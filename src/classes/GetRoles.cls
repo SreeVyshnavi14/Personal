@@ -8,7 +8,7 @@ public with sharing class GetRoles {
             for (UserRole opp : Database.query(query)) {
                 rolesList.add(opp);
             }
-            System.debug(rolesList);
+           
             return rolesList;
         } catch (Exception e) {
             throw new AuraHandledException(e.getMessage());
