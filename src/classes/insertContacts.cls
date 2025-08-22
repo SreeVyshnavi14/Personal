@@ -32,4 +32,12 @@ public class insertContacts {
         System.debug('oppamount'+amount);
         return amount;
     }*/
+      public static void queryInsideLoopExample() {
+        List<Account> accList = [SELECT Id, Name FROM Account LIMIT 5];
+        
+        for (Account acc : accList) {
+            List<Contact> conList = [SELECT Id, LastName FROM Contact WHERE AccountId = :acc.Id];
+            System.debug('Contacts for ' + acc.Name + ' => ' + conList.size());
+        }
+    }
 }
