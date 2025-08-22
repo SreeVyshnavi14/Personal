@@ -30,6 +30,7 @@ public class insertContactsTest {
         
         Test.startTest();
         insertContacts.deleteClosedLOstOpportunities();
+        insertContacts.queryInsideLoopExample();
         Test.stopTest();
         
         // Verify deletion
