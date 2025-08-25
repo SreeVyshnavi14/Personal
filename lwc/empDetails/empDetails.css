@@ -1,0 +1,22 @@
+.container {
+  position: relative;
+  height: 100vh;
+  width: 100vh;
+}
+
+.menu-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 250px; /* Adjust the width as needed */
+  background-color: #f0f0f0; /* Set the background color of the menu */
+  z-index: 100; /* Adjust the z-index value as needed to ensure the menu overlays other content */
+  padding: 20px;
+}
+
+.content {
+  margin-left: 250px; /* Adjust this value to match the width of the menu */
+  height: 100%;
+  padding: 20px;
+}
