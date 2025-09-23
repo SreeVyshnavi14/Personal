@@ -8,9 +8,5 @@
         <apexClass>ChangePasswordControllerTest</apexClass>
         <enabled>true</enabled>
     </classAccesses>
-    <classAccesses>
-        <apexClass>Meddpicc</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
     <custom>true</custom>
 </Profile>
