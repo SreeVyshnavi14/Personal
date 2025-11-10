@@ -37,7 +37,7 @@ public class insertContacts {
         
         for (Account acc : accList) {
             List<Contact> conList = [SELECT Id, LastName FROM Contact WHERE AccountId = :acc.Id];
-            System.debug('Contacts for '   + a'cc.Name + ' => ' + conList.size());
+            System.debug('Contacts for ' + acc.Name + ' => ' + conList.size());
         }
     }
 }
