@@ -39,5 +39,6 @@ public class insertContacts {
             List<Contact> conList = [SELECT Id, LastName FROM Contact WHERE AccountId = :acc.Id];
             System.debug('Contacts for ' + acc.Name + ' => ' + conList.size());
         }
+        //test
     }
 }
