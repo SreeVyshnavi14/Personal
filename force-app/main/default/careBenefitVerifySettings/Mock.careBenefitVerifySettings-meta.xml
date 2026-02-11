@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CareBenefitVerifySettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <codeSetType>Service Type Codes</codeSetType>
+    <defaultNpi>abc123</defaultNpi>
+    <generalPlanServiceTypeCode>30</generalPlanServiceTypeCode>
+    <isDefault>true</isDefault>
+    <masterLabel>Mock</masterLabel>
+    <organizationName>Facility</organizationName>
+    <serviceApexClass>BenefitsVerificationInterOpMock</serviceApexClass>
+</CareBenefitVerifySettings>
