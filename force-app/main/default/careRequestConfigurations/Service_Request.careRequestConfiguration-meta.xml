@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CareRequestConfiguration xmlns="http://soap.sforce.com/2006/04/metadata">
+    <careRequestRecordType>ServiceRequest</careRequestRecordType>
+    <careRequestRecords>
+        <careRequestRecord>CareRequestItem</careRequestRecord>
+    </careRequestRecords>
+    <careRequestRecords>
+        <careRequestRecord>CareDiagnosis</careRequestRecord>
+    </careRequestRecords>
+    <careRequestType>Service Request</careRequestType>
+    <isActive>true</isActive>
+    <isDefaultRecordType>false</isDefaultRecordType>
+    <masterLabel>Service Request</masterLabel>
+</CareRequestConfiguration>

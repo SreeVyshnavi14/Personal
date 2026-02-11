@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CareRequestConfiguration xmlns="http://soap.sforce.com/2006/04/metadata">
+    <careRequestRecordType>PreAuthorization</careRequestRecordType>
+    <careRequestRecords>
+        <careRequestRecord>CareRequestItem</careRequestRecord>
+    </careRequestRecords>
+    <careRequestType>Drug Request</careRequestType>
+    <isActive>true</isActive>
+    <isDefaultRecordType>false</isDefaultRecordType>
+    <masterLabel>Referral Request</masterLabel>
+</CareRequestConfiguration>

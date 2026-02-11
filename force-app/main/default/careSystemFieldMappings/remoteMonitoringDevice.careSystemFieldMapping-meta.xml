@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CareSystemFieldMapping xmlns="http://soap.sforce.com/2006/04/metadata">
+    <externalIdField>AccountNumber</externalIdField>
+    <isActive>true</isActive>
+    <masterLabel>Map1</masterLabel>
+    <role>RemoteMonitoringPatient</role>
+    <sourceSystem>Epic</sourceSystem>
+    <targetObject>Account</targetObject>
+</CareSystemFieldMapping>
