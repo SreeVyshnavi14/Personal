@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Service_Resource_Skill</fullName>
+    <columns>Name</columns>
+    <columns>LastModifiedDate</columns>
+    <columns>LastModifiedBy</columns>
+    <columns>ServiceResource</columns>
+    <columns>SkillMasterLabel</columns>
+    <columns>SkillLevel</columns>
+    <columns>EffectiveStartDate</columns>
+    <filterScope>Mine</filterScope>
+    <label>All Service Resource Skill</label>
+</ListView>

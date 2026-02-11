@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Service_Territory_Members</fullName>
+    <columns>Name</columns>
+    <columns>Role</columns>
+    <columns>ServiceTerritory</columns>
+    <columns>ServiceResource</columns>
+    <columns>TerritoryType</columns>
+    <columns>EffectiveStartDate</columns>
+    <columns>EffectiveEndDate</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Service Territory Members</label>
+</ListView>
