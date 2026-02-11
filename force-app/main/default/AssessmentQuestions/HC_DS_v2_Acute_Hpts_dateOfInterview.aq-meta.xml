@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Enter the date of the interview in dd/mm/yyyy format.</helpText>
+        <isActive>true</isActive>
+        <name>dateOfInterview</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>What is the date of the interview?</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Date</dataType>
+    <developerName>HC_DS_v2_Acute_Hpts_dateOfInterview</developerName>
+    <name>dateOfInterview</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

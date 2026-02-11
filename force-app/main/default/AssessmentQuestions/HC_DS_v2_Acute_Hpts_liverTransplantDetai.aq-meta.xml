@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Enter the hospital name and date of liver transplant.</helpText>
+        <isActive>true</isActive>
+        <name>liverTransplantDetails</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Name of hospital and date of liver transplant if applicable:</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Text</dataType>
+    <developerName>HC_DS_v2_Acute_Hpts_liverTransplantDetai</developerName>
+    <name>liverTransplantDetails</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

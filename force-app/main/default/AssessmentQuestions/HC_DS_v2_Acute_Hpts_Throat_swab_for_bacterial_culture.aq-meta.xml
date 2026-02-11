@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Throat swab for bacterial culture</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Throat swab for bacterial culture</questionText>
+        <responseValues>Detected
+Not detected
+Not tested
+Pending</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>HC_DS_v2_Acute_Hpts_Throat_swab_for_bacterial_culture</developerName>
+    <name>Throat swab for bacterial culture</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

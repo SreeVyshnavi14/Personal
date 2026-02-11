@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Check if respiratory symptoms are present.</helpText>
+        <isActive>true</isActive>
+        <name>respiratorySymptoms</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Are respiratory symptoms (shortness of breath, cough) present?</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Checkbox</dataType>
+    <developerName>HC_DS_v2_Acute_Hpts_respiratorySymptoms</developerName>
+    <name>respiratorySymptoms</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

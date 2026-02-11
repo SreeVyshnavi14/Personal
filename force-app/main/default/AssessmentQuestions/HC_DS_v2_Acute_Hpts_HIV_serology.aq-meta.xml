@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>HIV serology</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>HIV serology</questionText>
+        <responseValues>Detected
+Not detected
+Not tested
+Pending</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>HC_DS_v2_Acute_Hpts_HIV_serology</developerName>
+    <name>HIV serology</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

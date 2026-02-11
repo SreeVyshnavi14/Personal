@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Select the result for HHV-6.</helpText>
+        <isActive>true</isActive>
+        <name>infectiousDiseasesHHV6</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Was HHV-6 detected?</questionText>
+        <responseValues>Detected
+Not detected
+Not tested
+Pending</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>HC_DS_v2_Acute_Hpts_infectiousDiseasesHH</developerName>
+    <name>infectiousDiseasesHHV6</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

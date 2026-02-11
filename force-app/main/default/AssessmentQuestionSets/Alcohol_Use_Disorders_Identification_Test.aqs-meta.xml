@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionDeveloperNames>AUDITC_Citation</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>AUDITC_Score</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>HowManyDrinks</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>HowOftenDoYouDrink</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>SixOrMoreDrinks</assessmentQuestionDeveloperNames>
+    <developerName>Alcohol_Use_Disorders_Identification_Test</developerName>
+    <name>Alcohol Use Disorders Identification Test (AUDIT-C)</name>
+</AssessmentQuestionSet>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Check if the case visited the ER.</helpText>
+        <isActive>true</isActive>
+        <name>erVisit</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Did the case visit the ER?</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Checkbox</dataType>
+    <developerName>HC_DS_v2_Acute_Hpts_erVisit</developerName>
+    <name>erVisit</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

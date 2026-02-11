@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionDeveloperNames>PHQ_9_Citation</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>FeelingTired</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>BetterOffDead</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>TroubleSleeping</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>PHQ9_main_question</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>SpeakingSlow</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>FeelingBad</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>TroubleConcentrating</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>LittleInterest</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>FeelingDown</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>PoorAppetite</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>PHQ_9_Score</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>DifficultyDoingWork</assessmentQuestionDeveloperNames>
+    <developerName>Patient_Health_Questionnaire_9</developerName>
+    <name>Patient Health Questionnaire 9</name>
+</AssessmentQuestionSet>

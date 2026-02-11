@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Symptom Onset Abdominal pain/cramping</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>What is the symptom onset date?</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>DateTime</dataType>
+    <developerName>HC_DS_v2_Acute_Hpts_Symptom_Onset_Abdominal_pain_cramping</developerName>
+    <name>Symptom Onset Abdominal pain/cramping</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

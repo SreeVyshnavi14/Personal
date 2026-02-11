@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Select the type of contact with the source case.</helpText>
+        <isActive>true</isActive>
+        <name>contactType</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Was the case in contact with the source case as a:</questionText>
+        <responseValues>household contact
+caregiver to a family member
+sexual contact
+Health Care Worker (HCW)
+Other, specify:</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Multiselect</dataType>
+    <developerName>HC_DS_v2_Ebola_contactType</developerName>
+    <name>contactType</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

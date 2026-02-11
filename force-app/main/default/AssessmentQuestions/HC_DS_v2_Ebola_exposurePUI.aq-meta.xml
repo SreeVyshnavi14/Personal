@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Select if the case was exposed to PUI for EVD.</helpText>
+        <isActive>true</isActive>
+        <name>exposurePUI</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Was the case exposed to one or more person(s) under investigation (PUI) for EVD?</questionText>
+        <responseValues>Yes
+No
+Unknown</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>HC_DS_v2_Ebola_exposurePUI</developerName>
+    <name>exposurePUI</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

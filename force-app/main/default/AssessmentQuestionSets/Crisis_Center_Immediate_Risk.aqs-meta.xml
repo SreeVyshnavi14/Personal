@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionDeveloperNames>HealthCareCSCM_IR_MindSetStatus</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>HealthCareCSCM_IR_isSelfHarmPlanWorkedOut</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>HealthCareCSCM_IR_isThereAPlan</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>HealthCareCSCM_IR_isThereAnyPastThoughtAboutKilling</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>HealthCareCSCM_IR_isThereIntentToAct</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>HealthCareCSCM_IR_EndYourLife</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>HealthCareCSCM_IR_EndYourLifeIn3Months</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>HealthCareCSCM_IR_Interpretation</assessmentQuestionDeveloperNames>
+    <developerName>Crisis_Center_Immediate_Risk</developerName>
+    <name>Crisis Center - Immediate Risk</name>
+</AssessmentQuestionSet>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Specimen Site</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>What is the site from which Specimen is collected</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Text</dataType>
+    <developerName>HC_DS_v2_Ebola_Specimen_Site</developerName>
+    <name>Specimen Site</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

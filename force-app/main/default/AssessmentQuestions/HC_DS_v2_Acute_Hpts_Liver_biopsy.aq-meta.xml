@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Liver biopsy</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Liver biopsy (summarise histopathology
+report, including whether damage starting
+at portal tracts or diffuse)</questionText>
+        <responseValues>Yes
+No</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>HC_DS_v2_Acute_Hpts_Liver_biopsy</developerName>
+    <name>Liver biopsy</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

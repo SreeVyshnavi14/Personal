@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Enter the date when the fever started.</helpText>
+        <isActive>true</isActive>
+        <name>onsetFever</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Onset of fever</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Date</dataType>
+    <developerName>HC_DS_v2_Ebola_onsetFever</developerName>
+    <name>onsetFever</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

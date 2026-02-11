@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Feeling afraid as if something awful might happen</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Feeling afraid as if something awful might happen</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>FeelingAfraid</developerName>
+    <name>Feeling afraid as if something awful might happen</name>
+    <questionCategory>Health</questionCategory>
+    <relatedQuestion>GAD7_main_question</relatedQuestion>
+</AssessmentQuestion>

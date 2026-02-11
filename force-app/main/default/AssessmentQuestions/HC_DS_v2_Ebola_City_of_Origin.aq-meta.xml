@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>City of Origin</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>City of Origin</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Text</dataType>
+    <developerName>HC_DS_v2_Ebola_City_of_Origin</developerName>
+    <name>City of Origin</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

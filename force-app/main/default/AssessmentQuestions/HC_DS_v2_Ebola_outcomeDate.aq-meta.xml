@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Please enter the date of death or the date public health was made aware of the outcome.</helpText>
+        <isActive>true</isActive>
+        <name>outcomeDate</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>What is the outcome date?</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Date</dataType>
+    <developerName>HC_DS_v2_Ebola_outcomeDate</developerName>
+    <name>outcomeDate</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

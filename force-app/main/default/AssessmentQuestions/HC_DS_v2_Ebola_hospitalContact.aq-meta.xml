@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Select if the case was hospitalized or spent time in a healthcare facility with EVD cases.</helpText>
+        <isActive>true</isActive>
+        <name>hospitalContact</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Was the case hospitalized or spent time in a healthcare facility with EVD cases?</questionText>
+        <responseValues>Yes
+No
+Unknown</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>HC_DS_v2_Ebola_hospitalContact</developerName>
+    <name>hospitalContact</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

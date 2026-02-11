@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>supplements taken</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Does or has the case take(n) any supplements or medicines acquired, over the counter, purchased over the internet or accessed by any other methods? (Including herbal,
+alternative medicines, vitamins or other supplements);
+specifically, prompt acetaminophen/ anti-inflammatory drugs (e.g. aspirin, ibuprofen)/anticonvulsants in the 5 months prior to diagnosis?</questionText>
+        <responseValues>Yes
+No</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>HC_DS_v2_Acute_Hpts_supplements_taken</developerName>
+    <name>supplements taken</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

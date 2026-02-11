@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Enter the date of last exposure to PUI.</helpText>
+        <isActive>true</isActive>
+        <name>lastPUIExposureDate</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Date of last exposure to PUI</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Date</dataType>
+    <developerName>HC_DS_v2_Ebola_lastPUIExposureDate</developerName>
+    <name>lastPUIExposureDate</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

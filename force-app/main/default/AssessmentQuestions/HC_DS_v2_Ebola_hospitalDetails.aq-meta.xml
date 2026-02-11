@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Enter the details of the healthcare facility.</helpText>
+        <isActive>true</isActive>
+        <name>hospitalDetails</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>If yes, specify where:</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Text</dataType>
+    <developerName>HC_DS_v2_Ebola_hospitalDetails</developerName>
+    <name>hospitalDetails</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

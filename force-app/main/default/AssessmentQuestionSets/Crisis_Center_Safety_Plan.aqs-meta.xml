@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionDeveloperNames>HealthCareCSCM_MSA_CopingStrategiesBottom</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>HealthCareCSCM_MSA_CopingStrategiesParent</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>HealthCareCSCM_MSA_DistractionsParent</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>HealthCareCSCM_MSA_MSEParent</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>HealthCareCSCM_MSA_MYPSParent</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>HealthCareCSCM_MSA_MySupportsParent</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>HealthCareCSCM_MSA_WarningSignParent</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>HealthCareCSCM_MSA_CopingStrategies</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>HealthCareCSCM_MSA_Distractions</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>HealthCareCSCM_MSA_MSE</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>HealthCareCSCM_MSA_MYPS</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>HealthCareCSCM_MSA_MySupports</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>HealthCareCSCM_MSA_WarningSign</assessmentQuestionDeveloperNames>
+    <developerName>Crisis_Center_Safety_Plan</developerName>
+    <name>Crisis Center Safety Plan</name>
+</AssessmentQuestionSet>

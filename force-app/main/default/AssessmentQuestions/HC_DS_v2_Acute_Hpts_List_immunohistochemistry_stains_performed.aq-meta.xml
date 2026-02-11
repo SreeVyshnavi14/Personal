@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>List immunohistochemistry stains performed</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>List immunohistochemistry stains
+performed (adenovirus/CMV/EBV etc)</questionText>
+        <responseValues>Yes
+No</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>HC_DS_v2_Acute_Hpts_List_immunohistochemistry_stains_performed</developerName>
+    <name>List immunohistochemistry stains performed</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

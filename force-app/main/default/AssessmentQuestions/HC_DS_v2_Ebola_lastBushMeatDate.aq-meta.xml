@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Enter the last date bush meat was consumed.</helpText>
+        <isActive>true</isActive>
+        <name>lastBushMeatDate</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>If yes, specify last date consumed bush meat</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Date</dataType>
+    <developerName>HC_DS_v2_Ebola_lastBushMeatDate</developerName>
+    <name>lastBushMeatDate</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

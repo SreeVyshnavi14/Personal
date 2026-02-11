@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Varicella PCR in blood</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Varicella PCR in blood</questionText>
+        <responseValues>Detected
+Not detected
+Not tested
+Pending</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>HC_DS_v2_Acute_Hpts_Varicella_PCR_in_blood</developerName>
+    <name>Varicella PCR in blood</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Enter the name of the hospital.</helpText>
+        <isActive>true</isActive>
+        <name>hospitalName</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>What is the name of the hospital where diagnosis of acute hepatitis was made?</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Text</dataType>
+    <developerName>HC_DS_v2_Acute_Hpts_hospitalName1</developerName>
+    <name>hospitalName</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

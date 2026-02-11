@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>If you checked off any problems, how difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>If you checked off any problems, how difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?</questionText>
+        <responseValues>Not difficult at all
+Somewhat difficult
+Very difficult
+Extremely difficult</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>DifficultyDoingWork</developerName>
+    <name>If you checked off any problems, how difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?</name>
+    <questionCategory>Health</questionCategory>
+</AssessmentQuestion>

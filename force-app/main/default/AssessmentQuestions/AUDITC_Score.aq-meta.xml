@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>AUDIT-C Score</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>AUDIT-C Score</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Formula</dataType>
+    <developerName>AUDITC_Score</developerName>
+    <formulaResponseDataType>Integer</formulaResponseDataType>
+    <name>AUDIT-C Score</name>
+    <questionCategory>Health</questionCategory>
+</AssessmentQuestion>

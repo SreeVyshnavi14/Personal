@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>GAD-7 Score</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>GAD-7 Score</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Formula</dataType>
+    <developerName>GAD7_Score</developerName>
+    <formulaResponseDataType>Integer</formulaResponseDataType>
+    <name>GAD-7 Score</name>
+    <questionCategory>Health</questionCategory>
+</AssessmentQuestion>

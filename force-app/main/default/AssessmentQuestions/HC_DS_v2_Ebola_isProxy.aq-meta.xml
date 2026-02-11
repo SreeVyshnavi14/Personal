@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Select if the respondent is a proxy for the client.</helpText>
+        <isActive>true</isActive>
+        <name>isProxy</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Is respondent a proxy?</questionText>
+        <responseValues>Yes
+No
+Unknown</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>HC_DS_v2_Ebola_isProxy</developerName>
+    <name>isProxy</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

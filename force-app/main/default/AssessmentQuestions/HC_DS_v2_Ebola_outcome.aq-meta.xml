@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Select the outcome of the case at the time of reporting.</helpText>
+        <isActive>true</isActive>
+        <name>outcome</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Outcome at time of reporting</questionText>
+        <responseValues>Fully Recovered
+Not yet recovered/recovering
+Fatal
+Other, specify:
+Unknown
+Permanent disability, specify:</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>HC_DS_v2_Ebola_outcome</developerName>
+    <name>outcome</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

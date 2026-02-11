@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>SARS-CoV-2 PCR – respiratory sample</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>SARS-CoV-2 PCR – respiratory sample</questionText>
+        <responseValues>Detected
+Not detected
+Not tested
+Pending</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>HC_DS_v2_Acute_Hpts_SARS_CoV_2_PCR_respiratory_sample</developerName>
+    <name>SARS-CoV-2 PCR – respiratory sample</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Indigenous other</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Other, Please specify</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Text</dataType>
+    <developerName>HC_DS_v2_Cmm_Indigenous_other</developerName>
+    <name>Indigenous other</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

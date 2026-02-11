@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Enter the number of PUI the client was exposed to.</helpText>
+        <isActive>true</isActive>
+        <name>numberOfPUIExposures</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>If yes, how many?</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Integer</dataType>
+    <developerName>HC_DS_v2_Ebola_numberOfPUIExposures</developerName>
+    <name>numberOfPUIExposures</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

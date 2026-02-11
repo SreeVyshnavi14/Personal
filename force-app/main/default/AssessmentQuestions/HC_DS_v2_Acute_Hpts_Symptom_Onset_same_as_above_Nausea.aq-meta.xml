@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Symptom Onset same as above Nausea</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Is symptom onset date same as above?</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Checkbox</dataType>
+    <developerName>HC_DS_v2_Acute_Hpts_Symptom_Onset_same_as_above_Nausea</developerName>
+    <name>Symptom Onset same as above Nausea</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

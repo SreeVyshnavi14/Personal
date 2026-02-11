@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionDeveloperNames>HealthCareCSCM_Intake_Gender</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>HealthCareCSCM_Intake_MainConcern</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>HealthCareCSCM_Intake_IsTransgender</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>HealthCareCSCM_Intake_MentalStatus</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>HealthCareCSCM_Intake_isSucidial</assessmentQuestionDeveloperNames>
+    <developerName>Crisis_Center_Intake</developerName>
+    <name>Crisis Center Intake</name>
+</AssessmentQuestionSet>

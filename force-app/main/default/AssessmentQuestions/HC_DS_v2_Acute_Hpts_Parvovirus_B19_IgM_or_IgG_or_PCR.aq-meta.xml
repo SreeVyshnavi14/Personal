@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Parvovirus B19 IgM or IgG or PCR</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Parvovirus B19 IgM or IgG or PCR</questionText>
+        <responseValues>Detected
+Not detected
+Not tested
+Pending</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>HC_DS_v2_Acute_Hpts_Parvovirus_B19_IgM_or_IgG_or_PCR</developerName>
+    <name>Parvovirus B19 IgM or IgG or PCR</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>other illness days to resolution</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Days to resolution</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Integer</dataType>
+    <developerName>HC_DS_v2_Acute_Hpts_other_illness_days_to_resolution</developerName>
+    <name>other illness days to resolution</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

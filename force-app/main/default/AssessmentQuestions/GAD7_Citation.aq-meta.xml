@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>GAD-7 Citation</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>&lt;b&gt;Interpretation:&lt;/b&gt;
+&lt;b&gt;When screening for anxiety disorders, a score of 8 or greater represents a reasonable cut-point for identifying probable cases of generalized anxiety disorder&lt;/b&gt;; further diagnostic assessment is warranted to determine the presence and type of anxiety disorder. Using a cut-off of 8 the GAD-7 has a sensitivity of 92% and specificity of 76% for diagnosis generalized anxiety disorder.
+
+The following cut-offs correlate with level of anxiety severity:&lt;li&gt;Score 0-4: Minimal Anxiety&lt;/li&gt;&lt;li&gt;Score 5-9: Mild Anxiety&lt;/li&gt;&lt;li&gt;Score 10-14: Moderate Anxiety&lt;/li&gt;&lt;li&gt;Score greater than 15: Severe Anxiety&lt;/li&gt;Based on a recent meta-analysis, some experts have recommended using a cut-off of 8 to optimize sensitivity without compromising specificity.
+
+&lt;b&gt;Acknowledgement&lt;/b&gt;
+Developed by Drs. Robert L. Spitzer, Janet B.W. Williams, Kurt Kroenke and colleagues, with an educational grant from Pfizer Inc. No permission required to reproduce, translate, display or distribute.</questionText>
+        <status>Active</status>
+        <versionNumber>3</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>TextBlock</dataType>
+    <developerName>GAD7_Citation</developerName>
+    <name>GAD-7 Citation</name>
+    <questionCategory>Health</questionCategory>
+</AssessmentQuestion>

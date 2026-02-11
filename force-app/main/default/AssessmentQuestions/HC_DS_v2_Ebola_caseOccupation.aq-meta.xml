@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Select the occupation of the case.</helpText>
+        <isActive>true</isActive>
+        <name>caseOccupation</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>The case is a:</questionText>
+        <responseValues>Medevac Staff
+Consular employee
+NGO/Aid Worker
+Expatriate Worker
+Prospector
+Mine worker
+Mortician
+Veterinary/animal worker/or game hunter
+Laboratory Worker handling Ebola virus
+Health Care Worker (HCW)
+Other, specify:</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Multiselect</dataType>
+    <developerName>HC_DS_v2_Ebola_caseOccupation</developerName>
+    <name>caseOccupation</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Enter the date of liver transplant in dd/mm/yyyy format.</helpText>
+        <isActive>true</isActive>
+        <name>liverTransplantDate</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>What is the date of liver transplant?</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Date</dataType>
+    <developerName>HC_DS_v2_Acute_Hpts_liverTransplantDate</developerName>
+    <name>liverTransplantDate</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

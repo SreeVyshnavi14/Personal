@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Check if the case visited a family doctor or pediatrician.</helpText>
+        <isActive>true</isActive>
+        <name>familyDoctorVisit</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Did the case visit a family doctor or pediatrician?</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Checkbox</dataType>
+    <developerName>HC_DS_v2_Acute_Hpts_familyDoctorVisit</developerName>
+    <name>familyDoctorVisit</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

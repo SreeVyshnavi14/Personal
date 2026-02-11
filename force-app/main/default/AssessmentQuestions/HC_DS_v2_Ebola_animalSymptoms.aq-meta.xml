@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Select if the animal displayed symptoms or was dead.</helpText>
+        <isActive>true</isActive>
+        <name>animalSymptoms</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Did the animal display any symptoms of illness or was the animal dead?</questionText>
+        <responseValues>Yes
+No
+Unknown</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>HC_DS_v2_Ebola_animalSymptoms</developerName>
+    <name>animalSymptoms</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

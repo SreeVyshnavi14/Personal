@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Select if the case was admitted to the ICU.</helpText>
+        <isActive>true</isActive>
+        <name>icuAdmission</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Admitted to Intensive Care Unit (ICU)?</questionText>
+        <responseValues>Yes
+No
+Unknown</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>HC_DS_v2_Ebola_icuAdmission</developerName>
+    <name>icuAdmission</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

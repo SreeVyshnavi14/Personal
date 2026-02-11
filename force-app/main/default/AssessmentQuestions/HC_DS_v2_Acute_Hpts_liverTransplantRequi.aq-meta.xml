@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Select whether a liver transplant was required.</helpText>
+        <isActive>true</isActive>
+        <name>liverTransplantRequired</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Was liver transplant required?</questionText>
+        <responseValues>Yes
+No
+Unknown</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>HC_DS_v2_Acute_Hpts_liverTransplantRequi</developerName>
+    <name>liverTransplantRequired</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

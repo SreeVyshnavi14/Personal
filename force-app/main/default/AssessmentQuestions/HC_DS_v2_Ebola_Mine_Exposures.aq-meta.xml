@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Mine Exposures</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>In the 21 days prior to symptom onset, did the case work or spend time in a mine/cave inhabited by bat colonies in a country/region with widespread and intense Ebola virus transmission?</questionText>
+        <responseValues>Yes
+No 
+Unknown</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>HC_DS_v2_Ebola_Mine_Exposures</developerName>
+    <name>Mine Exposures</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

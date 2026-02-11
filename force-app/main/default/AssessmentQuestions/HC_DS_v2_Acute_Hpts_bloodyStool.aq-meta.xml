@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Check if bloody stool is present.</helpText>
+        <isActive>true</isActive>
+        <name>bloodyStool</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Is bloody stool present?</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Checkbox</dataType>
+    <developerName>HC_DS_v2_Acute_Hpts_bloodyStool</developerName>
+    <name>bloodyStool</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

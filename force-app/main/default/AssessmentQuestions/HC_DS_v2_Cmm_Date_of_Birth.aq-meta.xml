@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Date of Birth</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>What is the month and year of birth?</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Date</dataType>
+    <developerName>HC_DS_v2_Cmm_Date_of_Birth</developerName>
+    <name>Date of Birth</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Enter the date of death of the source case.</helpText>
+        <isActive>true</isActive>
+        <name>dateOfDeath</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>If deceased, date of death</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Date</dataType>
+    <developerName>HC_DS_v2_Ebola_dateOfDeath</developerName>
+    <name>dateOfDeath</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

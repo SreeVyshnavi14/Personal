@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Check if abdominal pain/cramping is present.</helpText>
+        <isActive>true</isActive>
+        <name>abdominalPain</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Is abdominal pain/cramping present?</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Checkbox</dataType>
+    <developerName>HC_DS_v2_Acute_Hpts_abdominalPain</developerName>
+    <name>abdominalPain</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

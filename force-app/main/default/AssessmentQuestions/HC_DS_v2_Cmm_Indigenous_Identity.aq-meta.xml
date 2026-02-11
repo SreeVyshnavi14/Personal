@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Indigenous Identity</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>If Indigenous, indicate which Indigenous identity the case self-identifies as:</questionText>
+        <responseValues>First Nations
+Metis
+Inuk/Inuit
+Other Indigenous, specify
+Not asked
+Prefer Not to answer
+Unknown</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Multiselect</dataType>
+    <developerName>HC_DS_v2_Cmm_Indigenous_Identity</developerName>
+    <name>Indigenous Identity</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

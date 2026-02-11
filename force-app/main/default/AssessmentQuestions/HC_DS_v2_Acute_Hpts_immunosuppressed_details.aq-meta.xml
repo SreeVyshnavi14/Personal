@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>immunosuppressed details</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>If yes, details: (condition (include if primary, secondary,
+medication related), date of diagnosis, medication)</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Text</dataType>
+    <developerName>HC_DS_v2_Acute_Hpts_immunosuppressed_details</developerName>
+    <name>immunosuppressed details</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

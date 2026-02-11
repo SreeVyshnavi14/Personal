@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Enter the peak GGT level.</helpText>
+        <isActive>true</isActive>
+        <name>peakGGT</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>What is the peak GGT level?</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Decimal</dataType>
+    <developerName>HC_DS_v2_Acute_Hpts_peakGGT</developerName>
+    <name>peakGGT</name>
+    <questionCategory>Financial</questionCategory>
+</AssessmentQuestion>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionDeveloperNames>GAD7_main_question</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>FeelingNervous</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>NotAbleToStopWorrying</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>WorryingTooMuch</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>TroubleRelaxing</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>BeingRestless</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>EasilyAnnoyed</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>FeelingAfraid</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>GAD7_Citation</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>GAD7_Score</assessmentQuestionDeveloperNames>
+    <developerName>Generalized_Anxiety_Disorder_7</developerName>
+    <name>Generalized Anxiety Disorder 7</name>
+</AssessmentQuestionSet>

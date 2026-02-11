@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Check if upper respiratory symptoms are present.</helpText>
+        <isActive>true</isActive>
+        <name>upperRespiratorySymptoms</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Are upper respiratory symptoms (runny nose, congestion, sore throat) present?</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Checkbox</dataType>
+    <developerName>HC_DS_v2_Acute_Hpts_upperRespiratorySymp</developerName>
+    <name>upperRespiratorySymptoms</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

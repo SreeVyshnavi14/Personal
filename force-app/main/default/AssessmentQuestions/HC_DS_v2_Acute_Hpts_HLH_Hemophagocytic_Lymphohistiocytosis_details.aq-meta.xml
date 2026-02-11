@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>HLH (Hemophagocytic Lymphohistiocytosis) details</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>HLH (Hemophagocytic Lymphohistiocytosis) details</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Text</dataType>
+    <developerName>HC_DS_v2_Acute_Hpts_HLH_Hemophagocytic_Lymphohistiocytosis_details</developerName>
+    <name>HLH (Hemophagocytic Lymphohistiocytosis) details</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

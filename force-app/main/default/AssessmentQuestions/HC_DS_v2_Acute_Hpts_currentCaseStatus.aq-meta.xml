@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Select the current status of the case.</helpText>
+        <isActive>true</isActive>
+        <name>currentCaseStatus</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>What is the current case status?</questionText>
+        <responseValues>Alive, recovered and discharged
+Alive, discharged and recovering
+Alive, in hospital
+Alive, in intensive care (ICU/CCU)
+Deceased
+Unknown</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Multiselect</dataType>
+    <developerName>HC_DS_v2_Acute_Hpts_currentCaseStatus</developerName>
+    <name>currentCaseStatus</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>AUDIT-C Citation</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>&lt;p&gt;&lt;strong&gt;Interpretation:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Men&lt;/strong&gt;, a score of 4 or more is considered positive, optimal for identifying hazardous drinking or active alcohol use disorders.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Women&lt;/strong&gt;, a score of 3 or more is considered positive, optimal for identifying hazardous drinking or active alcohol use disorders.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;NOTE&lt;/strong&gt;: If all points are from Question 1, assume the patient is drinking below recommended limits and the medical provider should review the patient’s alcohol intake during the past few months.&lt;/li&gt;&lt;/ul&gt;
+&lt;strong&gt;Sources&lt;/strong&gt;&lt;p&gt;National Institute on Alcohol Abuse and Alcoholism.&lt;/p&gt;</questionText>
+        <status>Active</status>
+        <versionNumber>2</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>TextBlock</dataType>
+    <developerName>AUDITC_Citation</developerName>
+    <name>AUDIT-C Citation</name>
+    <questionCategory>Health</questionCategory>
+</AssessmentQuestion>

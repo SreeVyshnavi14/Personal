@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Admission date Family Doctor</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>When did you visit the Family doctor?</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>DateTime</dataType>
+    <developerName>HC_DS_v2_Acute_Hpts_Admission_date_Family_Doctor</developerName>
+    <name>Admission date Family Doctor</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

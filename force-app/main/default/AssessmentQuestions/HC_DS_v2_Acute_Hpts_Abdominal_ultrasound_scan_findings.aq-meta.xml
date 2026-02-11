@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Abdominal ultrasound scan findings</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>please summarise findings:</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Text</dataType>
+    <developerName>HC_DS_v2_Acute_Hpts_Abdominal_ultrasound_scan_findings</developerName>
+    <name>Abdominal ultrasound scan findings</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

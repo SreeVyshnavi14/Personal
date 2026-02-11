@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Select if there was a breach in IPC.</helpText>
+        <isActive>true</isActive>
+        <name>ipcBreach</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Was there a break in infection prevention and control (IPC)?</questionText>
+        <responseValues>Yes
+No
+Unknown</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>HC_DS_v2_Ebola_ipcBreach</developerName>
+    <name>ipcBreach</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Enter the name of the municipality where the case became ill.</helpText>
+        <isActive>true</isActive>
+        <name>municipalityIllness</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Municipality where the case became ill</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Text</dataType>
+    <developerName>HC_DS_v2_Ebola_municipalityIllness</developerName>
+    <name>municipalityIllness</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

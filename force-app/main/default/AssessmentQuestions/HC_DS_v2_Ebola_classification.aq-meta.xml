@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Select the classification of the case.</helpText>
+        <isActive>true</isActive>
+        <name>classification</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Classification</questionText>
+        <responseValues>Confirmed
+Person Under Investigation
+Not a Case</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>HC_DS_v2_Ebola_classification</developerName>
+    <name>classification</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

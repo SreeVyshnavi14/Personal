@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Enter the date when the case was first placed on isolation precautions.</helpText>
+        <isActive>true</isActive>
+        <name>isolationDate</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Date first placed on Ebola isolation precautions</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Date</dataType>
+    <developerName>HC_DS_v2_Ebola_isolationDate</developerName>
+    <name>isolationDate</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>
