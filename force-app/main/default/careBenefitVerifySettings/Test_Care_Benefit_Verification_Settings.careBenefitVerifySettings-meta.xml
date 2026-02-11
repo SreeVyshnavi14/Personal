@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CareBenefitVerifySettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <codeSetType>Code set</codeSetType>
+    <defaultNpi>Npi info</defaultNpi>
+    <generalPlanServiceTypeCode>abc</generalPlanServiceTypeCode>
+    <isDefault>true</isDefault>
+    <masterLabel>Test Care Benefit Verification Settings</masterLabel>
+    <organizationName>Opsera</organizationName>
+    <serviceApexClass>BenefitsVerificationInterOpMock</serviceApexClass>
+    <serviceNamedCredential>MuleSoft_Integration_Credentials</serviceNamedCredential>
+    <uriPath>efgh</uriPath>
+</CareBenefitVerifySettings>
