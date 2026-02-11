@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FillDate__c</fullName>
+    <externalDeveloperName>fill_date</externalDeveloperName>
+    <inlineHelpText>Date on which the drug was filled by the pharmacy.</inlineHelpText>
+    <isFilteringDisabled>false</isFilteringDisabled>
+    <isNameField>false</isNameField>
+    <isSortingDisabled>false</isSortingDisabled>
+    <label>Fill Date</label>
+    <required>false</required>
+    <type>Date</type>
+</CustomField>

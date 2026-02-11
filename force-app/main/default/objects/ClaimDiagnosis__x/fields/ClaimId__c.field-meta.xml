@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ClaimId__c</fullName>
+    <externalDeveloperName>claim</externalDeveloperName>
+    <inlineHelpText>ID of the claim related to this record.</inlineHelpText>
+    <isFilteringDisabled>false</isFilteringDisabled>
+    <isNameField>false</isNameField>
+    <isSortingDisabled>false</isSortingDisabled>
+    <label>Claim</label>
+    <length>16</length>
+    <referenceTo>ClaimHeader__x</referenceTo>
+    <relationshipLabel>Claim Diagnoses</relationshipLabel>
+    <relationshipName>Claim_Diagnoses</relationshipName>
+    <type>ExternalLookup</type>
+</CustomField>

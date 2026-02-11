@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AdjudicatedOn__c</fullName>
+    <externalDeveloperName>adjudicatedon</externalDeveloperName>
+    <inlineHelpText>Date on which adjudicated amount was paid by the primary payer.</inlineHelpText>
+    <isFilteringDisabled>false</isFilteringDisabled>
+    <isNameField>false</isNameField>
+    <isSortingDisabled>false</isSortingDisabled>
+    <label>Adjudicated On</label>
+    <required>false</required>
+    <type>Date</type>
+</CustomField>

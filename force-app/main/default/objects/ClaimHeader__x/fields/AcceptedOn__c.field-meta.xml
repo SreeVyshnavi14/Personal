@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AcceptedOn__c</fullName>
+    <externalDeveloperName>acceptedon</externalDeveloperName>
+    <inlineHelpText>Date on which the claim was accepted.</inlineHelpText>
+    <isFilteringDisabled>false</isFilteringDisabled>
+    <isNameField>false</isNameField>
+    <isSortingDisabled>false</isSortingDisabled>
+    <label>Accepted On</label>
+    <required>false</required>
+    <type>Date</type>
+</CustomField>

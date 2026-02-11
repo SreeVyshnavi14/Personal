@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RenderingProvider__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalDeveloperName>rendering_provider</externalDeveloperName>
+    <inlineHelpText>National Provider Identifier (NPI) of the rendering provider associated with this service.</inlineHelpText>
+    <isFilteringDisabled>false</isFilteringDisabled>
+    <isNameField>false</isNameField>
+    <isSortingDisabled>false</isSortingDisabled>
+    <label>Rendering Provider</label>
+    <referenceTo>HealthCloudGA__Provider__c</referenceTo>
+    <relationshipLabel>Claim Lines</relationshipLabel>
+    <relationshipName>Claim_Lines</relationshipName>
+    <required>false</required>
+    <type>Lookup</type>
+</CustomField>

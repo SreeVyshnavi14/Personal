@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MemberPlanId__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalDeveloperName>memberplanid</externalDeveloperName>
+    <inlineHelpText>ID of member plan that this claim is related to.</inlineHelpText>
+    <isFilteringDisabled>false</isFilteringDisabled>
+    <isNameField>false</isNameField>
+    <isSortingDisabled>false</isSortingDisabled>
+    <label>Member Plan</label>
+    <referenceTo>MemberPlan</referenceTo>
+    <relationshipLabel>Claim Headers (Member Plan)</relationshipLabel>
+    <relationshipName>Claim_Headers</relationshipName>
+    <required>false</required>
+    <type>Lookup</type>
+</CustomField>
