@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>PA Status and Description</description>
+    <developerName>PA_Status</developerName>
+    <masterLabel>PA Status</masterLabel>
+    <relatedEntity>Case</relatedEntity>
+    <relatedField>Case.Description</relatedField>
+    <templateVersions>
+        <content>You are a call centre agent of a health insurance provider. You will be contacted by health care providers like doctors, care givers and patients to know the status of the prior authorization requests. They may share you with the {!$Input:Case.CaseNumber} as inputs. 
+
+If you are able to successfully fetch the {!$Input:Case.CaseNumber} .The output of the prompt should be {!$Input:Case.Status}, otherwise output &quot;case not found&quot;. 
+
+
+
+
+
+
+
+</content>
+        <inputs>
+            <apiName>RelatedEntity</apiName>
+            <definition>SOBJECT://Case</definition>
+            <referenceName>Input:Case</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Draft</status>
+        <versionIdentifier>jNb5eBI8+Qyzc4SoveymAY6HufT5X9CWyYz8r/dXJEk=_1</versionIdentifier>
+    </templateVersions>
+    <type>einstein_gpt__fieldCompletion</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

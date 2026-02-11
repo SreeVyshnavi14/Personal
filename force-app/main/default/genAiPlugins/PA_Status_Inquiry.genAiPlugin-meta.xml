@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <canEscalate>false</canEscalate>
+    <description>Classify user requests related to obtaining the PA status. This includes any inquiries about the current PA status.</description>
+    <developerName>PA_Status_Inquiry</developerName>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__CreateAToDo</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Ask the user for any necessary details to retrieve the PA status.</description>
+        <developerName>instruction_asktheuser0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_asktheuser0</masterLabel>
+        <sortOrder>0</sortOrder>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Verify the user&apos;s information before providing the PA status.</description>
+        <developerName>instruction_verifytheu1</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_verifytheu1</masterLabel>
+        <sortOrder>0</sortOrder>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If the PA status cannot be retrieved, inform the user and offer to escalate the issue.</description>
+        <developerName>instruction_ifthepasta2</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_ifthepasta2</masterLabel>
+        <sortOrder>0</sortOrder>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Ensure the response is clear and concise, providing only the relevant PA status information.</description>
+        <developerName>instruction_ensurether3</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_ensurether3</masterLabel>
+        <sortOrder>0</sortOrder>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>PA Status Inquiry</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is only to provide the current PA status based on the user&apos;s inquiry.</scope>
+</GenAiPlugin>
