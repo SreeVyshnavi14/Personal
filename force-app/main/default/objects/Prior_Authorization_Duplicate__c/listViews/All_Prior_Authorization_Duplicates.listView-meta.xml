@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Prior_Authorization_Duplicates</fullName>
+    <columns>NAME</columns>
+    <columns>Prior_Authorization_ID__c</columns>
+    <columns>Parent_Prior_Authorization_ID__c</columns>
+    <columns>Case_ID__c</columns>
+    <columns>Duplicate_Detected_Date__c</columns>
+    <columns>Duplicate_Confirmed__c</columns>
+    <columns>Confirmed_By__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Prior Authorization Duplicates</label>
+</ListView>

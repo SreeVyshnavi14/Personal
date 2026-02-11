@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prior_Authorization_Duplicate_Compact_Layout</fullName>
+    <fields>Prior_Authorization_ID__c</fields>
+    <fields>Parent_Prior_Authorization_ID__c</fields>
+    <fields>Case_ID__c</fields>
+    <fields>Duplicate_Confirmed__c</fields>
+    <label>Prior Authorization Duplicate Compact Layout</label>
+</CompactLayout>
