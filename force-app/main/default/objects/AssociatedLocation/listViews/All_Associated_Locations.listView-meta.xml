@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Associated_Locations</fullName>
+    <columns>Name</columns>
+    <columns>Location</columns>
+    <columns>Type</columns>
+    <columns>ActiveFrom</columns>
+    <columns>ActiveTo</columns>
+    <filterScope>Mine</filterScope>
+    <label>All Associated Locations</label>
+</ListView>
