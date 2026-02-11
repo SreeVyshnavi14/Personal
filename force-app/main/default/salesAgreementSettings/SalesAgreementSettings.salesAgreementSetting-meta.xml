@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SalesAgreementSettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actualsCalculationMode>Orders</actualsCalculationMode>
+    <arePredfndStatusValOveride>false</arePredfndStatusValOveride>
+    <decimalScale>2</decimalScale>
+    <displayedAgreementTermsMetrics>PlannedQuantity,ActualQuantity,SalesPrice,DiscountPercentage,DerivedPlannedAmount</displayedAgreementTermsMetrics>
+    <futureActCalcSchedules>0</futureActCalcSchedules>
+    <isOnlyApprovalProcessUsed>false</isOnlyApprovalProcessUsed>
+    <renewalPeriodDayCount>60</renewalPeriodDayCount>
+</SalesAgreementSettings>

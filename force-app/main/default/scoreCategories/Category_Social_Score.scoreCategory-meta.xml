@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScoreCategory xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <categoryName>Social Score</categoryName>
+    <description xsi:nil="true"/>
+    <developerName>Category_Social_Score</developerName>
+    <iconUrl>https://healthicons.org/icons/svg/filled/symbols/health.svg</iconUrl>
+    <masterLabel>Social Score</masterLabel>
+    <parentCategoryId>0gzdN0000004lef</parentCategoryId>
+    <scoreRangeClassifications>
+        <classificationName>Low</classificationName>
+        <colorHexadecimalCode>#E40505</colorHexadecimalCode>
+        <rangeEndValue>3.0</rangeEndValue>
+        <rangeStartValue>1.0</rangeStartValue>
+    </scoreRangeClassifications>
+    <scoreRangeClassifications>
+        <classificationName>Normal</classificationName>
+        <colorHexadecimalCode>#FFFF39</colorHexadecimalCode>
+        <rangeEndValue>6.0</rangeEndValue>
+        <rangeStartValue>4.0</rangeStartValue>
+    </scoreRangeClassifications>
+    <scoreRangeClassifications>
+        <classificationName>High</classificationName>
+        <colorHexadecimalCode>#008000</colorHexadecimalCode>
+        <rangeEndValue>10.0</rangeEndValue>
+        <rangeStartValue>7.0</rangeStartValue>
+    </scoreRangeClassifications>
+</ScoreCategory>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScoreCategory xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <categoryName>Daily Fitness Adherence</categoryName>
+    <description xsi:nil="true"/>
+    <developerName>Category_Daily_Fitness_Adherence</developerName>
+    <iconUrl>https://healthicons.org/icons/svg/filled/symbols/health.svg</iconUrl>
+    <masterLabel>Daily Fitness Adherence</masterLabel>
+    <parentCategoryId>0gzdN0000004leg</parentCategoryId>
+</ScoreCategory>

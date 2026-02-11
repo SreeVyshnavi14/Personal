@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScoreCategory xmlns="http://soap.sforce.com/2006/04/metadata">
+    <categoryName>Engagement Score</categoryName>
+    <description>Measures patient engagement level</description>
+    <developerName>Category_Engagement_Score</developerName>
+    <iconUrl>https://healthicons.org/icons/svg/filled/symbols/health.svg</iconUrl>
+    <masterLabel>Engagement Score</masterLabel>
+    <parentCategoryId>0gzdN0000004lef</parentCategoryId>
+    <scoreRangeClassifications>
+        <classificationName>Low</classificationName>
+        <colorHexadecimalCode>#FF0000</colorHexadecimalCode>
+        <rangeEndValue>3.0</rangeEndValue>
+        <rangeStartValue>0.0</rangeStartValue>
+    </scoreRangeClassifications>
+    <scoreRangeClassifications>
+        <classificationName>Medium</classificationName>
+        <colorHexadecimalCode>#FFA500</colorHexadecimalCode>
+        <rangeEndValue>6.0</rangeEndValue>
+        <rangeStartValue>3.1</rangeStartValue>
+    </scoreRangeClassifications>
+    <scoreRangeClassifications>
+        <classificationName>High</classificationName>
+        <colorHexadecimalCode>#008000</colorHexadecimalCode>
+        <rangeEndValue>10.0</rangeEndValue>
+        <rangeStartValue>6.1</rangeStartValue>
+    </scoreRangeClassifications>
+</ScoreCategory>
