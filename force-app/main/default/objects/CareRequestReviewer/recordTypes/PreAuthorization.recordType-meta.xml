@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PreAuthorization</fullName>
+    <active>true</active>
+    <label>PreAuthorization</label>
+    <picklistValues>
+        <picklist>ReviewerType</picklist>
+        <values>
+            <fullName>Admin Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intake Specialist Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medical Director Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Peer Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Physician Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Registered Nurse Review</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Requesting Practitioner Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Servicing Practitioner Review</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Denied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In process</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>
