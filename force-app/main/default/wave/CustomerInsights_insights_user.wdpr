@@ -1,0 +1,208 @@
+{
+  "version" : "53.0",
+  "nodes" : {
+    "DROP_FIELDS0" : {
+      "action" : "schema",
+      "parameters" : {
+        "fields" : [ ],
+        "slice" : {
+          "fields" : [ "isDuplicate" ],
+          "ignoreMissingFields" : true,
+          "mode" : "DROP"
+        }
+      },
+      "sources" : [ "EDIT_ATTRIBUTES5" ]
+    },
+    "EDIT_ATTRIBUTES4" : {
+      "action" : "schema",
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Id_formula",
+          "newProperties" : {
+            "label" : "isDuplicate",
+            "name" : "isDuplicate"
+          }
+        } ]
+      },
+      "sources" : [ "FORMULA0" ]
+    },
+    "EDIT_ATTRIBUTES5" : {
+      "action" : "schema",
+      "parameters" : {
+        "fields" : [ {
+          "name" : "Id_formula1",
+          "newProperties" : {
+            "label" : "UniqueUserName",
+            "name" : "UniqueUserName"
+          }
+        } ]
+      },
+      "sources" : [ "FORMULA1" ]
+    },
+    "FILTER5" : {
+      "action" : "filter",
+      "parameters" : {
+        "filterExpressions" : [ {
+          "field" : "IsActive",
+          "operands" : [ "true" ],
+          "operator" : "EQUAL",
+          "type" : "TEXT"
+        } ]
+      },
+      "sources" : [ "LOAD_DATASET1" ]
+    },
+    "FORMULA0" : {
+      "action" : "computeRelative",
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "defaultValue" : "",
+          "formulaExpression" : "lead(Id)",
+          "label" : "isDuplicate",
+          "name" : "Id_formula",
+          "precision" : 255,
+          "type" : "TEXT"
+        } ],
+        "orderBy" : [ {
+          "direction" : "ASC",
+          "fieldName" : "Id"
+        } ],
+        "partitionBy" : [ "Name" ]
+      },
+      "sources" : [ "FILTER5" ]
+    },
+    "FORMULA1" : {
+      "action" : "formula",
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "defaultValue" : "",
+          "formulaExpression" : "case \n\twhen isDuplicate is null\n\tthen Name\n\telse\n\tconcat(Name,' (',Username,')')\nend",
+          "label" : "UniqueUserName",
+          "name" : "Id_formula1",
+          "precision" : 255,
+          "type" : "TEXT"
+        } ]
+      },
+      "sources" : [ "EDIT_ATTRIBUTES4" ]
+    },
+    "LOAD_DATASET1" : {
+      "action" : "load",
+      "parameters" : {
+        "dataset" : {
+          "connectionName" : "SFDC_LOCAL",
+          "label" : "User",
+          "sourceObjectName" : "User",
+          "type" : "connectedDataset"
+        },
+        "fields" : [ "Id", "Username", "LastName", "FirstName", "Name", "CompanyName", "Division", "Department", "Title", "Street", "City", "State", "PostalCode", "Country", "Email", "Phone", "MobilePhone", "Alias", "IsActive", "TimeZoneSidKey", "UserType", "SmallPhotoUrl", "FullPhotoUrl" ]
+      },
+      "sources" : [ ]
+    },
+    "OUTPUT0" : {
+      "action" : "save",
+      "parameters" : {
+        "dataset" : {
+          "folderName" : "CustomerInsights",
+          "label" : "User",
+          "name" : "User",
+          "type" : "analyticsDataset"
+        },
+        "fields" : [ ]
+      },
+      "sources" : [ "DROP_FIELDS0" ]
+    }
+  },
+  "ui" : {
+    "connectors" : [ {
+      "source" : "FILTER5",
+      "target" : "TRANSFORM3"
+    }, {
+      "source" : "TRANSFORM3",
+      "target" : "TRANSFORM4"
+    }, {
+      "source" : "LOAD_DATASET1",
+      "target" : "FILTER5"
+    }, {
+      "source" : "TRANSFORM5",
+      "target" : "OUTPUT0"
+    }, {
+      "source" : "TRANSFORM4",
+      "target" : "TRANSFORM5"
+    } ],
+    "hiddenColumns" : [ ],
+    "nodes" : {
+      "FILTER5" : {
+        "description" : "",
+        "label" : "Filter Active Users Only",
+        "left" : 252,
+        "top" : 392,
+        "type" : "FILTER"
+      },
+      "LOAD_DATASET1" : {
+        "connectors" : [ ],
+        "graph" : {
+          "LOAD_DATASET1" : null
+        },
+        "label" : "User",
+        "left" : 112,
+        "parameters" : {
+          "sampleSize" : 2000
+        },
+        "top" : 392,
+        "type" : "LOAD_DATASET"
+      },
+      "OUTPUT0" : {
+        "description" : "",
+        "label" : "Save User",
+        "left" : 812.2,
+        "top" : 392.3,
+        "type" : "OUTPUT"
+      },
+      "TRANSFORM3" : {
+        "connectors" : [ {
+          "source" : "FORMULA0",
+          "target" : "EDIT_ATTRIBUTES4"
+        } ],
+        "description" : "",
+        "graph" : {
+          "EDIT_ATTRIBUTES4" : null,
+          "FORMULA0" : null
+        },
+        "label" : "Compute_IsDuplicate_Name",
+        "left" : 392,
+        "top" : 392,
+        "type" : "TRANSFORM"
+      },
+      "TRANSFORM4" : {
+        "connectors" : [ {
+          "source" : "FORMULA1",
+          "target" : "EDIT_ATTRIBUTES5"
+        } ],
+        "description" : "",
+        "graph" : {
+          "EDIT_ATTRIBUTES5" : null,
+          "FORMULA1" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            }
+          }
+        },
+        "label" : "Compute_UniqueUserName",
+        "left" : 532,
+        "top" : 392,
+        "type" : "TRANSFORM"
+      },
+      "TRANSFORM5" : {
+        "connectors" : [ ],
+        "graph" : {
+          "DROP_FIELDS0" : null
+        },
+        "label" : "Transform",
+        "left" : 672,
+        "top" : 392.2,
+        "type" : "TRANSFORM"
+      }
+    }
+  }
+}

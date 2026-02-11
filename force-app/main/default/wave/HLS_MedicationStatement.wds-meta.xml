@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveDataset xmlns="http://soap.sforce.com/2006/04/metadata">
+    <application>TCRM_For_HC</application>
+    <masterLabel>HLS_MedicationStatement</masterLabel>
+    <templateAssetSourceName>HLS_MedicationStatement</templateAssetSourceName>
+    <type>default</type>
+</WaveDataset>

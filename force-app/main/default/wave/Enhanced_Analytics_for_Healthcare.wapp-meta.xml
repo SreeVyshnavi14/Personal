@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assetIcon>/analytics/wave/web/proto/images/app/icons/16.png</assetIcon>
+    <folder>Enhanced_Analytics_for_Healthcare</folder>
+    <masterLabel>Enhanced Analytics for Healthcare</masterLabel>
+    <shares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>AllInternalUsers</sharedTo>
+        <sharedToType>Organization</sharedToType>
+    </shares>
+    <templateOrigin>sfdc_internal__HLSModernizationApp</templateOrigin>
+    <templateVersion>4.1</templateVersion>
+</WaveApplication>

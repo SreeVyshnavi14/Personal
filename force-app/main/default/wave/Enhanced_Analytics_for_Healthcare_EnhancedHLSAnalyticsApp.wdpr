@@ -1,0 +1,1314 @@
+{
+  "version" : "60.0",
+  "nodes" : {
+    "LOAD_DATASET3" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "Id", "Name", "LastName", "FirstName", "RecordTypeId", "BillingState", "BillingCountry", "OwnerId", "CreatedDate", "IsActive", "AccountNumber" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "Account",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "Account"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "LOAD_DATASET8" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "UserRoleId", "Id", "Username", "LastName", "FirstName", "Name" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "User",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "User"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "LOAD_DATASET10" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "CreatedDate", "CreatedById", "Id", "Name", "CaseId", "Description", "StartDate", "EndDate", "ParticipantId", "CarePlanTemplateId", "Status", "TaskJobStatus", "AuthorizationType", "AuthorId", "TaskJobStatusMessage" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "CarePlan",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "CarePlan"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "LOAD_DATASET11" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "CreatedDate", "CreatedById", "Id", "WhoId", "WhatId", "Subject", "ActivityDate", "Status", "Priority", "OwnerId", "Description" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "Task",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "Task"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "OUTPUT1" : {
+      "action" : "save",
+      "sources" : [ "JOIN40" ],
+      "parameters" : {
+        "fields" : [ ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "Care Management",
+          "name" : "Care_Management",
+          "rowLevelSecurityFilter" : "'UserRole.Role.Id_flatten_multiField' == \"$User.UserRoleId\" || 'CreatedById' == \"$User.Id\"",
+          "folderName" : "Enhanced_Analytics_for_Healthcare"
+        },
+        "measuresToCurrencies" : [ ]
+      }
+    },
+    "LOAD_DATASET12" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "Id", "OwnerId", "Name", "CreatedDate", "CarePlanId", "DetailType", "ProblemPriority", "DetailRecordId" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "CarePlanDetail",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "CarePlanDetail"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "LOAD_DATASET13" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "Id", "PatientId", "Name" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "HealthCondition",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "HealthCondition"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "LOAD_DATASET14" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "ParentRecordId", "Id", "Name", "GoalAssigneeId" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "GoalAssignment",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "GoalAssignment"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "LOAD_DATASET15" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "Id", "Name", "GoalAssignmentId", "DetailRecordId" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "GoalAssignmentDetail",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "GoalAssignmentDetail"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "FORMULA24" : {
+      "action" : "formula",
+      "sources" : [ "LOAD_DATASET10" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "NUMBER",
+          "name" : "Completion_Time",
+          "label" : "Completion Time",
+          "formulaExpression" : "datediff(EndDate, StartDate)",
+          "precision" : 10,
+          "scale" : 0,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "FORMULA25" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA24" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "Created_Date_Month",
+          "label" : "Created Date Month",
+          "formulaExpression" : "case\nwhen month(CreatedDate) = 01 then 'Jan'\nwhen month(CreatedDate) = 02 then 'Feb'\nwhen month(CreatedDate) = 03 then 'Mar'\nwhen month(CreatedDate) = 04 then 'Apr'\nwhen month(CreatedDate) = 05 then 'May'\nwhen month(CreatedDate) = 06 then 'June'\nwhen month(CreatedDate) = 07 then 'July'\nwhen month(CreatedDate) = 08 then 'Aug'\nwhen month(CreatedDate) = 09 then 'Sep'\nwhen month(CreatedDate) = 10 then 'Oct'\nwhen month(CreatedDate) = 11 then 'Nov'\nwhen month(CreatedDate) = 12 then 'Dec'\nend",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "JOIN29" : {
+      "action" : "join",
+      "sources" : [ "FORMULA25", "LOAD_DATASET3" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ "CarePlanMember.RecordTypeId", "CarePlanMember.BillingState", "CarePlanMember.BillingCountry", "CarePlanMember.LastName", "CarePlanMember.FirstName", "CarePlanMember.IsActive" ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LEFT_OUTER",
+        "leftKeys" : [ "ParticipantId" ],
+        "rightQualifier" : "CarePlanMember",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "JOIN30" : {
+      "action" : "join",
+      "sources" : [ "JOIN29", "LOAD_DATASET11" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ "Description", "StartDate", "EndDate", "ParticipantId", "CarePlanTemplateId", "TaskJobStatus", "AuthorizationType", "AuthorId", "TaskJobStatusMessage", "Completion_Time", "Created_Date_Month", "Task.Subject", "Task.ActivityDate", "Task.OwnerId", "Task.Description", "UserRole.LastName", "UserRole.FirstName", "UserRole.Username" ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "RIGHT_OUTER",
+        "leftKeys" : [ "Id" ],
+        "rightQualifier" : "Task",
+        "rightKeys" : [ "WhatId" ]
+      }
+    },
+    "JOIN31" : {
+      "action" : "join",
+      "sources" : [ "JOIN29", "LOAD_DATASET12" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "RIGHT_OUTER",
+        "leftKeys" : [ "Id" ],
+        "rightQualifier" : "CarePlanDetail",
+        "rightKeys" : [ "CarePlanId" ]
+      }
+    },
+    "JOIN32" : {
+      "action" : "join",
+      "sources" : [ "JOIN31", "LOAD_DATASET13" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LOOKUP",
+        "leftKeys" : [ "CarePlanDetail.DetailRecordId" ],
+        "rightQualifier" : "HealthCondition",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "JOIN33" : {
+      "action" : "join",
+      "sources" : [ "JOIN32", "LOAD_DATASET11" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ "Description", "StartDate", "EndDate", "ParticipantId", "CarePlanTemplateId", "TaskJobStatus", "AuthorizationType", "AuthorId", "TaskJobStatusMessage", "Completion_Time", "Created_Date_Month", "CarePlanDetail.Id", "CarePlanDetail.OwnerId", "CarePlanDetail.Name", "CarePlanDetail.CreatedDate", "CarePlanDetail.CarePlanId", "CarePlanDetail.DetailType", "CarePlanDetail.ProblemPriority", "CarePlanDetail.DetailRecordId", "HealthCondition.Id", "HealthCondition.PatientId", "HealthCondition.Name", "HC_CP_Task.Subject", "HC_CP_Task.ActivityDate", "HC_CP_Task.OwnerId", "HC_CP_Task.Description", "UserRole.LastName", "UserRole.FirstName", "UserRole.Username" ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "RIGHT_OUTER",
+        "leftKeys" : [ "HealthCondition.Id" ],
+        "rightQualifier" : "HC_CP_Task",
+        "rightKeys" : [ "WhatId" ]
+      }
+    },
+    "JOIN34" : {
+      "action" : "join",
+      "sources" : [ "LOAD_DATASET14", "LOAD_DATASET15" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LOOKUP",
+        "leftKeys" : [ "Id" ],
+        "rightQualifier" : "GoalAssignment",
+        "rightKeys" : [ "GoalAssignmentId" ]
+      }
+    },
+    "JOIN35" : {
+      "action" : "join",
+      "sources" : [ "JOIN32", "JOIN34" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "RIGHT_OUTER",
+        "leftKeys" : [ "HealthCondition.Id" ],
+        "rightQualifier" : "GA_HC",
+        "rightKeys" : [ "GoalAssignment.DetailRecordId" ]
+      }
+    },
+    "JOIN36" : {
+      "action" : "join",
+      "sources" : [ "JOIN35", "LOAD_DATASET11" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ "Description", "StartDate", "EndDate", "ParticipantId", "CarePlanTemplateId", "TaskJobStatus", "AuthorizationType", "AuthorId", "TaskJobStatusMessage", "Completion_Time", "Created_Date_Month", "CarePlanDetail.Id", "CarePlanDetail.OwnerId", "CarePlanDetail.Name", "CarePlanDetail.CreatedDate", "CarePlanDetail.CarePlanId", "CarePlanDetail.DetailType", "CarePlanDetail.ProblemPriority", "CarePlanDetail.DetailRecordId", "HealthCondition.Id", "HealthCondition.PatientId", "HealthCondition.Name", "GA_HC.ParentRecordId", "GA_HC.Id", "GA_HC.Name", "GA_HC.GoalAssigneeId", "GA_HC.GoalAssignment.Id", "GA_HC.GoalAssignment.Name", "GA_HC.GoalAssignment.GoalAssignmentId", "GA_HC.GoalAssignment.DetailRecordId", "GA_HC_CP_Task.Subject", "GA_HC_CP_Task.ActivityDate", "GA_HC_CP_Task.OwnerId", "GA_HC_CP_Task.Description", "UserRole.LastName", "UserRole.FirstName", "UserRole.Username" ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "RIGHT_OUTER",
+        "leftKeys" : [ "GA_HC.Id" ],
+        "rightQualifier" : "GA_HC_CP_Task",
+        "rightKeys" : [ "WhatId" ]
+      }
+    },
+    "JOIN37" : {
+      "action" : "join",
+      "sources" : [ "JOIN29", "JOIN34" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ "Description", "StartDate", "EndDate", "ParticipantId", "CarePlanTemplateId", "TaskJobStatus", "AuthorizationType", "AuthorId", "TaskJobStatusMessage", "Completion_Time", "Created_Date_Month", "GA_CP.ParentRecordId", "GA_CP.Name", "GA_CP.GoalAssigneeId", "GA_CP.GoalAssignment.Id", "GA_CP.GoalAssignment.Name", "GA_CP.GoalAssignment.GoalAssignmentId", "GA_CP.GoalAssignment.DetailRecordId", "UserRole.LastName", "UserRole.FirstName", "UserRole.Username" ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "RIGHT_OUTER",
+        "leftKeys" : [ "Id" ],
+        "rightQualifier" : "GA_CP",
+        "rightKeys" : [ "ParentRecordId" ]
+      }
+    },
+    "JOIN38" : {
+      "action" : "join",
+      "sources" : [ "JOIN37", "LOAD_DATASET11" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ "GA_CP.Id", "GA_CP_Task.Subject", "GA_CP_Task.ActivityDate", "GA_CP_Task.OwnerId", "GA_CP_Task.Description" ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "RIGHT_OUTER",
+        "leftKeys" : [ "GA_CP.Id" ],
+        "rightQualifier" : "GA_CP_Task",
+        "rightKeys" : [ "WhatId" ]
+      }
+    },
+    "LOAD_DATASET23" : {
+      "action" : "load",
+      "sources" : [ ],
+      "parameters" : {
+        "fields" : [ "Id", "Name", "ParentRoleId", "RollupDescription", "ForecastUserId", "DeveloperName", "PortalAccountOwnerId" ],
+        "dataset" : {
+          "type" : "connectedDataset",
+          "label" : "UserRole",
+          "connectionName" : "SFDC_LOCAL",
+          "sourceObjectName" : "UserRole"
+        },
+        "sampleDetails" : {
+          "type" : "TopN",
+          "sortBy" : [ ]
+        }
+      }
+    },
+    "FLATTEN0" : {
+      "action" : "flatten",
+      "sources" : [ "LOAD_DATASET23" ],
+      "parameters" : {
+        "selfField" : "Id",
+        "parentField" : "ParentRoleId",
+        "multiField" : {
+          "name" : "Id_flatten_multiField",
+          "label" : "Role Id Nodes",
+          "isSystemField" : false
+        },
+        "pathField" : {
+          "name" : "Id_flatten",
+          "label" : "Role Id Path",
+          "isSystemField" : false
+        },
+        "includeSelfId" : true
+      }
+    },
+    "JOIN39" : {
+      "action" : "join",
+      "sources" : [ "LOAD_DATASET8", "FLATTEN0" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LEFT_OUTER",
+        "leftKeys" : [ "UserRoleId" ],
+        "rightQualifier" : "Role",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "JOIN40" : {
+      "action" : "join",
+      "sources" : [ "JOIN29", "JOIN39" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ "UserRole.Role.ParentRoleId", "UserRole.Role.RollupDescription", "UserRole.Role.ForecastUserId", "UserRole.Role.DeveloperName", "UserRole.Role.PortalAccountOwnerId" ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LEFT_OUTER",
+        "leftKeys" : [ "CreatedById" ],
+        "rightQualifier" : "UserRole",
+        "rightKeys" : [ "Id" ]
+      }
+    },
+    "APPEND4" : {
+      "action" : "appendV2",
+      "sources" : [ "JOIN30", "JOIN33" ],
+      "parameters" : {
+        "fieldMappings" : [ {
+          "top" : "CreatedDate",
+          "bottom" : "CreatedDate"
+        }, {
+          "top" : "CreatedById",
+          "bottom" : "CreatedById"
+        }, {
+          "top" : "Id",
+          "bottom" : "Id"
+        }, {
+          "top" : "Name",
+          "bottom" : "Name"
+        }, {
+          "top" : "CaseId",
+          "bottom" : "CaseId"
+        }, {
+          "top" : "Status",
+          "bottom" : "Status"
+        }, {
+          "top" : "CarePlanMember.Id",
+          "bottom" : "CarePlanMember.Id"
+        }, {
+          "top" : "CarePlanMember.Name",
+          "bottom" : "CarePlanMember.Name"
+        }, {
+          "top" : "CarePlanMember.OwnerId",
+          "bottom" : "CarePlanMember.OwnerId"
+        }, {
+          "top" : "CarePlanMember.CreatedDate",
+          "bottom" : "CarePlanMember.CreatedDate"
+        }, {
+          "top" : "CarePlanMember.AccountNumber",
+          "bottom" : "CarePlanMember.AccountNumber"
+        }, {
+          "top" : "Task.CreatedDate",
+          "bottom" : "HC_CP_Task.CreatedDate"
+        }, {
+          "top" : "Task.CreatedById",
+          "bottom" : "HC_CP_Task.CreatedById"
+        }, {
+          "top" : "Task.Id",
+          "bottom" : "HC_CP_Task.Id"
+        }, {
+          "top" : "Task.WhoId",
+          "bottom" : "HC_CP_Task.WhoId"
+        }, {
+          "top" : "Task.WhatId",
+          "bottom" : "HC_CP_Task.WhatId"
+        }, {
+          "top" : "Task.Status",
+          "bottom" : "HC_CP_Task.Status"
+        }, {
+          "top" : "Task.Priority",
+          "bottom" : "HC_CP_Task.Priority"
+        } ]
+      }
+    },
+    "APPEND5" : {
+      "action" : "appendV2",
+      "sources" : [ "APPEND4", "JOIN36" ],
+      "parameters" : {
+        "fieldMappings" : [ {
+          "top" : "CreatedDate",
+          "bottom" : "CreatedDate"
+        }, {
+          "top" : "CreatedById",
+          "bottom" : "CreatedById"
+        }, {
+          "top" : "Id",
+          "bottom" : "Id"
+        }, {
+          "top" : "Name",
+          "bottom" : "Name"
+        }, {
+          "top" : "CaseId",
+          "bottom" : "CaseId"
+        }, {
+          "top" : "Status",
+          "bottom" : "Status"
+        }, {
+          "top" : "CarePlanMember.Id",
+          "bottom" : "CarePlanMember.Id"
+        }, {
+          "top" : "CarePlanMember.Name",
+          "bottom" : "CarePlanMember.Name"
+        }, {
+          "top" : "CarePlanMember.OwnerId",
+          "bottom" : "CarePlanMember.OwnerId"
+        }, {
+          "top" : "CarePlanMember.CreatedDate",
+          "bottom" : "CarePlanMember.CreatedDate"
+        }, {
+          "top" : "CarePlanMember.AccountNumber",
+          "bottom" : "CarePlanMember.AccountNumber"
+        }, {
+          "top" : "Task.CreatedDate",
+          "bottom" : "GA_HC_CP_Task.CreatedDate"
+        }, {
+          "top" : "Task.CreatedById",
+          "bottom" : "GA_HC_CP_Task.CreatedById"
+        }, {
+          "top" : "Task.Id",
+          "bottom" : "GA_HC_CP_Task.Id"
+        }, {
+          "top" : "Task.WhoId",
+          "bottom" : "GA_HC_CP_Task.WhoId"
+        }, {
+          "top" : "Task.WhatId",
+          "bottom" : "GA_HC_CP_Task.WhatId"
+        }, {
+          "top" : "Task.Status",
+          "bottom" : "GA_HC_CP_Task.Status"
+        }, {
+          "top" : "Task.Priority",
+          "bottom" : "GA_HC_CP_Task.Priority"
+        } ]
+      }
+    },
+    "APPEND6" : {
+      "action" : "appendV2",
+      "sources" : [ "APPEND5", "JOIN38" ],
+      "parameters" : {
+        "fieldMappings" : [ {
+          "top" : "CreatedDate",
+          "bottom" : "CreatedDate"
+        }, {
+          "top" : "CreatedById",
+          "bottom" : "CreatedById"
+        }, {
+          "top" : "Id",
+          "bottom" : "Id"
+        }, {
+          "top" : "Name",
+          "bottom" : "Name"
+        }, {
+          "top" : "CaseId",
+          "bottom" : "CaseId"
+        }, {
+          "top" : "Status",
+          "bottom" : "Status"
+        }, {
+          "top" : "CarePlanMember.Id",
+          "bottom" : "CarePlanMember.Id"
+        }, {
+          "top" : "CarePlanMember.Name",
+          "bottom" : "CarePlanMember.Name"
+        }, {
+          "top" : "CarePlanMember.OwnerId",
+          "bottom" : "CarePlanMember.OwnerId"
+        }, {
+          "top" : "CarePlanMember.CreatedDate",
+          "bottom" : "CarePlanMember.CreatedDate"
+        }, {
+          "top" : "CarePlanMember.AccountNumber",
+          "bottom" : "CarePlanMember.AccountNumber"
+        }, {
+          "top" : "Task.CreatedDate",
+          "bottom" : "GA_CP_Task.CreatedDate"
+        }, {
+          "top" : "Task.CreatedById",
+          "bottom" : "GA_CP_Task.CreatedById"
+        }, {
+          "top" : "Task.Id",
+          "bottom" : "GA_CP_Task.Id"
+        }, {
+          "top" : "Task.WhoId",
+          "bottom" : "GA_CP_Task.WhoId"
+        }, {
+          "top" : "Task.WhatId",
+          "bottom" : "GA_CP_Task.WhatId"
+        }, {
+          "top" : "Task.Status",
+          "bottom" : "GA_CP_Task.Status"
+        }, {
+          "top" : "Task.Priority",
+          "bottom" : "GA_CP_Task.Priority"
+        } ]
+      }
+    },
+    "FORMULA31" : {
+      "action" : "formula",
+      "sources" : [ "APPEND6" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "Task_Status_Modified",
+          "label" : "Task Status Modified",
+          "formulaExpression" : "case \n    when \"Task.Status\" = 'Delayed' then '1- Delayed'\n    when \"Task.Status\" = 'Not Started' then '2- Not Started'\n    when \"Task.Status\" = 'Waiting on someone else' then '3- Waiting on someone else'\n    when \"Task.Status\" = 'In Progress' then '4- In Progress'\n    when \"Task.Status\" = 'Completed' then '5- Completed'\n    else \"Task.Status\"\n\nend",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "FORMULA32" : {
+      "action" : "computeRelative",
+      "sources" : [ "FORMULA31" ],
+      "parameters" : {
+        "partitionBy" : [ "Id" ],
+        "orderBy" : [ {
+          "fieldName" : "Task_Status_Modified",
+          "direction" : "ASC"
+        } ],
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "CarePlan_Status",
+          "label" : "CarePlan Status",
+          "formulaExpression" : "first_value(Task_Status_Modified)",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "FORMULA33" : {
+      "action" : "computeRelative",
+      "sources" : [ "FORMULA32" ],
+      "parameters" : {
+        "partitionBy" : [ "CarePlanMember.Id" ],
+        "orderBy" : [ {
+          "fieldName" : "CarePlan_Status",
+          "direction" : "ASC"
+        } ],
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "TEXT",
+          "name" : "Member_Status",
+          "label" : "Member Status",
+          "formulaExpression" : "first_value(CarePlan_Status)",
+          "precision" : 255,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "FORMULA34" : {
+      "action" : "formula",
+      "sources" : [ "FORMULA33" ],
+      "parameters" : {
+        "expressionType" : "SQL",
+        "fields" : [ {
+          "type" : "NUMBER",
+          "name" : "CarePlan_Progress",
+          "label" : "CarePlan Progress",
+          "formulaExpression" : "case \n    when \"Task.Status\" = 'Delayed' then 1\n    when \"Task.Status\" = 'Not Started' then 2\n    when \"Task.Status\" = 'Waiting on someone else' then 3\n    when \"Task.Status\" = 'In Progress' then 4\n    when \"Task.Status\" = 'Completed' then 5\nend",
+          "precision" : 10,
+          "scale" : 0,
+          "defaultValue" : ""
+        } ]
+      }
+    },
+    "OUTPUT2" : {
+      "action" : "save",
+      "sources" : [ "JOIN41" ],
+      "parameters" : {
+        "fields" : [ ],
+        "dataset" : {
+          "type" : "analyticsDataset",
+          "label" : "Task",
+          "name" : "Task",
+          "rowLevelSecurityFilter" : "'Task_UserRole.Role.Id_flatten_multiField' == \"$User.UserRoleId\" || 'Task.CreatedById' == \"$User.Id\"",
+          "folderName" : "Enhanced_Analytics_for_Healthcare"
+        },
+        "measuresToCurrencies" : [ ]
+      }
+    },
+    "JOIN41" : {
+      "action" : "join",
+      "sources" : [ "FORMULA34", "JOIN39" ],
+      "schema" : {
+        "fields" : [ ],
+        "slice" : {
+          "mode" : "DROP",
+          "ignoreMissingFields" : true,
+          "fields" : [ "Task_UserRole.LastName", "Task_UserRole.FirstName", "Task_UserRole.UserRoleId", "Task_UserRole.Role.ParentRoleId", "Task_UserRole.Role.RollupDescription", "Task_UserRole.Role.ForecastUserId", "Task_UserRole.Role.PortalAccountOwnerId" ]
+        }
+      },
+      "parameters" : {
+        "joinType" : "LEFT_OUTER",
+        "leftKeys" : [ "Task.CreatedById" ],
+        "rightQualifier" : "Task_UserRole",
+        "rightKeys" : [ "Id" ]
+      }
+    }
+  },
+  "ui" : {
+    "nodes" : {
+      "LOAD_DATASET3" : {
+        "label" : "Account",
+        "type" : "LOAD_DATASET",
+        "top" : 951.8,
+        "left" : 112.1,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "LOAD_DATASET8" : {
+        "label" : "User",
+        "type" : "LOAD_DATASET",
+        "top" : 530.2,
+        "left" : 1512,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "LOAD_DATASET10" : {
+        "label" : "CarePlan",
+        "type" : "LOAD_DATASET",
+        "top" : 1091.8,
+        "left" : 112.1,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "LOAD_DATASET11" : {
+        "label" : "Task",
+        "type" : "LOAD_DATASET",
+        "top" : 1231.8,
+        "left" : 112.1,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "OUTPUT1" : {
+        "label" : "Output_CareManagement",
+        "description" : "",
+        "type" : "OUTPUT",
+        "top" : 1091.8,
+        "left" : 1092.1
+      },
+      "LOAD_DATASET12" : {
+        "label" : "CarePlanDetail",
+        "type" : "LOAD_DATASET",
+        "top" : 1371.8,
+        "left" : 112.1,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "LOAD_DATASET13" : {
+        "label" : "HealthCondition",
+        "type" : "LOAD_DATASET",
+        "top" : 1511.8,
+        "left" : 112.1,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "LOAD_DATASET14" : {
+        "label" : "GoalAssignment",
+        "type" : "LOAD_DATASET",
+        "top" : 1651.8,
+        "left" : 112.1,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "LOAD_DATASET15" : {
+        "label" : "GoalAssignmentDetail",
+        "type" : "LOAD_DATASET",
+        "top" : 1791.8,
+        "left" : 112.1,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "TRANSFORM3" : {
+        "label" : "Completion_Time_Calc",
+        "description" : "",
+        "type" : "TRANSFORM",
+        "top" : 1091.8,
+        "left" : 392.1,
+        "graph" : {
+          "FORMULA24" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Completion time in days"
+          },
+          "FORMULA25" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          }
+        },
+        "connectors" : [ {
+          "source" : "FORMULA24",
+          "target" : "FORMULA25"
+        } ]
+      },
+      "JOIN29" : {
+        "label" : "Join_CarePlan_Account",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 1091.8,
+        "left" : 532.1
+      },
+      "JOIN30" : {
+        "label" : "Join_CarePlan_Account_Task",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 1231.8,
+        "left" : 952.1
+      },
+      "JOIN31" : {
+        "label" : "Join_CarePlan_CarePlanDetail",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 1371.8,
+        "left" : 672.1
+      },
+      "JOIN32" : {
+        "label" : "Join_CarePlan_CarePlanDetail_HealthCondition",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 1511.8,
+        "left" : 672.1
+      },
+      "JOIN33" : {
+        "label" : "Join_CarePlan_CarePlanDetail_HealthCondition_Task",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 1371.8,
+        "left" : 952.1
+      },
+      "JOIN34" : {
+        "label" : "Join_GoalAsgmnt_GoalAsgmntDetail",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 1651.8,
+        "left" : 252.10000000000002
+      },
+      "JOIN35" : {
+        "label" : "Join_CarePlan_CarePlanDetail_HealthCondition_GoalAssignment",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 1651.8,
+        "left" : 672.1
+      },
+      "JOIN36" : {
+        "label" : "Join_CarePlan_CarePlanDetail_HealthCondition_GoalAssignment_Task",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 1511.8,
+        "left" : 952.1
+      },
+      "JOIN37" : {
+        "label" : "Join_CarePlan_GoalAssignment",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 1791.8,
+        "left" : 672.1
+      },
+      "JOIN38" : {
+        "label" : "Join_CarePlan_GoalAssignment_Task",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 1791.8,
+        "left" : 952.1
+      },
+      "LOAD_DATASET23" : {
+        "label" : "UserRole",
+        "type" : "LOAD_DATASET",
+        "top" : 670.2,
+        "left" : 1652,
+        "parameters" : {
+          "sampleSize" : 2000
+        }
+      },
+      "TRANSFORM4" : {
+        "label" : "Flatten_UserRole",
+        "description" : "",
+        "type" : "TRANSFORM",
+        "top" : 670.2,
+        "left" : 1512,
+        "graph" : {
+          "FLATTEN0" : {
+            "label" : "Flatten_UserRole"
+          }
+        },
+        "connectors" : [ ]
+      },
+      "JOIN39" : {
+        "label" : "Join_User_FlattenUserRole",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 670.2,
+        "left" : 1372
+      },
+      "JOIN40" : {
+        "label" : "Join_UserRole",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 1091.8,
+        "left" : 812.1
+      },
+      "APPEND4" : {
+        "label" : "Append_CarePlan_CarePlanDetail_HealthCondition_Task",
+        "description" : "",
+        "type" : "APPEND",
+        "top" : 1231.8,
+        "left" : 1092.1
+      },
+      "APPEND5" : {
+        "label" : "Append_CarePlan_CarePlanDetail_HealthCondition_GoalAssignment_Task",
+        "description" : "",
+        "type" : "APPEND",
+        "top" : 1231.8,
+        "left" : 1232.1
+      },
+      "APPEND6" : {
+        "label" : "Append_CarePlan_GoalAssignment_Task",
+        "description" : "",
+        "type" : "APPEND",
+        "top" : 1231.8,
+        "left" : 1372.1
+      },
+      "TRANSFORM5" : {
+        "label" : "Status_Rollup",
+        "description" : "",
+        "type" : "TRANSFORM",
+        "top" : 1231.8,
+        "left" : 1512.1,
+        "graph" : {
+          "FORMULA31" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Status Updated"
+          },
+          "FORMULA32" : {
+            "label" : "Formula"
+          },
+          "FORMULA33" : {
+            "label" : "Formula"
+          },
+          "FORMULA34" : {
+            "parameters" : {
+              "type" : "BASE_FORMULA_UI"
+            },
+            "label" : "Formula"
+          }
+        },
+        "connectors" : [ {
+          "source" : "FORMULA31",
+          "target" : "FORMULA32"
+        }, {
+          "source" : "FORMULA32",
+          "target" : "FORMULA33"
+        }, {
+          "source" : "FORMULA33",
+          "target" : "FORMULA34"
+        } ]
+      },
+      "OUTPUT2" : {
+        "label" : "Task",
+        "description" : "",
+        "type" : "OUTPUT",
+        "top" : 1231.8,
+        "left" : 1792.1
+      },
+      "JOIN41" : {
+        "label" : "Join_Task_UserRole",
+        "description" : "",
+        "type" : "JOIN",
+        "top" : 1231.8,
+        "left" : 1652.1
+      }
+    },
+    "connectors" : [ {
+      "source" : "JOIN29",
+      "target" : "JOIN31"
+    }, {
+      "source" : "JOIN29",
+      "target" : "JOIN37"
+    }, {
+      "source" : "JOIN29",
+      "target" : "JOIN30"
+    }, {
+      "source" : "JOIN32",
+      "target" : "JOIN33"
+    }, {
+      "source" : "LOAD_DATASET10",
+      "target" : "TRANSFORM3"
+    }, {
+      "source" : "TRANSFORM3",
+      "target" : "JOIN29"
+    }, {
+      "source" : "LOAD_DATASET3",
+      "target" : "JOIN29"
+    }, {
+      "source" : "LOAD_DATASET11",
+      "target" : "JOIN30"
+    }, {
+      "source" : "LOAD_DATASET12",
+      "target" : "JOIN31"
+    }, {
+      "source" : "JOIN31",
+      "target" : "JOIN32"
+    }, {
+      "source" : "LOAD_DATASET13",
+      "target" : "JOIN32"
+    }, {
+      "source" : "LOAD_DATASET11",
+      "target" : "JOIN33"
+    }, {
+      "source" : "LOAD_DATASET14",
+      "target" : "JOIN34"
+    }, {
+      "source" : "LOAD_DATASET15",
+      "target" : "JOIN34"
+    }, {
+      "source" : "JOIN32",
+      "target" : "JOIN35"
+    }, {
+      "source" : "JOIN34",
+      "target" : "JOIN35"
+    }, {
+      "source" : "JOIN35",
+      "target" : "JOIN36"
+    }, {
+      "source" : "LOAD_DATASET11",
+      "target" : "JOIN36"
+    }, {
+      "source" : "JOIN34",
+      "target" : "JOIN37"
+    }, {
+      "source" : "JOIN37",
+      "target" : "JOIN38"
+    }, {
+      "source" : "LOAD_DATASET11",
+      "target" : "JOIN38"
+    }, {
+      "source" : "JOIN40",
+      "target" : "OUTPUT1"
+    }, {
+      "source" : "LOAD_DATASET23",
+      "target" : "TRANSFORM4"
+    }, {
+      "source" : "LOAD_DATASET8",
+      "target" : "JOIN39"
+    }, {
+      "source" : "TRANSFORM4",
+      "target" : "JOIN39"
+    }, {
+      "source" : "JOIN29",
+      "target" : "JOIN40"
+    }, {
+      "source" : "JOIN39",
+      "target" : "JOIN40"
+    }, {
+      "source" : "JOIN30",
+      "target" : "APPEND4"
+    }, {
+      "source" : "JOIN33",
+      "target" : "APPEND4"
+    }, {
+      "source" : "APPEND4",
+      "target" : "APPEND5"
+    }, {
+      "source" : "JOIN36",
+      "target" : "APPEND5"
+    }, {
+      "source" : "APPEND5",
+      "target" : "APPEND6"
+    }, {
+      "source" : "JOIN38",
+      "target" : "APPEND6"
+    }, {
+      "source" : "APPEND6",
+      "target" : "TRANSFORM5"
+    }, {
+      "source" : "JOIN41",
+      "target" : "OUTPUT2"
+    }, {
+      "source" : "TRANSFORM5",
+      "target" : "JOIN41"
+    }, {
+      "source" : "JOIN39",
+      "target" : "JOIN41"
+    } ],
+    "hiddenColumns" : [ {
+      "fieldName" : "MasterRecordId",
+      "objectType" : "connectedDataset",
+      "objectName" : "SFDC_LOCAL$Case"
+    }, {
+      "fieldName" : "CaseNumber",
+      "objectType" : "connectedDataset",
+      "objectName" : "SFDC_LOCAL$Case"
+    }, {
+      "fieldName" : "ContactId",
+      "objectType" : "connectedDataset",
+      "objectName" : "SFDC_LOCAL$Case"
+    }, {
+      "fieldName" : "AccountId",
+      "objectType" : "connectedDataset",
+      "objectName" : "SFDC_LOCAL$Case"
+    }, {
+      "fieldName" : "ParentId",
+      "objectType" : "connectedDataset",
+      "objectName" : "SFDC_LOCAL$Case"
+    }, {
+      "fieldName" : "Type",
+      "objectType" : "connectedDataset",
+      "objectName" : "SFDC_LOCAL$Case"
+    }, {
+      "fieldName" : "RecordTypeId",
+      "objectType" : "connectedDataset",
+      "objectName" : "SFDC_LOCAL$Case"
+    }, {
+      "fieldName" : "Status",
+      "objectType" : "connectedDataset",
+      "objectName" : "SFDC_LOCAL$Case"
+    }, {
+      "fieldName" : "Reason",
+      "objectType" : "connectedDataset",
+      "objectName" : "SFDC_LOCAL$Case"
+    }, {
+      "fieldName" : "Subject",
+      "objectType" : "connectedDataset",
+      "objectName" : "SFDC_LOCAL$Case"
+    }, {
+      "fieldName" : "Description",
+      "objectType" : "connectedDataset",
+      "objectName" : "SFDC_LOCAL$Case"
+    }, {
+      "fieldName" : "IsClosed",
+      "objectType" : "connectedDataset",
+      "objectName" : "SFDC_LOCAL$Case"
+    }, {
+      "fieldName" : "ClosedDate",
+      "objectType" : "connectedDataset",
+      "objectName" : "SFDC_LOCAL$Case"
+    }, {
+      "fieldName" : "OwnerId",
+      "objectType" : "connectedDataset",
+      "objectName" : "SFDC_LOCAL$Case"
+    }, {
+      "fieldName" : "CreatedDate",
+      "objectType" : "connectedDataset",
+      "objectName" : "SFDC_LOCAL$Case"
+    }, {
+      "fieldName" : "LastModifiedDate",
+      "objectType" : "connectedDataset",
+      "objectName" : "SFDC_LOCAL$Case"
+    }, {
+      "fieldName" : "LastViewedDate",
+      "objectType" : "connectedDataset",
+      "objectName" : "SFDC_LOCAL$Case"
+    }, {
+      "fieldName" : "LastReferencedDate",
+      "objectType" : "connectedDataset",
+      "objectName" : "SFDC_LOCAL$Case"
+    }, {
+      "fieldName" : "RequestingPractitionerId",
+      "objectType" : "connectedDataset",
+      "objectName" : "SFDC_LOCAL$CareRequest"
+    }, {
+      "fieldName" : "Name",
+      "objectType" : "connectedDataset",
+      "objectName" : "SFDC_LOCAL$CareRequest"
+    }, {
+      "fieldName" : "RecordTypeId",
+      "objectType" : "connectedDataset",
+      "objectName" : "SFDC_LOCAL$CareRequest"
+    }, {
+      "fieldName" : "LastModifiedDate",
+      "objectType" : "connectedDataset",
+      "objectName" : "SFDC_LOCAL$CareRequest"
+    }, {
+      "fieldName" : "LastViewedDate",
+      "objectType" : "connectedDataset",
+      "objectName" : "SFDC_LOCAL$CareRequest"
+    }, {
+      "fieldName" : "LastReferencedDate",
+      "objectType" : "connectedDataset",
+      "objectName" : "SFDC_LOCAL$CareRequest"
+    }, {
+      "fieldName" : "CareRequestCaseId",
+      "objectType" : "connectedDataset",
+      "objectName" : "SFDC_LOCAL$CareRequest"
+    }, {
+      "fieldName" : "MemberId",
+      "objectType" : "connectedDataset",
+      "objectName" : "SFDC_LOCAL$CareRequest"
+    }, {
+      "fieldName" : "MemberFirstName",
+      "objectType" : "connectedDataset",
+      "objectName" : "SFDC_LOCAL$CareRequest"
+    }, {
+      "fieldName" : "MemberLastName",
+      "objectType" : "connectedDataset",
+      "objectName" : "SFDC_LOCAL$CareRequest"
+    }, {
+      "fieldName" : "Id",
+      "objectType" : "connectedDataset",
+      "objectName" : "SFDC_LOCAL$CareRequestExtension"
+    }, {
+      "fieldName" : "CreatedDate",
+      "objectType" : "connectedDataset",
+      "objectName" : "SFDC_LOCAL$CareRequestExtension"
+    }, {
+      "fieldName" : "CareRequestCaseId",
+      "objectType" : "connectedDataset",
+      "objectName" : "SFDC_LOCAL$CareRequestExtension"
+    }, {
+      "fieldName" : "CareRequestId",
+      "objectType" : "connectedDataset",
+      "objectName" : "SFDC_LOCAL$CareRequestExtension"
+    }, {
+      "fieldName" : "RequestType",
+      "objectType" : "connectedDataset",
+      "objectName" : "SFDC_LOCAL$CareRequestExtension"
+    }, {
+      "fieldName" : "ServiceType",
+      "objectType" : "connectedDataset",
+      "objectName" : "SFDC_LOCAL$CareRequestExtension"
+    }, {
+      "fieldName" : "HealthcareProviderId",
+      "objectType" : "connectedDataset",
+      "objectName" : "SFDC_LOCAL$CareRequestExtension"
+    }, {
+      "fieldName" : "RequestingProviderId",
+      "objectType" : "connectedDataset",
+      "objectName" : "SFDC_LOCAL$CareRequestExtension"
+    }, {
+      "fieldName" : "ServicingProviderId",
+      "objectType" : "connectedDataset",
+      "objectName" : "SFDC_LOCAL$CareRequestExtension"
+    }, {
+      "fieldName" : "ServicingFacilityId",
+      "objectType" : "connectedDataset",
+      "objectName" : "SFDC_LOCAL$CareRequestExtension"
+    }, {
+      "fieldName" : "CaseSubStatus",
+      "objectType" : "connectedDataset",
+      "objectName" : "SFDC_LOCAL$CareRequestExtension"
+    }, {
+      "fieldName" : "LastName",
+      "objectType" : "connectedDataset",
+      "objectName" : "SFDC_LOCAL$Account"
+    }, {
+      "fieldName" : "FirstName",
+      "objectType" : "connectedDataset",
+      "objectName" : "SFDC_LOCAL$Account"
+    }, {
+      "fieldName" : "IsActive",
+      "objectType" : "connectedDataset",
+      "objectName" : "SFDC_LOCAL$Account"
+    }, {
+      "fieldName" : "Id",
+      "objectType" : "connectedDataset",
+      "objectName" : "SFDC_LOCAL$HealthcareProvider"
+    }, {
+      "fieldName" : "Id",
+      "objectType" : "connectedDataset",
+      "objectName" : "SFDC_LOCAL$HealthcarePractitionerFacility"
+    }, {
+      "fieldName" : "Name",
+      "objectType" : "connectedDataset",
+      "objectName" : "SFDC_LOCAL$HealthcarePractitionerFacility"
+    }, {
+      "fieldName" : "LastName",
+      "objectType" : "connectedDataset",
+      "objectName" : "SFDC_LOCAL$User"
+    }, {
+      "fieldName" : "FirstName",
+      "objectType" : "connectedDataset",
+      "objectName" : "SFDC_LOCAL$User"
+    } ]
+  },
+  "runMode" : "full"
+}
