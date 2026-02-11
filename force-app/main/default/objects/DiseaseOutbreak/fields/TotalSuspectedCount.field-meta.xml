@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TotalSuspectedCount</fullName>
+    <inlineHelpText>Enter the total count of persons suspected to be contracted by the disease in the area.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>
