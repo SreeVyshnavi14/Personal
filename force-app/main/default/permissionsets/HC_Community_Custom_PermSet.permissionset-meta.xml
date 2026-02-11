@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>HC Community Custom PermSet</label>
+    <license>HealthCloudCmtyAccessPSL</license>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>HealthCloudCmtyAccess</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ManageHealthCloud</name>
+    </userPermissions>
+</PermissionSet>

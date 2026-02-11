@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Schedule a call with fitness coach</description>
+    <flowDefinition>runtime_appointmentbooking__In_New</flowDefinition>
+    <label>Appointment Schedule</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

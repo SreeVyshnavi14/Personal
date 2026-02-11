@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Patient Followup Task Queue</name>
+    <queueMembers>
+        <users>
+            <user>alan.reed.ygmspplwpjby.66v9dr9mzbr9.9qj.oo.lpxezutcix3z.rqpydh2jazce@force.com</user>
+            <user>andy.molina.gfu7otgc7gky.zz6tkvablb6e.6.go.vtf1rqxnmk7y.pzxck6prlwrf@force.com</user>
+            <user>cindy.lo.g7knhifuo4uj.g3zmplwaol6w.j8hg.nn.ihoizuzl2zkv.ghlzfaaquubc@force.com</user>
+            <user>clinician.9gprpbhj7ymd.nanc93fu9a4t.lsv.et.vyieqoswm8gu.rl81gbfr0q07@force.com</user>
+            <user>david.smith.f8278ndjzyyh.rvci41to7chs.4.qy.xuytt5jddsyl.9e0uu5sclgsx@force.com</user>
+            <user>harry.friedman.vsopgbqw5ovf.20xtttpouam.k9.bf5sihpyymg1.hlllldayqwzj@force.com</user>
+            <user>integration@00ddn00000scikyuae.com</user>
+            <user>john.bostworth.gms2f66lygc2.tu1co1upizz.dt.nhsnre9jgdlg.tqqbtn3bqmhk@force.com</user>
+            <user>lucas.t.xcumziyohyll.438uxb7szxer.qw6rz.vg.tcxoxa07mk16.ou7al3pqkjpk@force.com</user>
+            <user>melinda.smith.cac.fi9hfq87vgtk.byzdb1hn.eu.skdgfwmuny1g.slvzuddtspgp@force.com</user>
+            <user>melinda.smith.umnurse.1nib9mjx6hnz.6ah7.ax.y6eegzf9iu6c.l8qdpuoxxvu2@force.com</user>
+            <user>oliver.t.pvnv4e7rz9qt.2qiaey0mcpv3.mvuf.hb.i08zetbqy7wb.31cpbipytajx@force.com</user>
+            <user>peter.porter.x1dizxtbo5wa.e6q4nxwxkqjd..lq.metc7wpfizem.sazokipbtepc@force.com</user>
+            <user>richard.mart.wshbal0yhek1.0dm3rppmohiq..5a.392g6qcz31cj.1evlzogwwily@force.com</user>
+            <user>insightssecurity@00ddn00000scikyuae.com</user>
+            <user>shawna.green.idla0dadioz4.jycnrsagryho..fp.nepoxfzbwsdq.leruawouszfe@force.com</user>
+            <user>sheren.shea.mtz3lptco0jy.2bm36rcmw8f8.f.rb.pzt0h8jm7t3t.s2yowta1hzj2@force.com</user>
+            <user>skudupudi-89bp@force.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Task</sobjectType>
+    </queueSobject>
+</Queue>

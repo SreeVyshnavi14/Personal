@@ -1,0 +1,1122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniScript xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>OS for Provider Registration</description>
+    <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
+    <isActive>true</isActive>
+    <isIntegrationProcedure>false</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
+    <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+    <isTestProcedure>false</isTestProcedure>
+    <isWebCompEnabled>true</isWebCompEnabled>
+    <language>Multi-Language</language>
+    <lastPreviewPage>Newport</lastPreviewPage>
+    <name>ProviderRegistrationWorkflow</name>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>AgeError</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;controlWidth&quot; : 7,
+  &quot;disOnTplt&quot; : false,
+  &quot;elementErrorMap&quot; : {
+    &quot;Birthdate&quot; : &quot;=&apos;The minimum age must be 18 years. Select an earlier birthdate.&apos;&quot;
+  },
+  &quot;message&quot; : { },
+  &quot;pubsub&quot; : false,
+  &quot;show&quot; : {
+    &quot;group&quot; : {
+      &quot;operator&quot; : &quot;AND&quot;,
+      &quot;rules&quot; : [ {
+        &quot;condition&quot; : &quot;=&quot;,
+        &quot;data&quot; : &quot;true&quot;,
+        &quot;field&quot; : &quot;AgeValidation&quot;
+      } ]
+    }
+  },
+  &quot;showPersistentComponent&quot; : [ false, false ],
+  &quot;ssm&quot; : false,
+  &quot;wpm&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>3.0</sequenceNumber>
+        <type>Set Errors</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>DRCheckForDuplicateContact</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;HealthCloudPNMCheckForDuplicateContact&quot;,
+  &quot;controlWidth&quot; : 12,
+  &quot;dataRaptor Input Parameters&quot; : [ {
+    &quot;element&quot; : &quot;Email&quot;,
+    &quot;inputParam&quot; : &quot;Email&quot;
+  } ],
+  &quot;disOnTplt&quot; : false,
+  &quot;enableActionMessage&quot; : false,
+  &quot;enableDefaultAbort&quot; : false,
+  &quot;errorMessage&quot; : {
+    &quot;custom&quot; : [ ]
+  },
+  &quot;failureAbortLabel&quot; : &quot;$standardLabel.PNMFlowsCommon.Abort&quot;,
+  &quot;failureAbortMessage&quot; : &quot;$standardLabel.PNMFlowsCommon.AreYouSure&quot;,
+  &quot;failureGoBackLabel&quot; : &quot;$standardLabel.PNMFlowsCommon.GoBack&quot;,
+  &quot;failureNextLabel&quot; : &quot;$standardLabel.PNMFlowsCommon.Continue&quot;,
+  &quot;ignoreCache&quot; : false,
+  &quot;inProgressMessage&quot; : &quot;&quot;,
+  &quot;label&quot; : &quot;&quot;,
+  &quot;message&quot; : { },
+  &quot;postMessage&quot; : &quot;Done&quot;,
+  &quot;pubsub&quot; : false,
+  &quot;redirectNextLabel&quot; : &quot;Next&quot;,
+  &quot;redirectNextWidth&quot; : 3,
+  &quot;redirectPageName&quot; : &quot;&quot;,
+  &quot;redirectPreviousLabel&quot; : &quot;Previous&quot;,
+  &quot;redirectPreviousWidth&quot; : 3,
+  &quot;redirectTemplateUrl&quot; : &quot;vlcAcknowledge.html&quot;,
+  &quot;remoteTimeout&quot; : 30000,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;showPersistentComponent&quot; : [ false, false ],
+  &quot;ssm&quot; : false,
+  &quot;validationRequired&quot; : &quot;Step&quot;,
+  &quot;wpm&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>4.0</sequenceNumber>
+        <type>DataRaptor Extract Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>DRExtractLeadRecordTypeId</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;HealthCloudPNMExtractLeadRecordTypeId&quot;,
+  &quot;ignoreCache&quot; : false,
+  &quot;dataRaptor Input Parameters&quot; : [ ],
+  &quot;remoteTimeout&quot; : 30000,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;inProgressMessage&quot; : &quot;$standardLabel.PNMFlowsCommon.InProgress&quot;,
+  &quot;postMessage&quot; : &quot;$standardLabel.PNMFlowsCommon.Done&quot;,
+  &quot;failureNextLabel&quot; : &quot;$standardLabel.PNMFlowsCommon.Continue&quot;,
+  &quot;failureAbortLabel&quot; : &quot;$standardLabel.PNMFlowsCommon.Abort&quot;,
+  &quot;failureGoBackLabel&quot; : &quot;$standardLabel.PNMFlowsCommon.GoBack&quot;,
+  &quot;failureAbortMessage&quot; : &quot;$standardLabel.PNMFlowsCommon.AreYouSure&quot;,
+  &quot;validationRequired&quot; : &quot;Step&quot;,
+  &quot;redirectPageName&quot; : &quot;&quot;,
+  &quot;redirectTemplateUrl&quot; : &quot;vlcAcknowledge.html&quot;,
+  &quot;redirectNextLabel&quot; : &quot;Next&quot;,
+  &quot;redirectNextWidth&quot; : 3,
+  &quot;redirectPreviousLabel&quot; : &quot;Previous&quot;,
+  &quot;redirectPreviousWidth&quot; : 3,
+  &quot;showPersistentComponent&quot; : [ true, false ],
+  &quot;show&quot; : null,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;wpm&quot; : false,
+  &quot;ssm&quot; : false,
+  &quot;message&quot; : { },
+  &quot;pubsub&quot; : false,
+  &quot;errorMessage&quot; : {
+    &quot;custom&quot; : [ ],
+    &quot;default&quot; : null
+  },
+  &quot;enableDefaultAbort&quot; : false,
+  &quot;enableActionMessage&quot; : false,
+  &quot;businessCategory&quot; : &quot;&quot;,
+  &quot;businessEvent&quot; : &quot;&quot;
+}</propertySetConfig>
+        <sequenceNumber>0.0</sequenceNumber>
+        <type>DataRaptor Extract Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>DRLoadLeadData</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;bundle&quot; : &quot;HealthCloudPNMLoadLeadData&quot;,
+  &quot;remoteTimeout&quot; : 30000,
+  &quot;postTransformBundle&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;inProgressMessage&quot; : &quot;&quot;,
+  &quot;postMessage&quot; : &quot;$standardLabel.PNMFlowsCommon.Done&quot;,
+  &quot;failureNextLabel&quot; : &quot;$standardLabel.PNMFlowsCommon.Continue&quot;,
+  &quot;failureAbortLabel&quot; : &quot;$standardLabel.PNMFlowsCommon.Abort&quot;,
+  &quot;failureGoBackLabel&quot; : &quot;$standardLabel.PNMFlowsCommon.GoBack&quot;,
+  &quot;failureAbortMessage&quot; : &quot;$standardLabel.PNMFlowsCommon.AreYouSure&quot;,
+  &quot;validationRequired&quot; : &quot;Submit&quot;,
+  &quot;redirectPageName&quot; : &quot;&quot;,
+  &quot;redirectTemplateUrl&quot; : &quot;vlcAcknowledge.html&quot;,
+  &quot;redirectNextLabel&quot; : &quot;Next&quot;,
+  &quot;redirectNextWidth&quot; : 3,
+  &quot;redirectPreviousLabel&quot; : &quot;Previous&quot;,
+  &quot;redirectPreviousWidth&quot; : 3,
+  &quot;showPersistentComponent&quot; : [ false, false ],
+  &quot;show&quot; : {
+    &quot;group&quot; : {
+      &quot;operator&quot; : &quot;AND&quot;,
+      &quot;rules&quot; : [ {
+        &quot;condition&quot; : &quot;=&quot;,
+        &quot;field&quot; : &quot;ContactId&quot;
+      } ]
+    }
+  },
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;wpm&quot; : false,
+  &quot;ssm&quot; : false,
+  &quot;message&quot; : { },
+  &quot;pubsub&quot; : false,
+  &quot;label&quot; : &quot;&quot;,
+  &quot;errorMessage&quot; : {
+    &quot;custom&quot; : [ ],
+    &quot;default&quot; : &quot;$standardLabel.PNMRegistrationNomination.SaveError&quot;
+  },
+  &quot;enableDefaultAbort&quot; : false,
+  &quot;enableActionMessage&quot; : false,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>6.0</sequenceNumber>
+        <type>DataRaptor Post Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>DuplicateContactError</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;controlWidth&quot; : 12,
+  &quot;disOnTplt&quot; : false,
+  &quot;elementErrorMap&quot; : {
+    &quot;Email&quot; : &quot;=&apos;This email ID is already associated with another provider. Enter a different email.&apos;&quot;
+  },
+  &quot;label&quot; : &quot;&quot;,
+  &quot;message&quot; : { },
+  &quot;pubsub&quot; : false,
+  &quot;show&quot; : {
+    &quot;group&quot; : {
+      &quot;operator&quot; : &quot;AND&quot;,
+      &quot;rules&quot; : [ {
+        &quot;condition&quot; : &quot;&lt;&gt;&quot;,
+        &quot;field&quot; : &quot;ContactId&quot;
+      } ]
+    }
+  },
+  &quot;showPersistentComponent&quot; : [ false, false ],
+  &quot;ssm&quot; : false,
+  &quot;wpm&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>5.0</sequenceNumber>
+        <type>Set Errors</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>Initialise Captcha Key</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;$standardLabel.PNMFlowsCommon.InitializeValues&quot;,
+  &quot;elementValueMap&quot; : {
+    &quot;captchaSiteKey&quot; : &quot;6Le-kUspAAAAAG7yPO_y0X3EZxyWab5DHKanHh1y&quot;
+  },
+  &quot;showPersistentComponent&quot; : [ true, false ],
+  &quot;show&quot; : null,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;wpm&quot; : false,
+  &quot;ssm&quot; : false,
+  &quot;message&quot; : { },
+  &quot;pubsub&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>Set Values</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>AffiliatedGroup</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;controlWidth&quot; : 6,
+  &quot;debounceValue&quot; : 0,
+  &quot;disOnTplt&quot; : false,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;inputWidth&quot; : 12,
+  &quot;label&quot; : &quot;$standardLabel.PNMRegistrationNomination.Company&quot;,
+  &quot;mask&quot; : &quot;&quot;,
+  &quot;maxLength&quot; : 255,
+  &quot;minLength&quot; : 0,
+  &quot;pattern&quot; : &quot;&quot;,
+  &quot;ptrnErrText&quot; : &quot;&quot;,
+  &quot;readOnly&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;required&quot; : false,
+  &quot;showInputWidth&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>10.0</sequenceNumber>
+            <type>Text</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>AgeValidation</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;controlWidth&quot; : 12,
+  &quot;dateFormat&quot; : &quot;MM-dd-yyyy&quot;,
+  &quot;disOnTplt&quot; : false,
+  &quot;expression&quot; : &quot;IF(AGE(%Birthdate%)&lt;18,true,false)&quot;,
+  &quot;hide&quot; : true,
+  &quot;hideGroupSep&quot; : false,
+  &quot;inputWidth&quot; : 12,
+  &quot;showInputWidth&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>5.0</sequenceNumber>
+            <type>Formula</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>Birthdate</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;controlWidth&quot; : 6,
+  &quot;dateFormat&quot; : &quot;dd-mm-yyyy&quot;,
+  &quot;dateType&quot; : &quot;string&quot;,
+  &quot;disOnTplt&quot; : false,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;inputWidth&quot; : 12,
+  &quot;label&quot; : &quot;$standardLabel.PNMFlowsCommon.Birthdate&quot;,
+  &quot;maxDate&quot; : &quot;today&quot;,
+  &quot;minDate&quot; : &quot;&quot;,
+  &quot;modelDateFormat&quot; : &quot;yyyy-MM-dd&quot;,
+  &quot;readOnly&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;required&quot; : false,
+  &quot;showInputWidth&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>4.0</sequenceNumber>
+            <type>Date</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>captchacomponent</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;$standardLabel.PNMFlowsCommon.Captcha&quot;,
+  &quot;show&quot; : {
+    &quot;group&quot; : {
+      &quot;operator&quot; : &quot;AND&quot;,
+      &quot;rules&quot; : [ {
+        &quot;data&quot; : &quot;Enter site key…&quot;,
+        &quot;condition&quot; : &quot;&lt;&gt;&quot;,
+        &quot;field&quot; : &quot;captchaSiteKey&quot;
+      } ]
+    }
+  },
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;hide&quot; : false,
+  &quot;lwcName&quot; : &quot;industries_common__osGoogleRecaptcha&quot;,
+  &quot;bStandalone&quot; : false,
+  &quot;customAttributes&quot; : [ {
+    &quot;name&quot; : &quot;siteKey&quot;,
+    &quot;source&quot; : &quot;%captchaSiteKey%&quot;
+  } ]
+}</propertySetConfig>
+            <sequenceNumber>13.0</sequenceNumber>
+            <type>Custom Lightning Web Component</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>Email</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;controlWidth&quot; : 6,
+  &quot;debounceValue&quot; : 0,
+  &quot;disOnTplt&quot; : false,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;inputWidth&quot; : 12,
+  &quot;label&quot; : &quot;$standardLabel.PNMFlowsCommon.Email&quot;,
+  &quot;pattern&quot; : &quot;&quot;,
+  &quot;ptrnErrText&quot; : &quot;&quot;,
+  &quot;readOnly&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;required&quot; : true,
+  &quot;showInputWidth&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>6.0</sequenceNumber>
+            <type>Email</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>Fax</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 6,
+  &quot;showInputWidth&quot; : false,
+  &quot;inputWidth&quot; : 12,
+  &quot;required&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;readOnly&quot; : false,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;mask&quot; : &quot;(999) 999-9999&quot;,
+  &quot;pattern&quot; : &quot;&quot;,
+  &quot;ptrnErrText&quot; : &quot;&quot;,
+  &quot;minLength&quot; : 0,
+  &quot;maxLength&quot; : 255,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;debounceValue&quot; : 0,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;disOnTplt&quot; : false,
+  &quot;label&quot; : &quot;$standardLabel.PNMFlowsCommon.Fax&quot;
+}</propertySetConfig>
+            <sequenceNumber>8.0</sequenceNumber>
+            <type>Telephone</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>FirstName</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;controlWidth&quot; : 6,
+  &quot;debounceValue&quot; : 0,
+  &quot;disOnTplt&quot; : false,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;inputWidth&quot; : 6,
+  &quot;label&quot; : &quot;$standardLabel.PNMFlowsCommon.FirstName&quot;,
+  &quot;mask&quot; : &quot;&quot;,
+  &quot;maxLength&quot; : 255,
+  &quot;minLength&quot; : 0,
+  &quot;pattern&quot; : &quot;&quot;,
+  &quot;ptrnErrText&quot; : &quot;&quot;,
+  &quot;readOnly&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;required&quot; : true,
+  &quot;showInputWidth&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>2.0</sequenceNumber>
+            <type>Text</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>LastName</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;controlWidth&quot; : 6,
+  &quot;debounceValue&quot; : 0,
+  &quot;disOnTplt&quot; : false,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;inputWidth&quot; : 12,
+  &quot;label&quot; : &quot;$standardLabel.PNMFlowsCommon.LastName&quot;,
+  &quot;mask&quot; : &quot;&quot;,
+  &quot;maxLength&quot; : 255,
+  &quot;minLength&quot; : 0,
+  &quot;pattern&quot; : &quot;&quot;,
+  &quot;ptrnErrText&quot; : &quot;&quot;,
+  &quot;readOnly&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;required&quot; : true,
+  &quot;showInputWidth&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>3.0</sequenceNumber>
+            <type>Text</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>LineBreak2</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;disOnTplt&quot; : false,
+  &quot;label&quot; : &quot;LineBreak2&quot;,
+  &quot;padding&quot; : 0
+}</propertySetConfig>
+            <sequenceNumber>1.0</sequenceNumber>
+            <type>Line Break</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>Notes</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;controlWidth&quot; : 12,
+  &quot;debounceValue&quot; : 0,
+  &quot;disOnTplt&quot; : false,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;inputWidth&quot; : 12,
+  &quot;label&quot; : &quot;$standardLabel.PNMRegistrationNomination.Notes&quot;,
+  &quot;maxLength&quot; : 255,
+  &quot;minLength&quot; : 0,
+  &quot;pattern&quot; : &quot;&quot;,
+  &quot;ptrnErrText&quot; : &quot;&quot;,
+  &quot;readOnly&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;required&quot; : false,
+  &quot;showInputWidth&quot; : false,
+  &quot;defaultValue&quot; : &quot;&quot;
+}</propertySetConfig>
+            <sequenceNumber>12.0</sequenceNumber>
+            <type>Text Area</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>Paragraph</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;controlWidth&quot; : 12,
+  &quot;dataJSON&quot; : false,
+  &quot;disOnTplt&quot; : false,
+  &quot;sanitize&quot; : false,
+  &quot;text&quot; : &quot;&quot;,
+  &quot;textKey&quot; : &quot;$standardLabel.PNMRegistrationNomination.RegisterOnlyOnce&quot;
+}</propertySetConfig>
+            <sequenceNumber>0.0</sequenceNumber>
+            <type>Text Block</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>Phone</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 6,
+  &quot;showInputWidth&quot; : false,
+  &quot;inputWidth&quot; : 12,
+  &quot;required&quot; : true,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;readOnly&quot; : false,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;mask&quot; : &quot;(999) 999-9999&quot;,
+  &quot;pattern&quot; : &quot;&quot;,
+  &quot;ptrnErrText&quot; : &quot;&quot;,
+  &quot;minLength&quot; : 0,
+  &quot;maxLength&quot; : 255,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;debounceValue&quot; : 0,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;disOnTplt&quot; : false,
+  &quot;label&quot; : &quot;$standardLabel.PNMFlowsCommon.Phone&quot;
+}</propertySetConfig>
+            <sequenceNumber>7.0</sequenceNumber>
+            <type>Telephone</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>Specialty</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 6,
+  &quot;label&quot; : &quot;$standardLabel.PNMRegistrationNomination.Specialty&quot;,
+  &quot;required&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;horizontalMode&quot; : true,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;helpTextPos&quot; : &quot;&quot;,
+  &quot;options&quot; : [ ],
+  &quot;optionSource&quot; : {
+    &quot;type&quot; : &quot;SObject&quot;,
+    &quot;source&quot; : &quot;Lead.Specialty&quot;
+  },
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;optionWidth&quot; : 100,
+  &quot;optionHeight&quot; : 100,
+  &quot;imageCountInRow&quot; : 3,
+  &quot;enableCaption&quot; : true,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>9.0</sequenceNumber>
+            <type>Multi-select</type>
+        </childElements>
+        <childElements>
+            <childElements>
+                <isActive>true</isActive>
+                <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+                <level>2.0</level>
+                <name>City</name>
+                <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+                <propertySetConfig>{
+  &quot;controlWidth&quot; : 3,
+  &quot;showInputWidth&quot; : false,
+  &quot;inputWidth&quot; : 12,
+  &quot;required&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;readOnly&quot; : false,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;mask&quot; : &quot;&quot;,
+  &quot;pattern&quot; : &quot;&quot;,
+  &quot;ptrnErrText&quot; : &quot;&quot;,
+  &quot;minLength&quot; : 0,
+  &quot;maxLength&quot; : 255,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;debounceValue&quot; : 0,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;disOnTplt&quot; : false,
+  &quot;label&quot; : &quot;$standardLabel.PNMFlowsCommon.City&quot;
+}</propertySetConfig>
+                <sequenceNumber>2.0</sequenceNumber>
+                <type>Text</type>
+            </childElements>
+            <childElements>
+                <isActive>true</isActive>
+                <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+                <level>2.0</level>
+                <name>Country</name>
+                <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+                <propertySetConfig>{
+  &quot;controlWidth&quot; : 4,
+  &quot;showInputWidth&quot; : false,
+  &quot;inputWidth&quot; : 12,
+  &quot;required&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;readOnly&quot; : false,
+  &quot;defaultValue&quot; : &quot;US&quot;,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;options&quot; : [ {
+    &quot;name&quot; : &quot;US&quot;,
+    &quot;value&quot; : &quot;United States&quot;
+  } ],
+  &quot;optionSource&quot; : {
+    &quot;source&quot; : &quot;Lead.CountryCode&quot;,
+    &quot;type&quot; : &quot;SObject&quot;
+  },
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;
+  },
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;disOnTplt&quot; : false,
+  &quot;label&quot; : &quot;$standardLabel.PNMFlowsCommon.Country&quot;
+}</propertySetConfig>
+                <sequenceNumber>3.0</sequenceNumber>
+                <type>Select</type>
+            </childElements>
+            <childElements>
+                <description>devopsimpkg11__ProviderFeeSchedule__c.FeeScheduleState__c</description>
+                <isActive>true</isActive>
+                <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+                <level>2.0</level>
+                <name>State</name>
+                <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+                <propertySetConfig>{
+  &quot;controlWidth&quot; : 4,
+  &quot;showInputWidth&quot; : false,
+  &quot;inputWidth&quot; : 12,
+  &quot;required&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;readOnly&quot; : false,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;options&quot; : [ {
+    &quot;name&quot; : &quot;CA&quot;,
+    &quot;value&quot; : &quot;California&quot;
+  }, {
+    &quot;name&quot; : &quot;IL&quot;,
+    &quot;value&quot; : &quot;Illinois&quot;
+  }, {
+    &quot;name&quot; : &quot;NY&quot;,
+    &quot;value&quot; : &quot;New York&quot;
+  } ],
+  &quot;optionSource&quot; : {
+    &quot;source&quot; : &quot;Lead.StateCode&quot;,
+    &quot;type&quot; : &quot;SObject&quot;
+  },
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;Country&quot;,
+    &quot;source&quot; : &quot;Lead.CountryCode&quot;,
+    &quot;type&quot; : &quot;SObject&quot;
+  },
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;disOnTplt&quot; : false,
+  &quot;label&quot; : &quot;$standardLabel.PNMFlowsCommon.State&quot;
+}</propertySetConfig>
+                <sequenceNumber>4.0</sequenceNumber>
+                <type>Select</type>
+            </childElements>
+            <childElements>
+                <isActive>true</isActive>
+                <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+                <level>2.0</level>
+                <name>Street</name>
+                <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+                <propertySetConfig>{
+  &quot;controlWidth&quot; : 9,
+  &quot;showInputWidth&quot; : false,
+  &quot;inputWidth&quot; : 12,
+  &quot;required&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;readOnly&quot; : false,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;mask&quot; : &quot;&quot;,
+  &quot;pattern&quot; : &quot;&quot;,
+  &quot;ptrnErrText&quot; : &quot;&quot;,
+  &quot;minLength&quot; : 0,
+  &quot;maxLength&quot; : 255,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;debounceValue&quot; : 0,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;disOnTplt&quot; : false,
+  &quot;label&quot; : &quot;$standardLabel.PNMFlowsCommon.Street&quot;
+}</propertySetConfig>
+                <sequenceNumber>1.0</sequenceNumber>
+                <type>Text</type>
+            </childElements>
+            <childElements>
+                <isActive>true</isActive>
+                <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+                <level>2.0</level>
+                <name>ZipCode</name>
+                <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+                <propertySetConfig>{
+  &quot;controlWidth&quot; : 4,
+  &quot;showInputWidth&quot; : false,
+  &quot;inputWidth&quot; : 12,
+  &quot;required&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;readOnly&quot; : false,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;mask&quot; : &quot;&quot;,
+  &quot;pattern&quot; : &quot;&quot;,
+  &quot;ptrnErrText&quot; : &quot;&quot;,
+  &quot;minLength&quot; : 0,
+  &quot;maxLength&quot; : 255,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;debounceValue&quot; : 0,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;disOnTplt&quot; : false,
+  &quot;label&quot; : &quot;$standardLabel.PNMFlowsCommon.PostalCode&quot;
+}</propertySetConfig>
+                <sequenceNumber>5.0</sequenceNumber>
+                <type>Text</type>
+            </childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>TAProviderAddressDetails</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;showInputWidth&quot; : false,
+  &quot;inputWidth&quot; : 12,
+  &quot;googleTransformation&quot; : {
+    &quot;street&quot; : &quot;Street&quot;,
+    &quot;locality&quot; : &quot;City&quot;,
+    &quot;administrative_area_level_1&quot; : &quot;State&quot;,
+    &quot;administrative_area_level_2&quot; : &quot;&quot;,
+    &quot;country&quot; : &quot;Country&quot;,
+    &quot;postal_code&quot; : &quot;ZipCode&quot;
+  },
+  &quot;required&quot; : false,
+  &quot;readOnly&quot; : false,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;minLength&quot; : 0,
+  &quot;maxLength&quot; : 255,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : true,
+  &quot;debounceValue&quot; : 0,
+  &quot;typeAheadKey&quot; : &quot;&quot;,
+  &quot;dataProcessorFunction&quot; : &quot;&quot;,
+  &quot;callFrequency&quot; : 300,
+  &quot;editMode&quot; : true,
+  &quot;newItemLabel&quot; : &quot;&quot;,
+  &quot;hideEditButton&quot; : true,
+  &quot;enableGoogleMapsAutocomplete&quot; : false,
+  &quot;enableLookup&quot; : false,
+  &quot;disableDataFilter&quot; : false,
+  &quot;googleMapsAPIKey&quot; : &quot;&quot;,
+  &quot;hideMap&quot; : false,
+  &quot;googleAddressCountry&quot; : &quot;us&quot;,
+  &quot;useDataJson&quot; : false,
+  &quot;dataJsonPath&quot; : &quot;&quot;,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;label&quot; : &quot;$standardLabel.PNMFlowsCommon.Address&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>11.0</sequenceNumber>
+            <type>Type Ahead Block</type>
+        </childElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>LeadForm</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;allowSaveForLater&quot; : false,
+  &quot;cancelLabel&quot; : &quot;&quot;,
+  &quot;cancelMessage&quot; : &quot;&quot;,
+  &quot;completeLabel&quot; : &quot;&quot;,
+  &quot;completeMessage&quot; : &quot;&quot;,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;disOnTplt&quot; : false,
+  &quot;errorMessage&quot; : {
+    &quot;custom&quot; : [ ]
+  },
+  &quot;instruction&quot; : &quot;&quot;,
+  &quot;instructionKey&quot; : &quot;&quot;,
+  &quot;knowledgeOptions&quot; : {
+    &quot;dataCategoryCriteria&quot; : &quot;&quot;,
+    &quot;keyword&quot; : &quot;&quot;,
+    &quot;language&quot; : &quot;English&quot;,
+    &quot;publishStatus&quot; : &quot;Online&quot;,
+    &quot;remoteTimeout&quot; : 30000,
+    &quot;typeFilter&quot; : &quot;&quot;
+  },
+  &quot;label&quot; : &quot;$standardLabel.PNMRegistrationNomination.RegisterProvider&quot;,
+  &quot;message&quot; : { },
+  &quot;nextLabel&quot; : &quot;$standardLabel.PNMFlowsCommon.Submit&quot;,
+  &quot;nextWidth&quot; : 3,
+  &quot;previousLabel&quot; : &quot;&quot;,
+  &quot;previousWidth&quot; : 3,
+  &quot;pubsub&quot; : false,
+  &quot;remoteClass&quot; : &quot;&quot;,
+  &quot;remoteMethod&quot; : &quot;&quot;,
+  &quot;remoteOptions&quot; : { },
+  &quot;remoteTimeout&quot; : 30000,
+  &quot;saveLabel&quot; : &quot;&quot;,
+  &quot;saveMessage&quot; : &quot;&quot;,
+  &quot;showPersistentComponent&quot; : [ false, false ],
+  &quot;ssm&quot; : false,
+  &quot;validationRequired&quot; : true,
+  &quot;wpm&quot; : false,
+  &quot;lwcComponentOverride&quot; : &quot;&quot;
+}</propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>Step</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>ReviewText1</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;text&quot; : &quot;&quot;,
+  &quot;dataJSON&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;textKey&quot; : &quot;$standardLabel.PNMRegistrationNomination.ReceivedRegistrationRequest&quot;,
+  &quot;sanitize&quot; : false,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>30.0</sequenceNumber>
+            <type>Text Block</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>ReviewText2</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;disOnTplt&quot; : false,
+  &quot;sanitize&quot; : false,
+  &quot;textKey&quot; : &quot;$standardLabel.PNMRegistrationNomination.ProviderDataReview&quot;,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;dataJSON&quot; : false,
+  &quot;text&quot; : &quot;&quot;,
+  &quot;controlWidth&quot; : 12
+}</propertySetConfig>
+            <sequenceNumber>31.0</sequenceNumber>
+            <type>Text Block</type>
+        </childElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>LeadFormConfirmation</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;allowSaveForLater&quot; : false,
+  &quot;cancelLabel&quot; : &quot;&quot;,
+  &quot;cancelMessage&quot; : &quot;&quot;,
+  &quot;completeLabel&quot; : &quot;&quot;,
+  &quot;completeMessage&quot; : &quot;&quot;,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;disOnTplt&quot; : false,
+  &quot;errorMessage&quot; : {
+    &quot;custom&quot; : [ ]
+  },
+  &quot;instruction&quot; : &quot;&quot;,
+  &quot;instructionKey&quot; : &quot;&quot;,
+  &quot;knowledgeOptions&quot; : {
+    &quot;dataCategoryCriteria&quot; : &quot;&quot;,
+    &quot;keyword&quot; : &quot;&quot;,
+    &quot;language&quot; : &quot;English&quot;,
+    &quot;publishStatus&quot; : &quot;Online&quot;,
+    &quot;remoteTimeout&quot; : 30000,
+    &quot;typeFilter&quot; : &quot;&quot;
+  },
+  &quot;label&quot; : &quot;$standardLabel.PNMRegistrationNomination.ReviewRegistrationRequest&quot;,
+  &quot;message&quot; : { },
+  &quot;nextLabel&quot; : &quot;$standardLabel.PNMFlowsCommon.Done&quot;,
+  &quot;nextWidth&quot; : 3,
+  &quot;previousLabel&quot; : &quot;&quot;,
+  &quot;previousWidth&quot; : 0,
+  &quot;pubsub&quot; : false,
+  &quot;remoteClass&quot; : &quot;&quot;,
+  &quot;remoteMethod&quot; : &quot;&quot;,
+  &quot;remoteOptions&quot; : { },
+  &quot;remoteTimeout&quot; : 30000,
+  &quot;saveLabel&quot; : &quot;&quot;,
+  &quot;saveMessage&quot; : &quot;&quot;,
+  &quot;showPersistentComponent&quot; : [ false, false ],
+  &quot;ssm&quot; : false,
+  &quot;validationRequired&quot; : true,
+  &quot;wpm&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>7.0</sequenceNumber>
+        <type>Step</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>NavigateAction1</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;controlWidth&quot; : 3,
+  &quot;disOnTplt&quot; : false,
+  &quot;iconName&quot; : &quot;&quot;,
+  &quot;iconPosition&quot; : &quot;left&quot;,
+  &quot;iconVariant&quot; : &quot;&quot;,
+  &quot;label&quot; : &quot;&quot;,
+  &quot;loginAction&quot; : &quot;login&quot;,
+  &quot;message&quot; : { },
+  &quot;objectAction&quot; : &quot;home&quot;,
+  &quot;pubsub&quot; : false,
+  &quot;recordAction&quot; : &quot;view&quot;,
+  &quot;replace&quot; : false,
+  &quot;ssm&quot; : false,
+  &quot;targetFilter&quot; : &quot;Recent&quot;,
+  &quot;targetId&quot; : &quot;%ContextId%&quot;,
+  &quot;targetLWCLayout&quot; : &quot;lightning&quot;,
+  &quot;targetType&quot; : &quot;Web Page&quot;,
+  &quot;targetUrl&quot; : &quot;/joinournetwork&quot;,
+  &quot;validationRequired&quot; : &quot;none&quot;,
+  &quot;variant&quot; : &quot;brand&quot;,
+  &quot;wpm&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>8.0</sequenceNumber>
+        <type>Navigate Action</type>
+    </omniProcessElements>
+    <omniProcessType>OmniScript</omniProcessType>
+    <overrideKey>healthcloud_pnm_flows__HealthCloudPNM_ProviderRegistrationWorkflow_multiLanguage_1</overrideKey>
+    <propertySetConfig>{
+      &quot;persistentComponent&quot;: [
+        {
+          &quot;id&quot;: &quot;vlcCart&quot;,
+          &quot;itemsKey&quot;: &quot;cartItems&quot;,
+          &quot;label&quot;: &quot;&quot;,
+          &quot;modalConfigurationSetting&quot;: {
+            &quot;modalController&quot;: &quot;ModalProductCtrl&quot;,
+            &quot;modalHTMLTemplateId&quot;: &quot;vlcProductConfig.html&quot;,
+            &quot;modalSize&quot;: &quot;lg&quot;
+          },
+          &quot;postTransformBundle&quot;: &quot;&quot;,
+          &quot;preTransformBundle&quot;: &quot;&quot;,
+          &quot;remoteClass&quot;: &quot;&quot;,
+          &quot;remoteMethod&quot;: &quot;&quot;,
+          &quot;remoteOptions&quot;: {
+            &quot;postTransformBundle&quot;: &quot;&quot;,
+            &quot;preTransformBundle&quot;: &quot;&quot;
+          },
+          &quot;remoteTimeout&quot;: 30000,
+          &quot;render&quot;: false,
+          &quot;responseJSONNode&quot;: &quot;&quot;,
+          &quot;responseJSONPath&quot;: &quot;&quot;,
+          &quot;sendJSONNode&quot;: &quot;&quot;,
+          &quot;sendJSONPath&quot;: &quot;&quot;
+        },
+        {
+          &quot;id&quot;: &quot;vlcKnowledge&quot;,
+          &quot;itemsKey&quot;: &quot;knowledgeItems&quot;,
+          &quot;label&quot;: &quot;&quot;,
+          &quot;modalConfigurationSetting&quot;: {
+            &quot;modalController&quot;: &quot;&quot;,
+            &quot;modalHTMLTemplateId&quot;: &quot;&quot;,
+            &quot;modalSize&quot;: &quot;lg&quot;
+          },
+          &quot;postTransformBundle&quot;: &quot;&quot;,
+          &quot;preTransformBundle&quot;: &quot;&quot;,
+          &quot;remoteClass&quot;: &quot;&quot;,
+          &quot;remoteMethod&quot;: &quot;&quot;,
+          &quot;remoteOptions&quot;: {
+            &quot;postTransformBundle&quot;: &quot;&quot;,
+            &quot;preTransformBundle&quot;: &quot;&quot;
+          },
+          &quot;remoteTimeout&quot;: 30000,
+          &quot;render&quot;: false
+        }
+      ],
+      &quot;allowSaveForLater&quot;: false,
+      &quot;saveForLaterRedirectPageName&quot;: &quot;sflRedirect&quot;,
+      &quot;saveForLaterRedirectTemplateUrl&quot;: &quot;vlcSaveForLaterAcknowledge.html&quot;,
+      &quot;saveContentEncoded&quot;: false,
+      &quot;saveObjectId&quot;: &quot;%ContextId%&quot;,
+      &quot;saveURLPatterns&quot;: {},
+      &quot;autoSaveOnStepNext&quot;: false,
+      &quot;elementTypeToHTMLTemplateMapping&quot;: {},
+      &quot;seedDataJSON&quot;: {},
+      &quot;trackingCustomData&quot;: {},
+      &quot;enableKnowledge&quot;: false,
+      &quot;bLK&quot;: false,
+      &quot;knowledgeArticleTypeQueryFieldsMap&quot;: {},
+      &quot;timeTracking&quot;: true,
+      &quot;hideStepChart&quot;: false,
+      &quot;visualforcePagesAvailableInPreview&quot;: {},
+      &quot;cancelType&quot;: &quot;SObject&quot;,
+      &quot;allowCancel&quot;: true,
+      &quot;cancelSource&quot;: &quot;%ContextId%&quot;,
+      &quot;cancelRedirectPageName&quot;: &quot;OmniScriptCancelled&quot;,
+      &quot;cancelRedirectTemplateUrl&quot;: &quot;vlcCancelled.html&quot;,
+      &quot;consoleTabLabel&quot;: &quot;$standardLabel.PNMFlowsCommon.New&quot;,
+      &quot;wpm&quot;: false,
+      &quot;ssm&quot;: false,
+      &quot;message&quot;: {},
+      &quot;pubsub&quot;: false,
+      &quot;autoFocus&quot;: false,
+      &quot;currencyCode&quot;: &quot;&quot;,
+      &quot;showInputWidth&quot;: false,
+      &quot;rtpSeed&quot;: false,
+      &quot;consoleTabIcon&quot;: &quot;custom:custom18&quot;,
+      &quot;errorMessage&quot;: {
+        &quot;custom&quot;: []
+      },
+      &quot;disableUnloadWarn&quot;: true,
+      &quot;stylesheet&quot;: {
+        &quot;lightning&quot;: &quot;&quot;,
+        &quot;newport&quot;: &quot;&quot;
+      },
+      &quot;currentLanguage&quot;: &quot;en_US&quot;,
+      &quot;stepChartPlacement&quot;: &quot;top&quot;
+    }</propertySetConfig>
+    <subType>ProviderRegistrationWorkflow</subType>
+    <type>HealthCloudPNM</type>
+    <uniqueName>HealthCloudPNM_ProviderRegistrationWorkflow_multiLanguage_2</uniqueName>
+    <versionNumber>2.0</versionNumber>
+    <webComponentKey>06e938d3-f219-1f90-53af-cf10c2125b9e</webComponentKey>
+</OmniScript>

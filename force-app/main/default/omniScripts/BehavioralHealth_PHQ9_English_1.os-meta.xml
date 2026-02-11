@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniScript xmlns="http://soap.sforce.com/2006/04/metadata">
+    <designerCustomizationType>Discovery Framework</designerCustomizationType>
+    <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+    <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
+    <isActive>false</isActive>
+    <isIntegrationProcedure>false</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
+    <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+    <isTestProcedure>false</isTestProcedure>
+    <isWebCompEnabled>true</isWebCompEnabled>
+    <language>English</language>
+    <name>Patient Health Questionnaire-9 (PHQ-9)</name>
+    <omniProcessElements>
+        <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>CANCEL</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;Cancel&quot;,
+  &quot;validationRequired&quot; : &quot;Submit&quot;,
+  &quot;show&quot; : null,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;wpm&quot; : false,
+  &quot;ssm&quot; : false,
+  &quot;pubsub&quot; : false,
+  &quot;message&quot; : { },
+  &quot;targetType&quot; : &quot;Record&quot;,
+  &quot;objectAction&quot; : &quot;home&quot;,
+  &quot;recordAction&quot; : &quot;view&quot;,
+  &quot;loginAction&quot; : &quot;login&quot;,
+  &quot;targetFilter&quot; : &quot;Recent&quot;,
+  &quot;targetId&quot; : &quot;%ContextId%&quot;,
+  &quot;variant&quot; : &quot;brand&quot;,
+  &quot;iconName&quot; : &quot;&quot;,
+  &quot;iconVariant&quot; : &quot;&quot;,
+  &quot;iconPosition&quot; : &quot;left&quot;,
+  &quot;replace&quot; : true,
+  &quot;targetLWCLayout&quot; : &quot;lightning&quot;,
+  &quot;businessCategory&quot; : &quot;&quot;,
+  &quot;businessEvent&quot; : &quot;&quot;,
+  &quot;showCancelPrompt&quot; : true
+}</propertySetConfig>
+        <sequenceNumber>0.0</sequenceNumber>
+        <type>Navigate Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>NavigateBackToRecord</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;NavigateBackToRecord&quot;,
+  &quot;validationRequired&quot; : &quot;Submit&quot;,
+  &quot;show&quot; : null,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;wpm&quot; : false,
+  &quot;ssm&quot; : false,
+  &quot;pubsub&quot; : false,
+  &quot;message&quot; : { },
+  &quot;targetType&quot; : &quot;Record&quot;,
+  &quot;objectAction&quot; : &quot;home&quot;,
+  &quot;recordAction&quot; : &quot;view&quot;,
+  &quot;loginAction&quot; : &quot;login&quot;,
+  &quot;targetFilter&quot; : &quot;Recent&quot;,
+  &quot;targetId&quot; : &quot;%ContextId%&quot;,
+  &quot;variant&quot; : &quot;brand&quot;,
+  &quot;iconName&quot; : &quot;&quot;,
+  &quot;iconVariant&quot; : &quot;&quot;,
+  &quot;iconPosition&quot; : &quot;left&quot;,
+  &quot;replace&quot; : true,
+  &quot;targetLWCLayout&quot; : &quot;lightning&quot;,
+  &quot;businessCategory&quot; : &quot;&quot;,
+  &quot;businessEvent&quot; : &quot;&quot;,
+  &quot;targetName&quot; : &quot;Account&quot;
+}</propertySetConfig>
+        <sequenceNumber>4.0</sequenceNumber>
+        <type>Navigate Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>DifficultyDoingWork</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 12.0,
+  &quot;label&quot; : &quot;If you checked off any problems, how difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?&quot;,
+  &quot;required&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;horizontalMode&quot; : false,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;options&quot; : [ {
+    &quot;name&quot; : &quot;Not difficult at all&quot;,
+    &quot;developerName&quot; : &quot;Not difficult at all&quot;,
+    &quot;value&quot; : &quot;Not difficult at all&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;Somewhat difficult&quot;,
+    &quot;developerName&quot; : &quot;Somewhat difficult&quot;,
+    &quot;value&quot; : &quot;Somewhat difficult&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;Very difficult&quot;,
+    &quot;developerName&quot; : &quot;Very difficult&quot;,
+    &quot;value&quot; : &quot;Very difficult&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;Extremely difficult&quot;,
+    &quot;developerName&quot; : &quot;Extremely difficult&quot;,
+    &quot;value&quot; : &quot;Extremely difficult&quot;,
+    &quot;setAll&quot; : false
+  } ],
+  &quot;optionSource&quot; : {
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;optionWidth&quot; : 100.0,
+  &quot;optionHeight&quot; : 100.0,
+  &quot;imageCountInRow&quot; : 3.0,
+  &quot;enableCaption&quot; : true,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>4.0</sequenceNumber>
+            <type>Radio</type>
+            <uniqueIndex>DifficultyDoingWork</uniqueIndex>
+        </childElements>
+        <childElements>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>LineBreak1</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;label&quot; : &quot;LineBreak1&quot;,
+  &quot;padding&quot; : 15,
+  &quot;show&quot; : null,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;
+}</propertySetConfig>
+            <sequenceNumber>1.0</sequenceNumber>
+            <type>Line Break</type>
+        </childElements>
+        <childElements>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>LineBreak2</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;label&quot; : &quot;LineBreak2&quot;,
+  &quot;padding&quot; : 15,
+  &quot;show&quot; : null,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;
+}</propertySetConfig>
+            <sequenceNumber>3.0</sequenceNumber>
+            <type>Line Break</type>
+        </childElements>
+        <childElements>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>LineBreak3</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;label&quot; : &quot;LineBreak3&quot;,
+  &quot;padding&quot; : 15,
+  &quot;show&quot; : null,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;
+}</propertySetConfig>
+            <sequenceNumber>5.0</sequenceNumber>
+            <type>Line Break</type>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>PHQ9_main_question</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 12.0,
+  &quot;label&quot; : &quot;Over the last 2 weeks, how often have you been bothered by the following problems?&quot;,
+  &quot;required&quot; : false,
+  &quot;readOnly&quot; : false,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;radioLabelsWidth&quot; : 6.0,
+  &quot;radioLabels&quot; : [ {
+    &quot;name&quot; : &quot;BetterOffDead&quot;,
+    &quot;value&quot; : &quot;Thoughts that you would be better off dead or of hurting yourself in some way&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;FeelingBad&quot;,
+    &quot;value&quot; : &quot;Feeling bad about yourself - or that you’re a failure or have let yourself or your family down&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;FeelingDown&quot;,
+    &quot;value&quot; : &quot;Feeling down, depressed or hopeless&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;FeelingTired&quot;,
+    &quot;value&quot; : &quot;Feeling tired or having little energy&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;LittleInterest&quot;,
+    &quot;value&quot; : &quot;Little interest or pleasure in doing things&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;PoorAppetite&quot;,
+    &quot;value&quot; : &quot;Poor appetite or overeating&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;SpeakingSlow&quot;,
+    &quot;value&quot; : &quot;Moving or speaking so slowly that other people could have noticed. Or, the opposite - being so fidgety or restless that you have been moving around a lot more than usual&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;TroubleConcentrating&quot;,
+    &quot;value&quot; : &quot;Trouble concentrating on things, such as reading the newspaper or watching television&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;TroubleSleeping&quot;,
+    &quot;value&quot; : &quot;Trouble falling asleep, staying asleep, or sleeping too much&quot;,
+    &quot;setAll&quot; : false
+  } ],
+  &quot;options&quot; : [ {
+    &quot;name&quot; : &quot;Not at all&quot;,
+    &quot;value&quot; : &quot;Not at all&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;Several days&quot;,
+    &quot;value&quot; : &quot;Several days&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;More than half the days&quot;,
+    &quot;value&quot; : &quot;More than half the days&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;Nearly every day&quot;,
+    &quot;value&quot; : &quot;Nearly every day&quot;,
+    &quot;setAll&quot; : false
+  } ],
+  &quot;optionSource&quot; : {
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>0.0</sequenceNumber>
+            <type>Radio Group</type>
+            <uniqueIndex>PHQ9_main_question</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>PHQ_9_Citation</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 12.0,
+  &quot;label&quot; : &quot;&lt;p&gt;&lt;strong&gt;Interpretation&lt;/strong&gt;&lt;/p&gt;&lt;table style=\&quot;border-collapse: collapse;padding:5px;\&quot; border=\&quot;1\&quot;&gt;&lt;thead&gt;&lt;tr&gt; &lt;th style=\&quot;padding:5px;\&quot;&gt;PHQ-9 Score&lt;/th&gt;&lt;th style=\&quot;padding:5px;\&quot;&gt;Depression Severity&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=\&quot;padding:5px;\&quot;&gt;0 – 4&lt;/td&gt;&lt;td style=\&quot;padding:5px;\&quot;&gt;None-minimal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;padding:5px;\&quot;&gt;5 – 9&lt;/td&gt;&lt;td style=\&quot;padding:5px;\&quot;&gt;Mild&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;padding:5px;\&quot;&gt;10 – 14&lt;/td&gt;&lt;td style=\&quot;padding:5px;\&quot;&gt;Moderate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;padding:5px;\&quot;&gt;15 – 19&lt;/td&gt;&lt;td style=\&quot;padding:5px;\&quot;&gt;Moderately Severe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;padding:5px;\&quot;&gt;20 – 27&lt;/td&gt;&lt;td style=\&quot;padding:5px;\&quot;&gt;Severe&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;\r\n&lt;strong&gt;Acknowledgment&lt;/strong&gt;&lt;li&gt;Developed by Drs. Robert L. Spitzer, Janet B.W. Williams, Kurt Kroenke and colleagues, with an educational grant from Pfizer Inc. No permission required to reproduce, translate, display or distribute.&lt;/li&gt;&quot;,
+  &quot;text&quot; : &quot;&lt;p&gt;&lt;strong&gt;Interpretation&lt;/strong&gt;&lt;/p&gt;&lt;table style=\&quot;border-collapse: collapse;padding:5px;\&quot; border=\&quot;1\&quot;&gt;&lt;thead&gt;&lt;tr&gt; &lt;th style=\&quot;padding:5px;\&quot;&gt;PHQ-9 Score&lt;/th&gt;&lt;th style=\&quot;padding:5px;\&quot;&gt;Depression Severity&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=\&quot;padding:5px;\&quot;&gt;0 – 4&lt;/td&gt;&lt;td style=\&quot;padding:5px;\&quot;&gt;None-minimal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;padding:5px;\&quot;&gt;5 – 9&lt;/td&gt;&lt;td style=\&quot;padding:5px;\&quot;&gt;Mild&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;padding:5px;\&quot;&gt;10 – 14&lt;/td&gt;&lt;td style=\&quot;padding:5px;\&quot;&gt;Moderate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;padding:5px;\&quot;&gt;15 – 19&lt;/td&gt;&lt;td style=\&quot;padding:5px;\&quot;&gt;Moderately Severe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;padding:5px;\&quot;&gt;20 – 27&lt;/td&gt;&lt;td style=\&quot;padding:5px;\&quot;&gt;Severe&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;br/&gt;&lt;strong&gt;Acknowledgment&lt;/strong&gt;&lt;li&gt;Developed by Drs. Robert L. Spitzer, Janet B.W. Williams, Kurt Kroenke and colleagues, with an educational grant from Pfizer Inc. No permission required to reproduce, translate, display or distribute.&lt;/li&gt;&quot;,
+  &quot;show&quot; : null,
+  &quot;dataJSON&quot; : true,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;textKey&quot; : &quot;&quot;,
+  &quot;sanitize&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>6.0</sequenceNumber>
+            <type>Text Block</type>
+            <uniqueIndex>PHQ_9_Citation</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>PHQ_9_Score</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 2.0,
+  &quot;label&quot; : &quot;PHQ-9 Score&quot;,
+  &quot;showInputWidth&quot; : false,
+  &quot;inputWidth&quot; : 12.0,
+  &quot;expression&quot; : &quot;SUM(\nIF(CONTAINS(%PHQ9_main_question:FeelingBad%, &apos;Several days&apos;),1,IF(CONTAINS(%PHQ9_main_question:FeelingBad%, &apos;More than half the days&apos;), 2, IF(CONTAINS(%PHQ9_main_question:FeelingBad%, &apos;Nearly every day&apos;), 3, 0))),\nIF(CONTAINS(%PHQ9_main_question:LittleInterest%, &apos;Several days&apos;),1,IF(CONTAINS(%PHQ9_main_question:LittleInterest%, &apos;More than half the days&apos;), 2, IF(CONTAINS(%PHQ9_main_question:LittleInterest%, &apos;Nearly every day&apos;), 3, 0))),\nIF(CONTAINS(%PHQ9_main_question:FeelingDown%, &apos;Several days&apos;),1,IF(CONTAINS(%PHQ9_main_question:FeelingDown%, &apos;More than half the days&apos;), 2, IF(CONTAINS(%PHQ9_main_question:FeelingDown%, &apos;Nearly every day&apos;), 3, 0))),\nIF(CONTAINS(%PHQ9_main_question:TroubleSleeping%, &apos;Several days&apos;),1,IF(CONTAINS(%PHQ9_main_question:TroubleSleeping%, &apos;More than half the days&apos;), 2, IF(CONTAINS(%PHQ9_main_question:TroubleSleeping%, &apos;Nearly every day&apos;), 3, 0))),\nIF(CONTAINS(%PHQ9_main_question:FeelingTired%, &apos;Several days&apos;),1,IF(CONTAINS(%PHQ9_main_question:FeelingTired%, &apos;More than half the days&apos;), 2, IF(CONTAINS(%PHQ9_main_question:FeelingTired%, &apos;Nearly every day&apos;), 3, 0))),\nIF(CONTAINS(%PHQ9_main_question:PoorAppetite%, &apos;Several days&apos;),1,IF(CONTAINS(%PHQ9_main_question:PoorAppetite%, &apos;More than half the days&apos;), 2, IF(CONTAINS(%PHQ9_main_question:PoorAppetite%, &apos;Nearly every day&apos;), 3, 0))),\nIF(CONTAINS(%PHQ9_main_question:TroubleConcentrating%, &apos;Several days&apos;),1,IF(CONTAINS(%PHQ9_main_question:TroubleConcentrating%, &apos;More than half the days&apos;), 2, IF(CONTAINS(%PHQ9_main_question:TroubleConcentrating%, &apos;Nearly every day&apos;), 3, 0))),\nIF(CONTAINS(%PHQ9_main_question:SpeakingSlow%, &apos;Several days&apos;),1,IF(CONTAINS(%PHQ9_main_question:SpeakingSlow%, &apos;More than half the days&apos;), 2, IF(CONTAINS(%PHQ9_main_question:SpeakingSlow%, &apos;Nearly every day&apos;), 3, 0))),\nIF(CONTAINS(%PHQ9_main_question:BetterOffDead%, &apos;Several days&apos;),1,IF(CONTAINS(%PHQ9_main_question:BetterOffDead%, &apos;More than half the days&apos;), 2, IF(CONTAINS(%PHQ9_main_question:BetterOffDead%, &apos;Nearly every day&apos;), 3, 0)))\n)&quot;,
+  &quot;hide&quot; : false,
+  &quot;show&quot; : null,
+  &quot;mask&quot; : null,
+  &quot;dataType&quot; : &quot;Number&quot;,
+  &quot;hideGroupSep&quot; : false,
+  &quot;dateFormat&quot; : &quot;MM-dd-yyyy&quot;,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>2.0</sequenceNumber>
+            <type>Formula</type>
+            <uniqueIndex>PHQ_9_Score</uniqueIndex>
+        </childElements>
+        <designerCustomizationType>Discovery Framework</designerCustomizationType>
+        <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>PHQ-9</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;label&quot; : &quot;Patient Health Questionnaire-9 (PHQ-9)&quot;,
+  &quot;validationRequired&quot; : true,
+  &quot;previousLabel&quot; : &quot;Previous&quot;,
+  &quot;previousWidth&quot; : 3.0,
+  &quot;nextLabel&quot; : &quot;Submit&quot;,
+  &quot;nextWidth&quot; : 3.0,
+  &quot;cancelLabel&quot; : &quot;Cancel&quot;,
+  &quot;cancelMessage&quot; : &quot;Are you sure?&quot;,
+  &quot;saveLabel&quot; : &quot;Save for later&quot;,
+  &quot;saveMessage&quot; : &quot;Are you sure you want to save it for later?&quot;,
+  &quot;completeLabel&quot; : &quot;Complete&quot;,
+  &quot;completeMessage&quot; : &quot;Are you sure you want to complete the script?&quot;,
+  &quot;instruction&quot; : &quot;&quot;,
+  &quot;showPersistentComponent&quot; : [ true, false ],
+  &quot;remoteClass&quot; : &quot;&quot;,
+  &quot;remoteMethod&quot; : &quot;&quot;,
+  &quot;remoteTimeout&quot; : 30000.0,
+  &quot;remoteOptions&quot; : { },
+  &quot;knowledgeOptions&quot; : {
+    &quot;language&quot; : &quot;English&quot;,
+    &quot;publishStatus&quot; : &quot;Online&quot;,
+    &quot;keyword&quot; : &quot;&quot;,
+    &quot;dataCategoryCriteria&quot; : &quot;&quot;,
+    &quot;remoteTimeout&quot; : 30000.0,
+    &quot;typeFilter&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;instructionKey&quot; : &quot;&quot;,
+  &quot;chartLabel&quot; : null,
+  &quot;allowSaveForLater&quot; : true,
+  &quot;errorMessage&quot; : {
+    &quot;custom&quot; : [ ],
+    &quot;default&quot; : null
+  },
+  &quot;wpm&quot; : false,
+  &quot;ssm&quot; : false,
+  &quot;message&quot; : { },
+  &quot;pubsub&quot; : false,
+  &quot;businessCategory&quot; : &quot;&quot;,
+  &quot;businessEvent&quot; : &quot;&quot;
+}</propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>Step</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>Save-Responses</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;Save&quot;,
+  &quot;remoteClass&quot; : &quot;omnistudio.StoreResponses&quot;,
+  &quot;remoteMethod&quot; : &quot;invokeMethod&quot;,
+  &quot;remoteOptions&quot; : {
+    &quot;preTransformBundle&quot; : &quot;&quot;,
+    &quot;postTransformBundle&quot; : &quot;&quot;,
+    &quot;Assessment.Name&quot; : &quot;PHQ-9&quot;,
+    &quot;Assessment.AssessmentStatus&quot; : &quot;Completed&quot;,
+    &quot;Assessment.EffectiveDateTime&quot; : &quot;%EffectiveDate%&quot;
+  },
+  &quot;remoteTimeout&quot; : 30000,
+  &quot;preTransformBundle&quot; : &quot;&quot;,
+  &quot;postTransformBundle&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;extraPayload&quot; : {
+    &quot;usageType&quot; : &quot;HcUsageType&quot;
+  },
+  &quot;inProgressMessage&quot; : &quot;In Progress&quot;,
+  &quot;postMessage&quot; : &quot;Done&quot;,
+  &quot;failureNextLabel&quot; : &quot;Continue&quot;,
+  &quot;failureAbortLabel&quot; : &quot;Abort&quot;,
+  &quot;failureGoBackLabel&quot; : &quot;Go Back&quot;,
+  &quot;failureAbortMessage&quot; : &quot;Are you sure?&quot;,
+  &quot;validationRequired&quot; : &quot;Step&quot;,
+  &quot;redirectPageName&quot; : &quot;&quot;,
+  &quot;redirectTemplateUrl&quot; : &quot;vlcAcknowledge.html&quot;,
+  &quot;redirectNextLabel&quot; : &quot;Next&quot;,
+  &quot;redirectNextWidth&quot; : 3,
+  &quot;redirectPreviousLabel&quot; : &quot;Previous&quot;,
+  &quot;redirectPreviousWidth&quot; : 3,
+  &quot;showPersistentComponent&quot; : [ true, false ],
+  &quot;show&quot; : null,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;wpm&quot; : false,
+  &quot;ssm&quot; : false,
+  &quot;message&quot; : { },
+  &quot;pubsub&quot; : false,
+  &quot;svgSprite&quot; : &quot;&quot;,
+  &quot;svgIcon&quot; : &quot;&quot;,
+  &quot;errorMessage&quot; : {
+    &quot;custom&quot; : [ ],
+    &quot;default&quot; : null
+  },
+  &quot;enableDefaultAbort&quot; : false,
+  &quot;enableActionMessage&quot; : false,
+  &quot;useContinuation&quot; : false,
+  &quot;businessCategory&quot; : &quot;&quot;,
+  &quot;businessEvent&quot; : &quot;&quot;
+}</propertySetConfig>
+        <sequenceNumber>3.0</sequenceNumber>
+        <type>Remote Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>SetEffectiveDate</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;Set Effective Date&quot;,
+  &quot;elementValueMap&quot; : {
+    &quot;EffectiveDate&quot; : &quot;=NOW(\&quot;yyyy-mm-ddThh:mm:ss.000Z\&quot;)&quot;
+  },
+  &quot;showPersistentComponent&quot; : [ true, false ],
+  &quot;show&quot; : null,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;wpm&quot; : false,
+  &quot;ssm&quot; : false,
+  &quot;message&quot; : { },
+  &quot;pubsub&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>Set Values</type>
+    </omniProcessElements>
+    <omniProcessType>OmniScript</omniProcessType>
+    <propertySetConfig>{&quot;persistentComponent&quot;:[{&quot;render&quot;:false,&quot;label&quot;:&quot;&quot;,&quot;remoteClass&quot;:&quot;&quot;,&quot;remoteMethod&quot;:&quot;&quot;,&quot;remoteTimeout&quot;:30000,&quot;remoteOptions&quot;:{&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;},&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;,&quot;sendJSONPath&quot;:&quot;&quot;,&quot;sendJSONNode&quot;:&quot;&quot;,&quot;responseJSONPath&quot;:&quot;&quot;,&quot;responseJSONNode&quot;:&quot;&quot;,&quot;id&quot;:&quot;vlcCart&quot;,&quot;itemsKey&quot;:&quot;cartItems&quot;,&quot;modalConfigurationSetting&quot;:{&quot;modalHTMLTemplateId&quot;:&quot;vlcProductConfig.html&quot;,&quot;modalController&quot;:&quot;ModalProductCtrl&quot;,&quot;modalSize&quot;:&quot;lg&quot;}},{&quot;render&quot;:false,&quot;dispOutsideOmni&quot;:false,&quot;label&quot;:&quot;&quot;,&quot;remoteClass&quot;:&quot;&quot;,&quot;remoteMethod&quot;:&quot;&quot;,&quot;remoteTimeout&quot;:30000,&quot;remoteOptions&quot;:{&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;},&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;,&quot;id&quot;:&quot;vlcKnowledge&quot;,&quot;itemsKey&quot;:&quot;knowledgeItems&quot;,&quot;modalConfigurationSetting&quot;:{&quot;modalHTMLTemplateId&quot;:&quot;&quot;,&quot;modalController&quot;:&quot;&quot;,&quot;modalSize&quot;:&quot;lg&quot;}}],&quot;allowSaveForLater&quot;:true,&quot;saveNameTemplate&quot;:null,&quot;saveExpireInDays&quot;:null,&quot;saveForLaterRedirectPageName&quot;:&quot;sflRedirect&quot;,&quot;saveForLaterRedirectTemplateUrl&quot;:&quot;vlcSaveForLaterAcknowledge.html&quot;,&quot;saveContentEncoded&quot;:false,&quot;saveObjectId&quot;:&quot;%ContextId%&quot;,&quot;saveURLPatterns&quot;:{},&quot;autoSaveOnStepNext&quot;:false,&quot;elementTypeToHTMLTemplateMapping&quot;:{},&quot;seedDataJSON&quot;:{},&quot;trackingCustomData&quot;:{},&quot;enableKnowledge&quot;:false,&quot;bLK&quot;:false,&quot;lkObjName&quot;:null,&quot;knowledgeArticleTypeQueryFieldsMap&quot;:{},&quot;timeTracking&quot;:false,&quot;hideStepChart&quot;:true,&quot;mergeSavedData&quot;:true,&quot;visualforcePagesAvailableInPreview&quot;:{},&quot;cancelType&quot;:&quot;SObject&quot;,&quot;allowCancel&quot;:true,&quot;cancelSource&quot;:&quot;%ContextId%&quot;,&quot;cancelRedirectPageName&quot;:&quot;OmniScriptCancelled&quot;,&quot;cancelRedirectTemplateUrl&quot;:&quot;vlcCancelled.html&quot;,&quot;consoleTabLabel&quot;:&quot;New&quot;,&quot;wpm&quot;:false,&quot;ssm&quot;:false,&quot;message&quot;:{},&quot;pubsub&quot;:false,&quot;autoFocus&quot;:false,&quot;currencyCode&quot;:&quot;&quot;,&quot;showInputWidth&quot;:false,&quot;rtpSeed&quot;:false,&quot;consoleTabTitle&quot;:&quot;PHQ-9&quot;,&quot;consoleTabIcon&quot;:&quot;custom:custom18&quot;,&quot;errorMessage&quot;:{&quot;custom&quot;:[]},&quot;stylesheet&quot;:{&quot;newport&quot;:&quot;&quot;,&quot;lightning&quot;:&quot;&quot;,&quot;newportRtl&quot;:&quot;&quot;,&quot;lightningRtl&quot;:&quot;&quot;},&quot;stepChartPlacement&quot;:&quot;right&quot;,&quot;disableUnloadWarn&quot;:true,&quot;scrollBehavior&quot;:&quot;auto&quot;,&quot;currentLanguage&quot;:&quot;en_US&quot;}</propertySetConfig>
+    <subType>PHQ9</subType>
+    <type>BehavioralHealth</type>
+    <uniqueName>BehavioralHealth_PHQ9_English_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <webComponentKey>9c065cfd-0a9b-3176-724f-bc5cf9e234c3</webComponentKey>
+</OmniScript>
