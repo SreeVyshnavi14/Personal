@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <folder>HealthCloudWave__Health_Cloud_Apps</folder>
+    <masterLabel>Health Cloud Apps</masterLabel>
+    <shares>
+        <accessLevel>Manage</accessLevel>
+        <sharedTo>skudupudi-89bp@force.com</sharedTo>
+        <sharedToType>User</sharedToType>
+    </shares>
+</WaveApplication>

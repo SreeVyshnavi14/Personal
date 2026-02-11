@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveXmd xmlns="http://soap.sforce.com/2006/04/metadata">
+    <dataset>Task</dataset>
+    <dimensions>
+        <field>CarePlan_Status</field>
+        <isDerived>false</isDerived>
+        <label>Lowest Task Status</label>
+        <members>
+            <label>Not Started</label>
+            <member>2- Not Started</member>
+            <sortIndex>0</sortIndex>
+        </members>
+        <members>
+            <label>Delayed</label>
+            <member>1- Delayed</member>
+            <sortIndex>1</sortIndex>
+        </members>
+        <members>
+            <label>Waiting on someone else</label>
+            <member>3- Waiting on someone else</member>
+            <sortIndex>2</sortIndex>
+        </members>
+        <members>
+            <label>In Progress</label>
+            <member>4- In Progress</member>
+            <sortIndex>3</sortIndex>
+        </members>
+        <members>
+            <label>Completed</label>
+            <member>5- Completed</member>
+            <sortIndex>4</sortIndex>
+        </members>
+        <sortIndex>0</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>No._of_Pending_Tasks</field>
+        <isDerived>true</isDerived>
+        <showInExplorer>true</showInExplorer>
+        <sortIndex>0</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Member_Status</field>
+        <isDerived>false</isDerived>
+        <members>
+            <label>Not Started</label>
+            <member>2- Not Started</member>
+            <sortIndex>0</sortIndex>
+        </members>
+        <sortIndex>1</sortIndex>
+    </dimensions>
+</WaveXmd>
