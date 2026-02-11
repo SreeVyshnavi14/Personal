@@ -1,0 +1,24 @@
+<template>
+    <lightning-card title="Utilization Management Settings">
+        <div class="slds-p-around_medium">
+            <lightning-input
+                type="toggle"
+                label="Enable Utilization Management for Payers App"
+                checked={isPayersAppEnabled}
+                onchange={handlePayersAppToggle}>
+            </lightning-input>
+            <br/>
+            <lightning-input
+                type="toggle"
+                label="Enable Identify Duplicate PA Requests?"
+                checked={isDuplicatePAEnabled}
+                onchange={handleDuplicatePAToggle}>
+            </lightning-input>
+            <p class="slds-text-body_small slds-text-color_weak">
+                When enabled, the system will automatically identify and flag potential duplicate Prior Authorization (PA) requests for review.
+            </p>
+            <br/>
+            <lightning-button label="Save" variant="brand" onclick={handleSave}></lightning-button>
+        </div>
+    </lightning-card>
+</template>

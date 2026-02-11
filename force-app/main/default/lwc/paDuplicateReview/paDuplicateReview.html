@@ -1,0 +1,126 @@
+<template>
+    <lightning-card title="Prior Authorization Review" icon-name="standard:case">
+        <div slot="actions">
+            <template if:false={showComparison}>
+                <lightning-button 
+                    label="Review Duplicates" 
+                    onclick={handleReviewDuplicates}
+                    variant="brand">
+                </lightning-button>
+            </template>
+        </div>
+        <!-- Duplicate Alert Banner -->
+        <div class={alertBannerClass}>
+            <div class="slds-grid slds-grid_align-spread">
+                <div class="slds-col">
+                    <lightning-icon icon-name="utility:warning" size="small" class="slds-m-right_small"></lightning-icon>
+                    <span class="slds-text-heading_small">Potential Duplicate PA Requests Found ({duplicateCount})</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Case Record Details -->
+        <template if:false={showComparison}>
+            <div class="slds-p-around_medium">
+                <div class="slds-grid slds-wrap">
+                    <div class="slds-col slds-size_1-of-2 slds-p-right_medium">
+                        <div class="slds-text-heading_small slds-m-bottom_small">Case Details</div>
+                        <div class="slds-grid slds-wrap">
+                            <div class="slds-col slds-size_1-of-2 slds-p-right_small">
+                                <div class="slds-text-body_small slds-text-color_weak">Care Request ID</div>
+                                <div class="slds-text-body_regular">{currentPA.careRequestId}</div>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2">
+                                <div class="slds-text-body_small slds-text-color_weak">Case ID</div>
+                                <div class="slds-text-body_regular">{currentPA.caseId}</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <div class="slds-text-heading_small slds-m-bottom_small">Request Details</div>
+                        <div class="slds-grid slds-wrap">
+                            <div class="slds-col slds-size_1-of-2 slds-p-right_small">
+                                <div class="slds-text-body_small slds-text-color_weak">Care Request Item</div>
+                                <div class="slds-text-body_regular">{currentPA.careRequestItem}</div>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2">
+                                <div class="slds-text-body_small slds-text-color_weak">Status</div>
+                                <div class="slds-text-body_regular">{currentPA.careRequestSubStatus}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+
+        <!-- Duplicate Comparison Section (shown when reviewing duplicates) -->
+        <template if:true={showComparison}>
+            <div class="slds-p-around_medium">
+                <div class="slds-grid slds-grid_align-spread slds-m-bottom_medium">
+                    <div class="slds-col">
+                        <h2 class="slds-text-heading_small">Review Potential Duplicate Prior Authorizations</h2>
+                    </div>
+                    <div class="slds-col">
+                        <lightning-button 
+                            label="Back to Case" 
+                            onclick={handleBackToCase}
+                            variant="neutral">
+                        </lightning-button>
+                    </div>
+                </div>
+                <div class="slds-grid slds-wrap">
+                    <!-- Current PA -->
+                    <div class="slds-col slds-size_1-of-2 slds-p-right_medium">
+                        <div class="slds-text-heading_small slds-m-bottom_small">Current PA Request</div>
+                        <div class="slds-box">
+                            <template for:each={currentPAFields} for:item="field">
+                                <div key={field.key} class="slds-grid slds-wrap slds-m-bottom_small">
+                                    <div class="slds-col slds-size_1-of-3 slds-text-body_small slds-text-color_weak">{field.label}</div>
+                                    <div class="slds-col slds-size_2-of-3">{field.value}</div>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+
+                    <!-- Potential Duplicates -->
+                    <div class="slds-col slds-size_1-of-2">
+                        <div class="slds-text-heading_small slds-m-bottom_small">Potential Duplicates</div>
+                        <template for:each={duplicatesWithFields} for:item="duplicate">
+                            <div key={duplicate.careRequestId} class="slds-box slds-m-bottom_medium">
+                                <div class="slds-grid slds-wrap">
+                                    <template for:each={duplicate.fields} for:item="field">
+                                        <div key={field.key} class="slds-col slds-size_1-of-2 slds-m-bottom_small">
+                                            <div class="slds-text-body_small slds-text-color_weak">{field.label}</div>
+                                            <div class="slds-text-body_regular">{field.value}</div>
+                                        </div>
+                                    </template>
+                                </div>
+                                <div class="slds-grid slds-grid_align-end slds-m-top_medium">
+                                    <lightning-button 
+                                        label="View Full Request" 
+                                        onclick={handleViewFullRequest} 
+                                        data-id={duplicate.careRequestId}
+                                        class="slds-m-right_small">
+                                    </lightning-button>
+                                    <lightning-button 
+                                        label="Merge/Link" 
+                                        onclick={handleMergeRequest} 
+                                        data-id={duplicate.careRequestId}
+                                        variant="brand"
+                                        class="slds-m-right_small">
+                                    </lightning-button>
+                                    <lightning-button 
+                                        label="Not a Duplicate" 
+                                        onclick={handleNotDuplicate} 
+                                        data-id={duplicate.careRequestId}
+                                        variant="destructive">
+                                    </lightning-button>
+                                </div>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+            </div>
+        </template>
+    </lightning-card>
+</template>
