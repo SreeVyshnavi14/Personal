@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>mho</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>MHO</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Text</dataType>
+    <developerName>HC_DS_v2_ProSurv_mho</developerName>
+    <name>mho</name>
+    <questionCategory>Demographic</questionCategory>
+    <relatedQuestion>HC_DS_v2_ProSurv_INTERVENTIONS</relatedQuestion>
+</AssessmentQuestion>

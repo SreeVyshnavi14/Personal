@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Select the method of transport to the health care facility.</helpText>
+        <isActive>true</isActive>
+        <name>transportMethod</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>How was the case transported to the health care facility?</questionText>
+        <responseValues>Ambulance
+Medevac
+Private vehicle
+Commercial vehicle
+Public transportation
+Other, specify:</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>HC_DS_v2_Ebola_transportMethod</developerName>
+    <name>transportMethod</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

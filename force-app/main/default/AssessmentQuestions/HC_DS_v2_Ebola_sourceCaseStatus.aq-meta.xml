@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Select the status of the source case at the time of exposure.</helpText>
+        <isActive>true</isActive>
+        <name>sourceCaseStatus</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>At the time of exposure, was the source case alive or deceased?</questionText>
+        <responseValues>Alive
+Deceased</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>HC_DS_v2_Ebola_sourceCaseStatus</developerName>
+    <name>sourceCaseStatus</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

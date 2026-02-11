@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Select if the case traveled outside BC in the 21 days prior to symptom onset.</helpText>
+        <isActive>true</isActive>
+        <name>travelOutsideBC</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Did the case travel outside British Columbia in the 21 days prior to symptom onset?</questionText>
+        <responseValues>Yes
+No
+Unknown</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>HC_DS_v2_Ebola_travelOutsideBC</developerName>
+    <name>travelOutsideBC</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>HealthCareCSCM_MSA_MySupportsParent</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Supports are people you feel comfortable talking to about what you&apos;re going through, and who can provide some help. When possible, talking with them about being 
+a support before you are in crisis can be helpful.</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>EditBlock</dataType>
+    <developerName>HealthCareCSCM_MSA_MySupportsParent</developerName>
+    <name>HealthCareCSCM_MSA_MySupportsParent</name>
+    <questionCategory>Financial</questionCategory>
+</AssessmentQuestion>

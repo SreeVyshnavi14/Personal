@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <description>Not yet recovered/recovering</description>
+        <isActive>true</isActive>
+        <name>Not yet recovered/recovering</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Not yet recovered/recovering</questionText>
+        <status>Active</status>
+        <versionNumber>2</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Checkbox</dataType>
+    <developerName>HC_DS_v2_ProSurv_Not_yet_recovered_recovering</developerName>
+    <name>Not yet recovered/recovering</name>
+    <questionCategory>Demographic</questionCategory>
+    <relatedQuestion>HC_DS_v2_ProSurv_OUTCOME_AT_TIME_OF_REPORTING</relatedQuestion>
+</AssessmentQuestion>

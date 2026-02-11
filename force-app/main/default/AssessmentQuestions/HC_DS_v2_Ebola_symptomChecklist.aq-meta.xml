@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Select all symptoms that apply.</helpText>
+        <isActive>true</isActive>
+        <name>symptomChecklist</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Signs/Symptoms Checklist</questionText>
+        <responseValues>Abdominal pain/discomfort
+Anorectal symptoms - bloody stool
+Anorexia
+Arthralgia (sore joints)
+Blood in urine (hematuria)
+Chest pain
+Circulatory shock
+Coma
+Conjunctival injection
+Cough
+Diarrhea
+Difficulty swallowing
+Fever ≥ 38○C
+Headache
+Hemorrhage
+Hypotension (low blood pressure)
+Malaise
+Myalgia (muscle pain)
+Nausea
+Pharyngitis (sore throat)
+Rash
+Rash, maculopapular
+Shortness of breath / breathing difficulty
+Vomiting
+Vomiting blood (hematemesis)
+Weakness
+Other, specify:</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Multiselect</dataType>
+    <developerName>HC_DS_v2_Ebola_symptomChecklist</developerName>
+    <name>symptomChecklist</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

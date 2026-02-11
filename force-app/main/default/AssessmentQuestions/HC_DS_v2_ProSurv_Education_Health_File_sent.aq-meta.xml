@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <description>Education-Health File sent</description>
+        <isActive>true</isActive>
+        <name>Education-Health File sent</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Education-Health File sent</questionText>
+        <status>Active</status>
+        <versionNumber>2</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Checkbox</dataType>
+    <developerName>HC_DS_v2_ProSurv_Education_Health_File_sent</developerName>
+    <name>Education-Health File sent</name>
+    <questionCategory>Demographic</questionCategory>
+    <relatedQuestion>HC_DS_v2_ProSurv_INTERVENTIONS</relatedQuestion>
+</AssessmentQuestion>

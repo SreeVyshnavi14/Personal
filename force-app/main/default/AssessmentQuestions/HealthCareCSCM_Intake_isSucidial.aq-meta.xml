@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>HealthCareCSCM_Intake_isSucidial</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Do you have thoughts of suicide?</questionText>
+        <responseValues>Yes - Current (within the past 24 hours)
+Yes - Recent Past (within the past two months)
+No</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>HealthCareCSCM_Intake_isSucidial</developerName>
+    <name>HealthCareCSCM_Intake_isSucidial</name>
+    <questionCategory>Financial</questionCategory>
+</AssessmentQuestion>

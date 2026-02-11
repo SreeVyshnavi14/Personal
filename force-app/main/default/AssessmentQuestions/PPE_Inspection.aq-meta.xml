@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Is PPE Inspected</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Is PPE inspected before each use?</questionText>
+        <responseValues>Yes
+No</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>PPE_Inspection</developerName>
+    <name>PPE Inspection</name>
+    <questionCategory>Inspections</questionCategory>
+</AssessmentQuestion>

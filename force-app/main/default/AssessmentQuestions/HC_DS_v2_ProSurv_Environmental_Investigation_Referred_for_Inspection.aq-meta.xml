@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <description>Environmental
+Investigation-Referred for Inspection</description>
+        <isActive>true</isActive>
+        <name>Environmental Investigation-Referred for Inspection</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Environmental
+Investigation-Referred for Inspection</questionText>
+        <responseValues>Yes
+No</responseValues>
+        <status>Active</status>
+        <versionNumber>2</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Checkbox</dataType>
+    <developerName>HC_DS_v2_ProSurv_Environmental_Investigation_Referred_for_Inspection</developerName>
+    <name>Environmental Investigation-Referred for Inspection</name>
+    <questionCategory>Demographic</questionCategory>
+    <relatedQuestion>HC_DS_v2_ProSurv_INTERVENTIONS</relatedQuestion>
+</AssessmentQuestion>

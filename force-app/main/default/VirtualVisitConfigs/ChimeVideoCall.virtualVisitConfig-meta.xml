@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VirtualVisitConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <comprehendServiceType>ComprehendService</comprehendServiceType>
+    <experienceCloudSiteUrl>videocall_c@testcloudurl.com</experienceCloudSiteUrl>
+    <masterLabel>vvconfig1</masterLabel>
+    <storageBucketName>comprehendbucket</storageBucketName>
+    <usageType>CHIME</usageType>
+    <visitRegion>us-east-1</visitRegion>
+</VirtualVisitConfig>

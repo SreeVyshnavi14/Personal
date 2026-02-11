@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <description>TRAVEL DURING EXPOSURE PERIOD</description>
+        <isActive>true</isActive>
+        <name>TRAVEL DURING EXPOSURE PERIOD</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>&lt;html&gt;&lt;strong&gt;F.  TRAVEL DURING EXPOSURE PERIOD&lt;/strong&gt;&lt;/html&gt;</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>TextBlock</dataType>
+    <developerName>HC_DS_v2_ProSurv_TRAVEL_DURING_EXPOSURE_PERIOD</developerName>
+    <name>TRAVEL DURING EXPOSURE PERIOD</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

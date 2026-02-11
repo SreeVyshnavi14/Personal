@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Indicate if the individual died from the illness.</helpText>
+        <isActive>true</isActive>
+        <name>didIndividualDie</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>[FOR INTERVIEWER] Did the individual die from this illness?</questionText>
+        <responseValues>Yes
+No
+Unknown</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>HC_DS_v2_Mpox_didIndividualDie1</developerName>
+    <name>didIndividualDie</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

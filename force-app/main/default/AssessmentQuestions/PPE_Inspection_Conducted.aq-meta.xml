@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>PPE Inspection Conducted</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>If PPE inspection is conducted, what is included in the inspection?</questionText>
+        <responseValues>Checking for physical damage or wear
+Ensuring cleanliness and hygiene
+Verifying proper functionality
+Confirming fit and adjustments</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Multiselect</dataType>
+    <developerName>PPE_Inspection_Conducted</developerName>
+    <name>PPE Inspection Conducted</name>
+    <questionCategory>Inspections</questionCategory>
+</AssessmentQuestion>

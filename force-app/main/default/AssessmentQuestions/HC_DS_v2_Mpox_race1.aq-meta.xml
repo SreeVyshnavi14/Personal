@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Select all races that apply to the individual.</helpText>
+        <isActive>true</isActive>
+        <name>race</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>What is your race? (check all that apply)</questionText>
+        <responseValues>White
+African American or Black
+Asian
+Native Hawaiian/Pacific Islander
+American Indian/Alaska Native
+Multiple Races
+Unknown Race
+Other
+Declined to answer</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Multiselect</dataType>
+    <developerName>HC_DS_v2_Mpox_race1</developerName>
+    <name>race</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

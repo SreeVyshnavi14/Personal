@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Residence History1</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Excluding the 3 weeks before onset of your symptoms, and in the last 10 years, have you lived or traveled to</questionText>
+        <responseValues>SE Asia
+Indian Subcontinent
+E Asia(China, Japan)
+Middle East
+Australia
+Africa
+Caribbean
+Mediterranean
+USA
+Central/South America</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Multiselect</dataType>
+    <developerName>HC_DS_v2_WestNile_Residence_History1</developerName>
+    <name>Residence History1</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

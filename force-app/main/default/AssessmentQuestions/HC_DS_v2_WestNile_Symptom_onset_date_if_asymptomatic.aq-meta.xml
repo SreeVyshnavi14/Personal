@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Symptom onset date_if asymptomatic</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>If No, what is the symptom onset date</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Date</dataType>
+    <developerName>HC_DS_v2_WestNile_Symptom_onset_date_if_asymptomatic</developerName>
+    <name>Symptom onset date_if asymptomatic</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

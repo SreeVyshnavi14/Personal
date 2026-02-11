@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Has Travelled</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>In the 3 weeks before onset of your symptoms (or before diagnosis, if asymptomatic), did you travel more than 100 km distance (1 hour drive on highway roads) from your residence?</questionText>
+        <responseValues>Yes
+No</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>HC_DS_v2_WestNile_Has_Travelled</developerName>
+    <name>Has Travelled</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

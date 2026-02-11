@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>HealthCareCSCM_MSA_WarningSignParent</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>A warning sign is something you think, feel, or do as suicidal thoughts are starting to develop.</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>EditBlock</dataType>
+    <developerName>HealthCareCSCM_MSA_WarningSignParent</developerName>
+    <name>HealthCareCSCM_MSA_WarningSignParent</name>
+    <questionCategory>Financial</questionCategory>
+</AssessmentQuestion>

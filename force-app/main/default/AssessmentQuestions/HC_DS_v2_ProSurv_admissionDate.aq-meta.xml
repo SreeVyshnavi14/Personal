@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>admissionDate</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Admission date</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Date</dataType>
+    <developerName>HC_DS_v2_ProSurv_admissionDate</developerName>
+    <name>admissionDate</name>
+    <questionCategory>Demographic</questionCategory>
+    <relatedQuestion>HC_DS_v2_ProSurv_HOSPITALIZATION</relatedQuestion>
+</AssessmentQuestion>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <description>Education-Hygiene Education Provided</description>
+        <isActive>true</isActive>
+        <name>Education-Hygiene Education Provided</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Education-Hygiene Education Provided</questionText>
+        <status>Active</status>
+        <versionNumber>2</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Checkbox</dataType>
+    <developerName>HC_DS_v2_ProSurv_Education_Hygiene_Education_Provided</developerName>
+    <name>Education-Hygiene Education Provided</name>
+    <questionCategory>Demographic</questionCategory>
+    <relatedQuestion>HC_DS_v2_ProSurv_INTERVENTIONS</relatedQuestion>
+</AssessmentQuestion>

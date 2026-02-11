@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Select all that apply.</helpText>
+        <isActive>true</isActive>
+        <name>suspect_location_of_exposure</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Please provide the suspect location of exposure:</questionText>
+        <responseValues>International
+Domestic
+Air Travel Contact
+Other
+Unknown</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Multiselect</dataType>
+    <developerName>HC_DS_v2_Mpox_suspect_location_of</developerName>
+    <name>suspect_location_of_exposure</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

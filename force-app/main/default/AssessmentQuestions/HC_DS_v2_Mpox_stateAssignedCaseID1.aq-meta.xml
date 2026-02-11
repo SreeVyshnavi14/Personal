@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Enter the state-assigned case ID for tracking purposes.</helpText>
+        <isActive>true</isActive>
+        <name>stateAssignedCaseID</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>State-assigned case ID:</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Text</dataType>
+    <developerName>HC_DS_v2_Mpox_stateAssignedCaseID1</developerName>
+    <name>stateAssignedCaseID</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

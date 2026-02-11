@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>PHQ_9_Citation</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>&lt;p&gt;&lt;strong&gt;Interpretation&lt;/strong&gt;&lt;/p&gt;&lt;table style=&quot;border-collapse: collapse;padding:5px;&quot; border=&quot;1&quot;&gt;&lt;thead&gt;&lt;tr&gt; &lt;th style=&quot;padding:5px;&quot;&gt;PHQ-9 Score&lt;/th&gt;&lt;th style=&quot;padding:5px;&quot;&gt;Depression Severity&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=&quot;padding:5px;&quot;&gt;0 – 4&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;None-minimal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:5px;&quot;&gt;5 – 9&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Mild&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:5px;&quot;&gt;10 – 14&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Moderate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:5px;&quot;&gt;15 – 19&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Moderately Severe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:5px;&quot;&gt;20 – 27&lt;/td&gt;&lt;td style=&quot;padding:5px;&quot;&gt;Severe&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;strong&gt;Acknowledgment&lt;/strong&gt;&lt;li&gt;Developed by Drs. Robert L. Spitzer, Janet B.W. Williams, Kurt Kroenke and colleagues, with an educational grant from Pfizer Inc. No permission required to reproduce, translate, display or distribute.&lt;/li&gt;</questionText>
+        <status>Active</status>
+        <versionNumber>4</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>TextBlock</dataType>
+    <developerName>PHQ_9_Citation</developerName>
+    <name>PHQ-9 Citation</name>
+    <questionCategory>Health</questionCategory>
+</AssessmentQuestion>

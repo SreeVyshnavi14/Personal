@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>symptomC</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Symptom C</questionText>
+        <responseValues>Yes
+No
+Asked but Unknown
+Declined to Answer
+Not Assessed</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>HC_DS_v2_ProSurv_symptomC</developerName>
+    <name>symptomC Response</name>
+    <questionCategory>Demographic</questionCategory>
+    <relatedQuestion>HC_DS_v2_ProSurv_CLINICAL_PRESENTATION_or_SIGNS_AND_SYMPTOMS</relatedQuestion>
+</AssessmentQuestion>

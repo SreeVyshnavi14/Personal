@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Vaccine 2 Dose number</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>What is the Dose number of Vaccination 2?</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Text</dataType>
+    <developerName>HC_DS_v2_Mpox_Vaccine_2_Dose_number</developerName>
+    <name>Vaccine 2 Dose number</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

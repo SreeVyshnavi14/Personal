@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>HealthCareCSCM_Intake_MainConcern</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>What is your main concern?</questionText>
+        <responseValues>Addictions
+Anxiety
+Bullying
+Depression
+Discrimination
+Eating Disorder
+Family Issues
+Financial Issues
+Problem in School
+Relationship Issues
+Physical, sexual and/or Emotional Abuse
+Physical Health
+Self Harm
+Sexuality
+Someone else&apos;s safety
+Violence</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>HealthCareCSCM_Intake_MainConcern</developerName>
+    <name>HealthCareCSCM_Intake_MainConcern</name>
+    <questionCategory>Financial</questionCategory>
+</AssessmentQuestion>

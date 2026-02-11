@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Please enter the most recent admission date.</helpText>
+        <isActive>true</isActive>
+        <name>mostRecentAdmissionDate</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Individual&apos;s most recent admission date to the hospital for the condition covered by the investigation:</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Date</dataType>
+    <developerName>HC_DS_v2_Mpox_mostRecentAdmissionD4</developerName>
+    <name>mostRecentAdmissionDate</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

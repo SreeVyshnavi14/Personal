@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Select all locations where the rash appeared.</helpText>
+        <isActive>true</isActive>
+        <name>rashLocation</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>If yes, where on your body is the rash? (choose all that apply)</questionText>
+        <responseValues>Face
+Head
+Neck
+Mouth
+Lips or oral mucosa
+Trunk
+Arms
+Legs
+Palms of hands
+Soles of feet
+Genitals
+Perianal
+Other locations</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Multiselect</dataType>
+    <developerName>HC_DS_v2_Mpox_rashLocation1</developerName>
+    <name>rashLocation</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

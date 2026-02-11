@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>PPE training received?</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Have employees received training on the correct use and maintenance of PPE?</questionText>
+        <responseValues>Yes
+No</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>PPE_training_received</developerName>
+    <name>PPE training received?</name>
+    <questionCategory>Inspections</questionCategory>
+</AssessmentQuestion>

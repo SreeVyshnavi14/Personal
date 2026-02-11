@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <description>NTERVENTIONS</description>
+        <isActive>true</isActive>
+        <name>INTERVENTIONS</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>&lt;html&gt;&lt;strong&gt;I.  INTERVENTIONS&lt;/strong&gt;&lt;/html&gt;</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>TextBlock</dataType>
+    <developerName>HC_DS_v2_ProSurv_INTERVENTIONS</developerName>
+    <name>INTERVENTIONS</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

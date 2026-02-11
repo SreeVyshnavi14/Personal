@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>HealthCareCSCM_IR_Interpretation</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Risk Assessment Interpretation</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Formula</dataType>
+    <developerName>HealthCareCSCM_IR_Interpretation</developerName>
+    <formulaResponseDataType>Text</formulaResponseDataType>
+    <name>HealthCareCSCM_IR_Interpretation</name>
+    <questionCategory>Health</questionCategory>
+</AssessmentQuestion>

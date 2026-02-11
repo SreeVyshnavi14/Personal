@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>HealthCareCSCM_MSA_DistractionsParent</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Distractions are people or places that may offer comfort or help you take a break from the situation so you can start feeling/thinking differently.</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>EditBlock</dataType>
+    <developerName>HealthCareCSCM_MSA_DistractionsParent</developerName>
+    <name>HealthCareCSCM_MSA_DistractionsParent</name>
+    <questionCategory>Financial</questionCategory>
+</AssessmentQuestion>

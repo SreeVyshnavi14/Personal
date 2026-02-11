@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>How often do you have six or more drinks on one occasion?</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>How often do you have six or more drinks on one occasion?</questionText>
+        <responseValues>Never
+Less than monthly
+Monthly
+Weekly
+Daily or almost daily</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>SixOrMoreDrinks</developerName>
+    <name>How often do you have six or more drinks on one occasion?</name>
+    <questionCategory>Health</questionCategory>
+</AssessmentQuestion>

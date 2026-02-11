@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Case Classification WNAI</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Based on the reported symptoms and the advice of the local MHO, Please report if the case is probable or suspected or confirmed for West Nile virus Asymptomatic Infection(WNAI)</questionText>
+        <responseValues>Suspected
+Probable
+Confirmed</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>HC_DS_v2_WestNile_Case_Classification_WNAI</developerName>
+    <name>Case Classification WNAI</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

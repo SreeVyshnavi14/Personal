@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Provide a description if the number of female partners is not specified.</helpText>
+        <isActive>true</isActive>
+        <name>femalePartnersDescription</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>If yes, number of female partners or description if no number is provided:</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Text</dataType>
+    <developerName>HC_DS_v2_Mpox_femalePartnersDescri</developerName>
+    <name>femalePartnersDescription</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

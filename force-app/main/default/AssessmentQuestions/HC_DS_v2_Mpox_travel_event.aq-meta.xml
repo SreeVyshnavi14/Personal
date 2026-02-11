@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Select all that apply.</helpText>
+        <isActive>true</isActive>
+        <name>travel_event</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>If you spent time in a country outside the U.S., or in a state/territory outside your home state/territory during the 3 weeks before your first symptom appeared, please report all travel events below:</questionText>
+        <responseValues>Domestic
+International</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Checkbox</dataType>
+    <developerName>HC_DS_v2_Mpox_travel_event</developerName>
+    <name>travel_event</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

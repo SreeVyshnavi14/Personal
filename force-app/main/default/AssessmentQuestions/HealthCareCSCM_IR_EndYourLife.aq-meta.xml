@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>HealthCareCSCM_IR_EndYourLife</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Have you done anything, started to do anything,
+or prepared to do anything to end your life?</questionText>
+        <responseValues>Yes
+No</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>HealthCareCSCM_IR_EndYourLife</developerName>
+    <name>HealthCareCSCM_IR_EndYourLife</name>
+    <questionCategory>Health</questionCategory>
+</AssessmentQuestion>

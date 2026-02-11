@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>HealthCareCSCM_Intake_IsTransgender</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Do you identify as transgender?</questionText>
+        <responseValues>Yes
+No
+I&apos;m not sure
+Decline to answer</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>HealthCareCSCM_Intake_IsTransgender</developerName>
+    <name>HealthCareCSCM_Intake_IsTransgender</name>
+    <questionCategory>Financial</questionCategory>
+</AssessmentQuestion>

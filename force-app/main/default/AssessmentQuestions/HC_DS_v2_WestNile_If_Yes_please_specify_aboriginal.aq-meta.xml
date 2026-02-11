@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>If Yes, please specify aboriginal</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>If Yes, please specify:</questionText>
+        <responseValues>First Nations
+Metis
+Inuit</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>HC_DS_v2_WestNile_If_Yes_please_specify_aboriginal</developerName>
+    <name>If Yes, please specify aboriginal</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

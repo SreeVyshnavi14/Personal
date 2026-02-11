@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Select all that apply.</helpText>
+        <isActive>true</isActive>
+        <name>contact_type</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Contact type:</questionText>
+        <responseValues>Providing care to case - home setting
+Indirect contact (e.g., shared sexual partners)
+Sexual (e.g., vaginal, oral, or anal sex) or intimate contact
+Shared food, utensils, or dishes
+Shared towels, bedding, or clothing
+Shared transportation (e.g., carpooling, riding a bus, riding a motorcycle, using a taxi, using Uber)
+Shared bathrooms (toilets, sinks, showers)
+Face-to-face contact, not including intimate contact
+Health care worker
+Identified air contact
+Other</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Multiselect</dataType>
+    <developerName>HC_DS_v2_Mpox_contact_type</developerName>
+    <name>contact_type</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

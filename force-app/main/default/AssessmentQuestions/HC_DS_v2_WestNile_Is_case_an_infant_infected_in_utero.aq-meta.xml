@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Is case an infant infected in utero?</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Is case an infant infected in utero?</questionText>
+        <responseValues>Yes
+No</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>HC_DS_v2_WestNile_Is_case_an_infant_infected_in_utero</developerName>
+    <name>Is case an infant infected in utero?</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

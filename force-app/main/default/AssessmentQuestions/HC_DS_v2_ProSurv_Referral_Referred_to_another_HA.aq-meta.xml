@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <description>Referral-Referred to another HA</description>
+        <isActive>true</isActive>
+        <name>Referral-Referred to another HA</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Referral-Referred to another HA</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Checkbox</dataType>
+    <developerName>HC_DS_v2_ProSurv_Referral_Referred_to_another_HA</developerName>
+    <name>Referral-Referred to another HA</name>
+    <questionCategory>Demographic</questionCategory>
+    <relatedQuestion>HC_DS_v2_ProSurv_INTERVENTIONS</relatedQuestion>
+</AssessmentQuestion>

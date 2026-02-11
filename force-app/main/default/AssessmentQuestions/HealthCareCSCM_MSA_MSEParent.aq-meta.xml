@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>HealthCareCSCM_MSA_MSEParent</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Having items that can be used to harm yourself when you are in crisis can be dangerous. What items do you have nearby that you may use to harm yourself
+ and how might you safely remove them?</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>EditBlock</dataType>
+    <developerName>HealthCareCSCM_MSA_MSEParent</developerName>
+    <name>HealthCareCSCM_MSA_MSEParent</name>
+    <questionCategory>Financial</questionCategory>
+</AssessmentQuestion>

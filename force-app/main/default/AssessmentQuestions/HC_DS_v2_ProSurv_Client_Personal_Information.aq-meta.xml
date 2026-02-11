@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <description>client personal information</description>
+        <isActive>true</isActive>
+        <name>Client Personal Information</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>&lt;html&gt;&lt;strong&gt;A.  CLIENT PERSONAL INFORMATION&lt;/strong&gt;&lt;/html&gt;</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>TextBlock</dataType>
+    <developerName>HC_DS_v2_ProSurv_Client_Personal_Information</developerName>
+    <name>Client Personal Information</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

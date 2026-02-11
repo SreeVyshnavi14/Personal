@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Symptoms5</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>What are your current Signs and Symptoms?</questionText>
+        <responseValues>Fever (≥ 38o or ≥ 100oF)
+Headache
+Muscle pain
+Joint pain
+Confusion or unusual forgetfulness
+Blurred vision or deterioration in eyesight
+Tremors
+Unusual fatigue/sleepiness
+Weakness in arms/legs
+Stiff neck
+Rash
+Enlarged glands
+Other signs/symptoms (Please specify)</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Multiselect</dataType>
+    <developerName>HC_DS_v2_WestNile_Symptoms5</developerName>
+    <name>Symptoms5</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

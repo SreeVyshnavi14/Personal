@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>If yes for mosquito Bite, details</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>If yes for mosquito Bite, please share details like City or Specific Location</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Text</dataType>
+    <developerName>HC_DS_v2_WestNile_If_yes_for_mosquito_Bite_details</developerName>
+    <name>If yes for mosquito Bite, details</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

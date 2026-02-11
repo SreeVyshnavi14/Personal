@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Enter the date of return to the US.</helpText>
+        <isActive>true</isActive>
+        <name>date_of_return_international</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Date of return to US (MM/DD/YYYY):</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Date</dataType>
+    <developerName>HC_DS_v2_Mpox_date_of_return_inter</developerName>
+    <name>date_of_return_international</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

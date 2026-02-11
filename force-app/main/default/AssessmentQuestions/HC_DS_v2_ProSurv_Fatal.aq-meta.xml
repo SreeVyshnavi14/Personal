@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <description>Fatal</description>
+        <isActive>true</isActive>
+        <name>Fatal</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Fatal</questionText>
+        <status>Active</status>
+        <versionNumber>2</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Checkbox</dataType>
+    <developerName>HC_DS_v2_ProSurv_Fatal</developerName>
+    <name>Fatal</name>
+    <questionCategory>Demographic</questionCategory>
+    <relatedQuestion>HC_DS_v2_ProSurv_OUTCOME_AT_TIME_OF_REPORTING</relatedQuestion>
+</AssessmentQuestion>

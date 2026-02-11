@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Other Comments</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Any other comments</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Text</dataType>
+    <developerName>HC_DS_v2_WestNile_Other_Comments</developerName>
+    <name>Other Comments</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

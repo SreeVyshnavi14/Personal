@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Was travel confirmed as the most likely source of infection</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Was travel confirmed as the most likely source of infection?</questionText>
+        <responseValues>Yes
+No
+Unknown</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>HC_DS_v2_ProSurv_Was_travel_confirmed</developerName>
+    <name>Was travel confirmed as the most likely source of infection</name>
+    <questionCategory>Demographic</questionCategory>
+    <relatedQuestion>HC_DS_v2_ProSurv_TRAVEL_DURING_EXPOSURE_PERIOD</relatedQuestion>
+</AssessmentQuestion>

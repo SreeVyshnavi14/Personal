@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Vaccine 2 Reason</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>If you have received the vaccination, please specify the reason.</questionText>
+        <responseValues>Pre-exposure
+Post-exposure
+Routine pre-exposure
+Unknown</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>HC_DS_v2_Mpox_Vaccine_2_Reason</developerName>
+    <name>Vaccine 2 Reason</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

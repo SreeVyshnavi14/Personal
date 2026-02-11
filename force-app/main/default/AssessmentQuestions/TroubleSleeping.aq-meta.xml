@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>TroubleSleeping</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Trouble falling asleep, staying asleep, or sleeping too much</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>TroubleSleeping</developerName>
+    <name>Trouble falling asleep, staying asleep, or sleeping too much</name>
+    <questionCategory>Health</questionCategory>
+    <relatedQuestion>PHQ9_main_question</relatedQuestion>
+</AssessmentQuestion>

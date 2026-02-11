@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>HealthCareCSCM_MSA_CopingStrategiesParent</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Coping strategies are things you can do on your own to help feel a little better in the moment.</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>EditBlock</dataType>
+    <developerName>HealthCareCSCM_MSA_CopingStrategiesParent</developerName>
+    <name>HealthCareCSCM_MSA_CopingStrategiesParent</name>
+    <questionCategory>Financial</questionCategory>
+</AssessmentQuestion>

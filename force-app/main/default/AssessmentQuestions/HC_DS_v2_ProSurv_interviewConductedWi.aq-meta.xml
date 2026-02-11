@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>interviewConductedWith</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Interview conducted with</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Text</dataType>
+    <developerName>HC_DS_v2_ProSurv_interviewConductedWi</developerName>
+    <name>interviewConductedWith</name>
+    <questionCategory>Demographic</questionCategory>
+    <relatedQuestion>HC_DS_v2_ProSurv_Client_Personal_Information</relatedQuestion>
+</AssessmentQuestion>

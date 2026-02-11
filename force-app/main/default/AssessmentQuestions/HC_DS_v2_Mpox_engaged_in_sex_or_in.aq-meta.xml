@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Select one option.</helpText>
+        <isActive>true</isActive>
+        <name>engaged_in_sex_or_intimate_contact</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Did you engage in any sex (e.g., vaginal, oral or anal sex) and/or close intimate contact (e.g., cuddling, kissing, touching partner&apos;s genitals or anus, or sharing sex toys) in the three weeks before your first symptom appeared (also called symptom onset)?</questionText>
+        <responseValues>Yes
+No
+Unknown</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>RadioGroup</dataType>
+    <developerName>HC_DS_v2_Mpox_engaged_in_sex_or_in</developerName>
+    <name>engaged_in_sex_or_intimate_contact</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

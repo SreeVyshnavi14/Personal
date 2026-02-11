@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Name</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Name</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Text</dataType>
+    <developerName>HC_DS_v2_ProSurv_OtherSpecify_Name</developerName>
+    <name>Name</name>
+    <questionCategory>Demographic</questionCategory>
+    <relatedQuestion>HC_DS_v2_ProSurv_CLINICAL_PRESENTATION_or_SIGNS_AND_SYMPTOMS</relatedQuestion>
+</AssessmentQuestion>

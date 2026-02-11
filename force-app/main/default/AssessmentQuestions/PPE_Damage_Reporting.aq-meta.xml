@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Reporting of Damaged PPE</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>What is the procedure for reporting and replacing damaged PPE?</questionText>
+        <responseValues>Notify the supervisor immediately
+Document the issue in a maintenance log
+Use the damaged PPE temporarily until replaced
+Request a replacement through the designated process</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Multiselect</dataType>
+    <developerName>PPE_Damage_Reporting</developerName>
+    <name>PPE Damage Reporting</name>
+    <questionCategory>Inspections</questionCategory>
+</AssessmentQuestion>

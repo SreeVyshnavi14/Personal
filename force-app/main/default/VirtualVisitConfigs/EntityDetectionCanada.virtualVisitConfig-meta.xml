@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VirtualVisitConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <comprehendServiceType>ComprehendMedicalService</comprehendServiceType>
+    <experienceCloudSiteUrl>video_c@testcloudurl.com</experienceCloudSiteUrl>
+    <masterLabel>vvconfig2</masterLabel>
+    <storageBucketName>comprehendbucket</storageBucketName>
+    <usageType>INTELLIGENT_FORM_READER</usageType>
+    <visitRegion>us-east-1</visitRegion>
+</VirtualVisitConfig>

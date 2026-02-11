@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Donated organs in 8 weeks before onset?</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Have you donated organs in 8 weeks before onset?</questionText>
+        <responseValues>Yes
+No</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>HC_DS_v2_WestNile_Donated_organs_in_8_weeks_before_onset</developerName>
+    <name>Donated organs in 8 weeks before onset?</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

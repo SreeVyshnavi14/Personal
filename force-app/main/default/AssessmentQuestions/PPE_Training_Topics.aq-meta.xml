@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Topics covered in the PPE training</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>What topics are covered in the PPE training?</questionText>
+        <responseValues>How to properly wear and remove PPE
+Limitations of PPE
+Maintenance and storage requirements
+When and why PPE is required</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Multiselect</dataType>
+    <developerName>PPE_Training_Topics</developerName>
+    <name>PPE Training Topics</name>
+    <questionCategory>Inspections</questionCategory>
+</AssessmentQuestion>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>PPE Storage</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Where is PPE stored to ensure its longevity and effectiveness?</questionText>
+        <responseValues>In a clean, dry area away from heat or sunlight
+On the workbench for easy access
+In designated storage areas as per manufacturer guidelines
+Anywhere convenient</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Multiselect</dataType>
+    <developerName>PPE_Storage</developerName>
+    <name>PPE Storage</name>
+    <questionCategory>Inspections</questionCategory>
+</AssessmentQuestion>

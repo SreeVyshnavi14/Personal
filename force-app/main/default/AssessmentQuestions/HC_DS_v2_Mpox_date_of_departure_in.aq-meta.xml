@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Enter the date of departure.</helpText>
+        <isActive>true</isActive>
+        <name>date_of_departure_international</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Date of departure (MM/DD/YYYY):</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Date</dataType>
+    <developerName>HC_DS_v2_Mpox_date_of_departure_in</developerName>
+    <name>date_of_departure_international</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

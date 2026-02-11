@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>1413</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>1413</questionText>
+        <responseValues>1413</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Select</dataType>
+    <developerName>MCG_1413</developerName>
+    <name>1413</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>HealthCareCSCM_IR_isSelfHarmPlanWorkedOut</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Have you started to work out or worked out the details of how to kill yourself? Did you intend to carry out this plan?</questionText>
+        <responseValues>Yes
+No
+Not sure</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>HealthCareCSCM_IR_isSelfHarmPlanWorkedOut</developerName>
+    <name>HealthCareCSCM_IR_isSelfHarmPlanWorkedOut</name>
+    <questionCategory>Financial</questionCategory>
+</AssessmentQuestion>

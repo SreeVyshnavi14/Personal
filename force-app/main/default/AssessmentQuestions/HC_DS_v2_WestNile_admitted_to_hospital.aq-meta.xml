@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>admitted to hospital</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Was this patient admitted to hospital for this illness?</questionText>
+        <responseValues>Yes
+No
+Unknown</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>HC_DS_v2_WestNile_admitted_to_hospital</developerName>
+    <name>admitted to hospital</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

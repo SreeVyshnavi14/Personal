@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Specify the tribal affiliation if applicable.</helpText>
+        <isActive>true</isActive>
+        <name>tribalAffiliation</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>If the selected race is American Indian or Alaska Native, what is the tribal affiliation?</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Text</dataType>
+    <developerName>HC_DS_v2_Mpox_tribalAffiliation1</developerName>
+    <name>tribalAffiliation</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

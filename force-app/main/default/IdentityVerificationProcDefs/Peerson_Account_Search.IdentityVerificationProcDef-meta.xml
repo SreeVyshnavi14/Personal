@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<IdentityVerificationProcDef xmlns="http://soap.sforce.com/2006/04/metadata">
+    <identityVerificationProcDtls>
+        <fullName>Contact_Email_Search</fullName>
+        <dataSourceType>Salesforce</dataSourceType>
+        <developerName>Contact_Email_Search</developerName>
+        <identityVerificationProcFlds>
+            <fullName>Last_Name</fullName>
+            <dataSourceType>Salesforce</dataSourceType>
+            <developerName>Last_Name</developerName>
+            <fieldName>LastName</fieldName>
+            <fieldType>requiredVerifier</fieldType>
+            <isActive>true</isActive>
+            <isManualInput>false</isManualInput>
+            <masterLabel>Last Name</masterLabel>
+            <sequenceNumber>1</sequenceNumber>
+        </identityVerificationProcFlds>
+        <identityVerificationProcFlds>
+            <fullName>Email</fullName>
+            <dataSourceType>Salesforce</dataSourceType>
+            <developerName>Email</developerName>
+            <fieldName>Email</fieldName>
+            <fieldType>requiredVerifier</fieldType>
+            <isActive>true</isActive>
+            <isManualInput>false</isManualInput>
+            <masterLabel>Email</masterLabel>
+            <sequenceNumber>2</sequenceNumber>
+        </identityVerificationProcFlds>
+        <identityVerificationProcFlds>
+            <fullName>Contact_Name</fullName>
+            <dataSourceType>Salesforce</dataSourceType>
+            <developerName>Contact_Name</developerName>
+            <fieldName>Name</fieldName>
+            <fieldType>resultField</fieldType>
+            <isActive>true</isActive>
+            <isManualInput>false</isManualInput>
+            <masterLabel>Contact Name</masterLabel>
+            <sequenceNumber>1</sequenceNumber>
+        </identityVerificationProcFlds>
+        <identityVerificationProcFlds>
+            <fullName>Phone</fullName>
+            <dataSourceType>Salesforce</dataSourceType>
+            <developerName>Phone</developerName>
+            <fieldName>Phone</fieldName>
+            <fieldType>resultField</fieldType>
+            <isActive>true</isActive>
+            <isManualInput>false</isManualInput>
+            <masterLabel>Phone</masterLabel>
+            <sequenceNumber>2</sequenceNumber>
+        </identityVerificationProcFlds>
+        <isActive>true</isActive>
+        <isRetryAllowedAfterLimit>false</isRetryAllowedAfterLimit>
+        <masterLabel>Contact Email Search</masterLabel>
+        <objectName>Contact</objectName>
+        <searchRecordUniqueIdField>Id</searchRecordUniqueIdField>
+        <searchResultSortBy>Name</searchResultSortBy>
+        <searchSequenceNumber>1</searchSequenceNumber>
+        <searchType>Text-Based</searchType>
+    </identityVerificationProcDtls>
+    <masterLabel>Contact Identity Verification</masterLabel>
+    <searchLayoutType>Tab</searchLayoutType>
+</IdentityVerificationProcDef>

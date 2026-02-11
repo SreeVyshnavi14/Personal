@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Indicate the sex assigned at birth.</helpText>
+        <isActive>true</isActive>
+        <name>sexAssignedAtBirth</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>What sex were you assigned at birth, on your original birth certificate?</questionText>
+        <responseValues>Male
+Female
+Declined to answer
+Unknown</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>HC_DS_v2_Mpox_sexAssignedAtBirth1</developerName>
+    <name>sexAssignedAtBirth</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

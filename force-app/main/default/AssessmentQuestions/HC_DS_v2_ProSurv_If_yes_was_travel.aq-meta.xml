@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>If yes, was travel</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>If yes, was travel</questionText>
+        <responseValues>Within BC
+Outside BC, but within Canada
+Outside Canada</responseValues>
+        <status>Active</status>
+        <versionNumber>2</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>HC_DS_v2_ProSurv_If_yes_was_travel</developerName>
+    <name>If yes, was travel</name>
+    <questionCategory>Demographic</questionCategory>
+    <relatedQuestion>HC_DS_v2_ProSurv_TRAVEL_DURING_EXPOSURE_PERIOD</relatedQuestion>
+</AssessmentQuestion>

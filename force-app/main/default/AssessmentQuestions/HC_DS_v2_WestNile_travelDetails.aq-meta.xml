@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Please specify the endemic area if applicable.</helpText>
+        <isActive>true</isActive>
+        <name>travelDetails</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>If yes, specify the endemic area:</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Text</dataType>
+    <developerName>HC_DS_v2_WestNile_travelDetails</developerName>
+    <name>travelDetails</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

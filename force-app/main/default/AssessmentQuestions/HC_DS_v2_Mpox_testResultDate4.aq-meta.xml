@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Please enter the date when the test result was received.</helpText>
+        <isActive>true</isActive>
+        <name>testResultDate</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>What was the test result date?</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Date</dataType>
+    <developerName>HC_DS_v2_Mpox_testResultDate4</developerName>
+    <name>testResultDate</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Please enter the date when your symptoms first started.</helpText>
+        <isActive>true</isActive>
+        <name>illnessOnsetDate</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>What day was the date of your illness onset (the date any symptoms mentioned above first started)?</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Date</dataType>
+    <developerName>HC_DS_v2_Mpox_illnessOnsetDate1</developerName>
+    <name>illnessOnsetDate</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

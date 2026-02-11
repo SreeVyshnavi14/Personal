@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Indicate if the individual engaged in sexual or intimate contact.</helpText>
+        <isActive>true</isActive>
+        <name>engagedInSexualContact</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Did you engage in any sex and/or close intimate contact in the three weeks before your first symptom appeared?</questionText>
+        <responseValues>Yes
+No
+Unknown</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>HC_DS_v2_Mpox_engagedInSexualConta1</developerName>
+    <name>engagedInSexualContact</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

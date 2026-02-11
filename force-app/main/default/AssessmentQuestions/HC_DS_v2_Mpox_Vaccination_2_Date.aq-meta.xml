@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Vaccination 2 Date</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Please specify the date of Vaccination 2</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Date</dataType>
+    <developerName>HC_DS_v2_Mpox_Vaccination_2_Date</developerName>
+    <name>Vaccination 2 Date</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

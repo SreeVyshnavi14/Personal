@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>2264</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>2264</questionText>
+        <responseValues>2264</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Select</dataType>
+    <developerName>MCG_2264</developerName>
+    <name>2264</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Immunisation Taken1</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>What immunisation have you taken</questionText>
+        <responseValues>Japanese encephalitis
+Yellow Fever</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Multiselect</dataType>
+    <developerName>HC_DS_v2_WestNile_Immunisation_Taken1</developerName>
+    <name>Immunisation Taken1</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

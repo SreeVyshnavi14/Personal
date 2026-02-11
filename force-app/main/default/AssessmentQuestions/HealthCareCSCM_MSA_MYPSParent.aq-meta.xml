@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>HealthCareCSCM_MSA_MYPSParent</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Professional contacts are people who can provide professional care and support.</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>EditBlock</dataType>
+    <developerName>HealthCareCSCM_MSA_MYPSParent</developerName>
+    <name>HealthCareCSCM_MSA_MYPSParent</name>
+    <questionCategory>Financial</questionCategory>
+</AssessmentQuestion>

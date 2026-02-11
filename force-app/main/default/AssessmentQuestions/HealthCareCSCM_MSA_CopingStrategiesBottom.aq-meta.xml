@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>HealthCareCSCM_MSA_CopingStrategiesBottom</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>How will you know when to use your safety plan?
+What is happening when you start to experience suicidal thoughts or feel overwhelmed?
+How do you feel physically before you begin feeling suicidal or like harming yourself? (e.g., heart racing, not sleeping or eating well)</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>TextBlock</dataType>
+    <developerName>HealthCareCSCM_MSA_CopingStrategiesBottom</developerName>
+    <name>HealthCareCSCM_MSA_CopingStrategiesBottom</name>
+    <questionCategory>Financial</questionCategory>
+</AssessmentQuestion>

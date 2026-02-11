@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>health care worker</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Is this individual a health care worker who was exposed at work?</questionText>
+        <responseValues>Yes
+No
+Unknown</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>HC_DS_v2_Mpox_health_care_worker</developerName>
+    <name>health care worker</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

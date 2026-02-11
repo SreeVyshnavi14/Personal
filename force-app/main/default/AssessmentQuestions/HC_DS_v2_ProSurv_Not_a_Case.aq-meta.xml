@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <description>Not a Case</description>
+        <isActive>true</isActive>
+        <name>Not a Case</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Not a Case</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Checkbox</dataType>
+    <developerName>HC_DS_v2_ProSurv_Not_a_Case</developerName>
+    <name>Not a Case</name>
+    <questionCategory>Demographic</questionCategory>
+    <relatedQuestion>HC_DS_v2_ProSurv_CLASSIFICATION</relatedQuestion>
+</AssessmentQuestion>

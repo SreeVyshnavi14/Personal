@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>PPE Physical Injury</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>For the Physical Injury hazard identified, which type of PPE is required?</questionText>
+        <responseValues>Hard hat
+Steel-toed boots
+Cut-resistant gloves</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Multiselect</dataType>
+    <developerName>PPE_Physical_Injury</developerName>
+    <name>PPE Physical Injury</name>
+    <questionCategory>Inspections</questionCategory>
+</AssessmentQuestion>

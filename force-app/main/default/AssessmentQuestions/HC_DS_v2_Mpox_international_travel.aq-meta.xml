@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Enter the country traveled to.</helpText>
+        <isActive>true</isActive>
+        <name>international_travel_country</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>International Travel: Country traveled to:</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Text</dataType>
+    <developerName>HC_DS_v2_Mpox_international_travel</developerName>
+    <name>international_travel_country</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

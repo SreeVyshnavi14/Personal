@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Clinical Symptoms</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>What signs or symptoms did you experience during the course of your illness?</questionText>
+        <responseValues>Fever
+Rash
+Enlarged Lymph Nodes
+Pruritis (itching)
+Rectal Pain
+Rectal Bleeding
+Pus or blood on stools
+Proctitis
+Tenesmus/urgency to defecate
+Headache
+Malaise (general feeling of illness or weakness)
+Conjunctivitis
+Abdominal Pain
+Vomiting or Nausea
+Myalgia (muscle aches)
+Chills</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Multiselect</dataType>
+    <developerName>HC_DS_v2_Mpox_Clinical_Symptoms</developerName>
+    <name>Clinical Symptoms</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

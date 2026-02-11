@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Indicate if the individual has any known immunocompromising conditions.</helpText>
+        <isActive>true</isActive>
+        <name>immunocompromisingConditions</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Does the individual have any known immunocompromising conditions (excluding HIV) or take immunosuppressive medications?</questionText>
+        <responseValues>Yes
+No
+Unknown</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>HC_DS_v2_Mpox_immunocompromisingCo4</developerName>
+    <name>immunocompromisingConditions</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

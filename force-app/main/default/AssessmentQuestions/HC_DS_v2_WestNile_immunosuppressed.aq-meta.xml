@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Please indicate if the patient is immunosuppressed or has a chronic disease.</helpText>
+        <isActive>true</isActive>
+        <name>immunosuppressed</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Is this patient immunosuppressed or suffering from a chronic disease?</questionText>
+        <responseValues>No
+Yes
+Unknown</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>HC_DS_v2_WestNile_immunosuppressed</developerName>
+    <name>immunosuppressed</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

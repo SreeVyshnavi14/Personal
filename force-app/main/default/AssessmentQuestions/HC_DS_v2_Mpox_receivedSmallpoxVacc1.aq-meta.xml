@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Indicate if the individual received a smallpox vaccine.</helpText>
+        <isActive>true</isActive>
+        <name>receivedSmallpoxVaccine</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>[FOR INTERVIEWER] Did the individual ever receive a vaccine against smallpox?</questionText>
+        <responseValues>Yes
+No
+Unknown</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>HC_DS_v2_Mpox_receivedSmallpoxVacc1</developerName>
+    <name>receivedSmallpoxVaccine</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

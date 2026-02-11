@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>If lab acquired, facility name</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>If lab acquired, facility name</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Text</dataType>
+    <developerName>HC_DS_v2_WestNile_If_lab_acquired_facility_name</developerName>
+    <name>If lab acquired, facility name</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

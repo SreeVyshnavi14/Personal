@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>cause of death</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>If yes, how did West Nile virus relate to the cause of death:</questionText>
+        <responseValues>Underlying cause of death
+WNV contributed, but wasn’t underlying cause
+WNV did not contribute to death; incidental
+Unknown</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Multiselect</dataType>
+    <developerName>HC_DS_v2_WestNile_cause_of_death</developerName>
+    <name>cause of death</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

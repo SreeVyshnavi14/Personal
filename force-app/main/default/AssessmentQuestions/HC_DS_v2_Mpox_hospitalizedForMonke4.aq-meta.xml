@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Indicate if the individual has been hospitalized for monkeypox.</helpText>
+        <isActive>true</isActive>
+        <name>hospitalizedForMonkeypox</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Has the individual been hospitalized for monkeypox?</questionText>
+        <responseValues>Yes
+No
+Unknown</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>HC_DS_v2_Mpox_hospitalizedForMonke4</developerName>
+    <name>hospitalizedForMonkeypox</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>
