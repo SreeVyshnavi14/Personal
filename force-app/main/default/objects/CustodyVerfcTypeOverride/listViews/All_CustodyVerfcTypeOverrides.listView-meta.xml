@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_CustodyVerfcTypeOverrides</fullName>
+    <columns>Name</columns>
+    <columns>LastModifiedBy</columns>
+    <columns>LastModifiedDate</columns>
+    <columns>CustodyVerificationType</columns>
+    <columns>DigitalVerificationSetup</columns>
+    <columns>Priority</columns>
+    <columns>WorkProcedure</columns>
+    <columns>WorkType</columns>
+    <columns>WorkTypeStep</columns>
+    <columns>TaskName</columns>
+    <columns>ServiceTerritory</columns>
+    <columns>Country</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Custody Verification Type Overrides</label>
+</ListView>
