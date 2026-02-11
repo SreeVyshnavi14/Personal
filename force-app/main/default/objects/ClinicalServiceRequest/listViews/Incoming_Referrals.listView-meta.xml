@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Incoming_Referrals</fullName>
+    <columns>Name</columns>
+    <columns>Patient</columns>
+    <columns>Requester</columns>
+    <columns>Performer</columns>
+    <columns>Status</columns>
+    <columns>Type</columns>
+    <columns>Priority</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status</field>
+        <operation>notEqual</operation>
+        <value>Active</value>
+    </filters>
+    <label>Incoming Referrals</label>
+</ListView>
