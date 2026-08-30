@@ -1,0 +1,46 @@
+<template>
+      <lightning-layout>
+       <div class="'container">
+       <div class="menu-overlay">
+      <lightning-layout-item  size="1" class="sidenav" style="background-color: aliceblue;">
+      <lightning-vertical-navigation>
+                    <lightning-vertical-navigation-item-icon label="Account" name="Account"
+                        icon-name="standard:account" onclick={handleAccountClick}>
+                    </lightning-vertical-navigation-item-icon>
+                    <lightning-vertical-navigation-item-icon label="Opportunity" name="Opportunity"
+                        icon-name="standard:opportunity" onclick={handleOpportunityClick}>
+                    </lightning-vertical-navigation-item-icon>
+                    <lightning-vertical-navigation-item-icon label="Contact" name="Contact"
+                        icon-name="standard:contact" onclick={handleContcatClick}>
+                    </lightning-vertical-navigation-item-icon>
+            </lightning-vertical-navigation>
+          </lightning-layout-item>
+          </div>
+        </div>
+          <lightning-layout-item size="12">
+          <div class="content">
+          <template if:true={isAccountSelected}>
+            <!-- Account Component -->
+            <c-account></c-account>
+          </template>
+        </div>
+        </lightning-layout-item>
+        <lightning-layout-item size="12">
+          <div class="content">
+          <template if:true={isOpportunitySelected}>
+              <!-- Opportunity Component -->
+              <c-opportunity></c-opportunity>
+          </template> 
+        </div>
+        </lightning-layout-item>
+        <lightning-layout-item size="12">
+          <div class="content">
+          <template if:true={isContactSelected}>
+              <!-- Opportunity Component -->
+              <c-contact></c-contact>
+          </template>
+        </div>
+        </lightning-layout-item>
+        
+      </lightning-layout>
+</template>
